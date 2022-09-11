@@ -1,2 +1,2 @@
-export const REACT_APP_SUPABASE_URL = 'https://your-project-url.supabase.co';
-export const REACT_APP_SUPABASE_ANON_KEY = 'PROJECT_ANON_KEY';
+export const REACT_APP_SUPABASE_URL = 'https://qvnnpsyliavoprokftgs.supabase.co';
+export const REACT_APP_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2bm5wc3lsaWF2b3Byb2tmdGdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI3NTY4NjUsImV4cCI6MTk3ODMzMjg2NX0.gHjTwhctfqj8qo3GLnA-mRY8VFS_9iYxzlpVLs1qFLg';
