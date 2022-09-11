@@ -1,17 +1,26 @@
 import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import getCaretCoordinates from 'textarea-caret';
-import Button from '../../components/ui/button';
-import TextField from '../../components/ui/text-field';
-import Mascot from '../../components/ui/mascot';
-import { SUPPORT_LINK } from '../../helpers/constants/common';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import {
   EVENT,
   EVENT_NAMES,
-  CONTEXT_PROPS,
 } from '../../../shared/constants/metametrics';
+import {
+  REACT_APP_SUPABASE_URL,
+  REACT_APP_SUPABASE_ANON_KEY,
+} from '../../../shared/constants/supabase';
+import { Auth } from "@supabase/ui";
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseClient = createClient(REACT_APP_SUPABASE_URL, REACT_APP_SUPABASE_ANON_KEY);
+
+supabaseClient.auth.onAuthStateChange((event, session) => {
+  if (event == 'SIGNED_IN') {
+    onSubmitsession.refresh_token
+    supabaseClient.auth.setSession(session.refresh_token)
+  }
+})
 
 export default class UnlockPage extends Component {
   static contextTypes = {
@@ -66,13 +75,9 @@ export default class UnlockPage extends Component {
   }
 
   handleSubmit = async (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    const { password } = this.state;
     const { onSubmit, forceUpdateMetamaskState, showOptInModal } = this.props;
 
-    if (password === '' || this.submitting) {
+    if (this.submitting) {
       return;
     }
 
@@ -80,7 +85,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      await onSubmit(password);
+      await onSubmit(session.access_token);
       const newState = await forceUpdateMetamaskState();
       this.context.trackEvent(
         {
@@ -94,13 +99,6 @@ export default class UnlockPage extends Component {
           isNewVisit: true,
         },
       );
-
-      if (
-        newState.participateInMetaMetrics === null ||
-        newState.participateInMetaMetrics === undefined
-      ) {
-        showOptInModal();
-      }
     } catch ({ message }) {
       this.failed_attempts += 1;
 
@@ -121,117 +119,22 @@ export default class UnlockPage extends Component {
     }
   };
 
-  handleInputChange({ target }) {
-    this.setState({ password: target.value, error: null });
-
-    // tell mascot to look at page action
-    if (target.getBoundingClientRect) {
-      const element = target;
-      const boundingRect = element.getBoundingClientRect();
-      const coordinates = getCaretCoordinates(element, element.selectionEnd);
-      this.animationEventEmitter.emit('point', {
-        x: boundingRect.left + coordinates.left - element.scrollLeft,
-        y: boundingRect.top + coordinates.top - element.scrollTop,
-      });
-    }
-  }
-
-  renderSubmitButton() {
-    const style = {
-      backgroundColor: 'var(--color-primary-default)',
-      color: 'var(--color-primary-inverse)',
-      marginTop: '20px',
-      height: '60px',
-      fontWeight: '400',
-      boxShadow: 'none',
-      borderRadius: '100px',
-    };
-
-    return (
-      <Button
-        type="submit"
-        style={style}
-        disabled={!this.state.password}
-        variant="contained"
-        size="large"
-        onClick={this.handleSubmit}
-      >
-        {this.context.t('unlock')}
-      </Button>
-    );
-  }
-
   render() {
     const { password, error } = this.state;
     const { t } = this.context;
-    const { onRestore } = this.props;
+
+    // TODO: Add a "forgot password" button for key recovery
+    // const { onRestore } = this.props;
 
     return (
-      <div className="unlock-page__container">
-        <div className="unlock-page" data-testid="unlock-page">
-          <div className="unlock-page__mascot-container">
-            <Mascot
-              animationEventEmitter={this.animationEventEmitter}
-              width="120"
-              height="120"
-            />
-          </div>
-          <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
-          <div>{t('unlockMessage')}</div>
-          <form className="unlock-page__form" onSubmit={this.handleSubmit}>
-            <TextField
-              id="password"
-              label={t('password')}
-              type="password"
-              value={password}
-              onChange={(event) => this.handleInputChange(event)}
-              error={error}
-              autoFocus
-              autoComplete="current-password"
-              theme="material"
-              fullWidth
-            />
-          </form>
-          {this.renderSubmitButton()}
-          <div className="unlock-page__links">
-            <Button
-              type="link"
-              key="import-account"
-              className="unlock-page__link"
-              onClick={() => onRestore()}
-            >
-              {t('forgotPassword')}
-            </Button>
-          </div>
-          <div className="unlock-page__support">
-            {t('needHelp', [
-              <a
-                href={SUPPORT_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                key="need-help-link"
-                onClick={() => {
-                  this.context.trackEvent(
-                    {
-                      category: EVENT.CATEGORIES.NAVIGATION,
-                      event: EVENT_NAMES.SUPPORT_LINK_CLICKED,
-                      properties: {
-                        url: SUPPORT_LINK,
-                      },
-                    },
-                    {
-                      contextPropsIntoEventProperties: [
-                        CONTEXT_PROPS.PAGE_TITLE,
-                      ],
-                    },
-                  );
-                }}
-              >
-                {t('needHelpLinkText')}
-              </a>,
-            ])}
-          </div>
-        </div>
+      <div>
+        <Auth
+          supabaseClient={supabaseClient}
+          providers={["google", "apple"]}
+          socialLayout="horizontal"
+          redirectTo="/vaults"
+          socialButtonSize="xlarge"
+        />
       </div>
     );
   }
