@@ -125,20 +125,13 @@ export const SETTINGS_CONSTANTS = [
     route: `${ADVANCED_ROUTE}#ipfs-gateway`,
     icon: 'fas fa-sliders-h',
   },
-  {
+  /* {
     tabMessage: (t) => t('advanced'),
     sectionMessage: (t) => t('preferredLedgerConnectionType'),
     descriptionMessage: (t) => t('preferredLedgerConnectionType'),
     route: `${ADVANCED_ROUTE}#ledger-connection`,
     icon: 'fas fa-sliders-h',
-  },
-  {
-    tabMessage: (t) => t('advanced'),
-    sectionMessage: (t) => t('dismissReminderField'),
-    descriptionMessage: (t) => t('dismissReminderDescriptionField'),
-    route: `${ADVANCED_ROUTE}#dimiss-secretrecovery`,
-    icon: 'fas fa-sliders-h',
-  },
+  }, */
   {
     tabMessage: (t) => t('contacts'),
     sectionMessage: (t) => t('contacts'),
@@ -155,13 +148,6 @@ export const SETTINGS_CONSTANTS = [
     icon: 'fa fa-flask',
   },
   ///: END:ONLY_INCLUDE_IN
-  {
-    tabMessage: (t) => t('securityAndPrivacy'),
-    sectionMessage: (t) => t('revealSeedWords'),
-    descriptionMessage: (t) => t('revealSeedWords'),
-    route: `${SECURITY_ROUTE}#reveal-secretrecovery`,
-    icon: 'fa fa-lock',
-  },
   {
     tabMessage: (t) => t('securityAndPrivacy'),
     sectionMessage: (t) => t('showIncomingTransactions'),

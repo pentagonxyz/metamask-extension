@@ -372,28 +372,7 @@ export default class AccountMenu extends Component {
           icon={<IconPlus color="var(--color-icon-alternative)" />}
           text={t('createAccount')}
         />
-        <AccountMenuItem
-          onClick={() => {
-            toggleAccountMenu();
-            trackEvent({
-              category: EVENT.CATEGORIES.NAVIGATION,
-              event: EVENT_NAMES.ACCOUNT_ADD_SELECTED,
-              properties: {
-                account_type: EVENT.ACCOUNT_TYPES.IMPORTED,
-                location: 'Main Menu',
-              },
-            });
-            history.push(IMPORT_ACCOUNT_ROUTE);
-          }}
-          icon={
-            <IconImport
-              color="var(--color-icon-alternative)"
-              ariaLabel={t('importAccount')}
-            />
-          }
-          text={t('importAccount')}
-        />
-        <AccountMenuItem
+        {/* <AccountMenuItem
           onClick={() => {
             toggleAccountMenu();
             trackEvent({
@@ -417,7 +396,7 @@ export default class AccountMenu extends Component {
             />
           }
           text={t('connectHardwareWallet')}
-        />
+        /> */}
         <div className="account-menu__divider" />
         {
           ///: BEGIN:ONLY_INCLUDE_IN(flask)

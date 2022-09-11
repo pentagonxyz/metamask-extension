@@ -47,41 +47,6 @@ export default class SecurityTab extends PureComponent {
     handleSettingsRefs(t, t('securityAndPrivacy'), this.settingsRefs);
   }
 
-  renderSeedWords() {
-    const { t } = this.context;
-    const { history } = this.props;
-
-    return (
-      <div ref={this.settingsRefs[0]} className="settings-page__content-row">
-        <div className="settings-page__content-item">
-          <span>{t('revealSeedWords')}</span>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <Button
-              type="danger"
-              large
-              onClick={(event) => {
-                event.preventDefault();
-                this.context.trackEvent({
-                  category: EVENT.CATEGORIES.SETTINGS,
-                  event: EVENT_NAMES.KEY_EXPORT_SELECTED,
-                  properties: {
-                    key_type: EVENT.KEY_TYPES.SRP,
-                    location: 'Settings',
-                  },
-                });
-                history.push(REVEAL_SEED_ROUTE);
-              }}
-            >
-              {t('revealSeedWords')}
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   renderMetaMetricsOptIn() {
     const { t } = this.context;
     const { participateInMetaMetrics, setParticipateInMetaMetrics } =
@@ -170,7 +135,6 @@ export default class SecurityTab extends PureComponent {
     return (
       <div className="settings-page__body">
         {warning ? <div className="settings-tab__error">{warning}</div> : null}
-        {this.renderSeedWords()}
         {this.renderIncomingTransactionsOptIn()}
         {this.renderPhishingDetectionToggle()}
         {this.renderMetaMetricsOptIn()}

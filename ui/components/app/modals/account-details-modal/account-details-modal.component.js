@@ -58,12 +58,6 @@ export default class AccountDetailsModal extends Component {
         .filter((itemName) => itemName !== currentName);
     };
 
-    let exportPrivateKeyFeatureEnabled = true;
-    // This feature is disabled for hardware wallets
-    if (isHardwareKeyring(keyring?.type)) {
-      exportPrivateKeyFeatureEnabled = false;
-    }
-
     const routeToAddBlockExplorerUrl = () => {
       hideModal();
       history.push(`${NETWORKS_ROUTE}#blockExplorerUrl`);
@@ -118,26 +112,6 @@ export default class AccountDetailsModal extends Component {
               : [blockExplorerLinkText.secondPart],
           )}
         </Button>
-
-        {exportPrivateKeyFeatureEnabled ? (
-          <Button
-            type="secondary"
-            className="account-details-modal__button"
-            onClick={() => {
-              this.context.trackEvent({
-                category: EVENT.CATEGORIES.ACCOUNTS,
-                event: EVENT_NAMES.KEY_EXPORT_SELECTED,
-                properties: {
-                  key_type: EVENT.KEY_TYPES.PKEY,
-                  location: 'Account Details Modal',
-                },
-              });
-              showExportPrivateKeyModal();
-            }}
-          >
-            {this.context.t('exportPrivateKey')}
-          </Button>
-        ) : null}
       </AccountModalContainer>
     );
   }

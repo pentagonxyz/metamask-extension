@@ -428,23 +428,6 @@ export default class Home extends PureComponent {
             key="home-web3ShimUsageNotification"
           />
         ) : null}
-        {shouldShowSeedPhraseReminder ? (
-          <HomeNotification
-            descriptionText={t('backupApprovalNotice')}
-            acceptText={t('backupNow')}
-            onAccept={() => {
-              if (isPopup) {
-                global.platform.openExtensionInBrowser(
-                  INITIALIZE_BACKUP_SEED_PHRASE_ROUTE,
-                );
-              } else {
-                history.push(INITIALIZE_BACKUP_SEED_PHRASE_ROUTE);
-              }
-            }}
-            infoText={t('backupApprovalInfo')}
-            key="home-backupApprovalNotice"
-          />
-        ) : null}
         {threeBoxLastUpdated && showRestorePrompt ? (
           <HomeNotification
             descriptionText={t('restoreWalletPreferences', [
