@@ -1,13 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ToggleButton from '../../../components/ui/toggle-button';
-import { REVEAL_SEED_ROUTE } from '../../../helpers/constants/routes';
-import Button from '../../../components/ui/button';
 import {
   getNumberOfSettingsInSection,
   handleSettingsRefs,
 } from '../../../helpers/utils/settings-search';
-import { EVENT, EVENT_NAMES } from '../../../../shared/constants/metametrics';
 
 export default class SecurityTab extends PureComponent {
   static contextTypes = {
@@ -17,7 +14,6 @@ export default class SecurityTab extends PureComponent {
 
   static propTypes = {
     warning: PropTypes.string,
-    history: PropTypes.object,
     participateInMetaMetrics: PropTypes.bool.isRequired,
     setParticipateInMetaMetrics: PropTypes.func.isRequired,
     showIncomingTransactions: PropTypes.bool.isRequired,

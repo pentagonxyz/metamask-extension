@@ -7,7 +7,7 @@ import QrView from '../../../ui/qr-code';
 import EditableLabel from '../../../ui/editable-label';
 import Button from '../../../ui/button';
 import { getURLHostName } from '../../../../helpers/utils/util';
-import { isHardwareKeyring } from '../../../../helpers/utils/hardware';
+// import { isHardwareKeyring } from '../../../../helpers/utils/hardware';
 import {
   EVENT,
   EVENT_NAMES,
@@ -18,9 +18,7 @@ export default class AccountDetailsModal extends Component {
   static propTypes = {
     selectedIdentity: PropTypes.object,
     chainId: PropTypes.string,
-    showExportPrivateKeyModal: PropTypes.func,
     setAccountLabel: PropTypes.func,
-    keyrings: PropTypes.array,
     rpcPrefs: PropTypes.object,
     accounts: PropTypes.array,
     history: PropTypes.object,
@@ -37,9 +35,7 @@ export default class AccountDetailsModal extends Component {
     const {
       selectedIdentity,
       chainId,
-      showExportPrivateKeyModal,
       setAccountLabel,
-      keyrings,
       rpcPrefs,
       accounts,
       history,
@@ -47,10 +43,6 @@ export default class AccountDetailsModal extends Component {
       blockExplorerLinkText,
     } = this.props;
     const { name, address } = selectedIdentity;
-
-    const keyring = keyrings.find((kr) => {
-      return kr.accounts.includes(address);
-    });
 
     const getAccountsNames = (allAccounts, currentName) => {
       return Object.values(allAccounts)

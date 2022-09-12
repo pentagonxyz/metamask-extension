@@ -39,7 +39,6 @@ import {
   RESTORE_VAULT_ROUTE,
   CONFIRM_TRANSACTION_ROUTE,
   CONFIRM_ADD_SUGGESTED_TOKEN_ROUTE,
-  INITIALIZE_BACKUP_SEED_PHRASE_ROUTE,
   CONNECT_ROUTE,
   CONNECTED_ROUTE,
   CONNECTED_ACCOUNTS_ROUTE,
@@ -83,7 +82,6 @@ export default class Home extends PureComponent {
     forgottenPassword: PropTypes.bool,
     suggestedAssets: PropTypes.array,
     unconfirmedTransactionsCount: PropTypes.number,
-    shouldShowSeedPhraseReminder: PropTypes.bool.isRequired,
     isPopup: PropTypes.bool,
     isNotification: PropTypes.bool.isRequired,
     threeBoxSynced: PropTypes.bool,
@@ -259,9 +257,6 @@ export default class Home extends PureComponent {
   renderNotifications() {
     const { t } = this.context;
     const {
-      history,
-      shouldShowSeedPhraseReminder,
-      isPopup,
       selectedAddress,
       restoreFromThreeBox,
       turnThreeBoxSyncingOn,

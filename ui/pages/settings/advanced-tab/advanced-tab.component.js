@@ -8,9 +8,9 @@ import { MOBILE_SYNC_ROUTE } from '../../../helpers/constants/routes';
 import Dropdown from '../../../components/ui/dropdown';
 import Dialog from '../../../components/ui/dialog';
 
-import { getPlatform } from '../../../../app/scripts/lib/util';
+// import { getPlatform } from '../../../../app/scripts/lib/util';
 
-import { PLATFORM_FIREFOX } from '../../../../shared/constants/app';
+// import { PLATFORM_FIREFOX } from '../../../../shared/constants/app';
 import {
   getNumberOfSettingsInSection,
   handleSettingsRefs,
@@ -55,8 +55,6 @@ export default class AdvancedTab extends PureComponent {
     ipfsGateway: PropTypes.string.isRequired,
     ledgerTransportType: PropTypes.oneOf(Object.values(LEDGER_TRANSPORT_TYPES)),
     setLedgerTransportPreference: PropTypes.func.isRequired,
-    setDismissSeedBackUpReminder: PropTypes.func.isRequired,
-    dismissSeedBackUpReminder: PropTypes.bool.isRequired,
     userHasALedgerAccount: PropTypes.bool.isRequired,
     useTokenDetection: PropTypes.bool.isRequired,
     setUseTokenDetection: PropTypes.func.isRequired,
@@ -798,7 +796,7 @@ export default class AdvancedTab extends PureComponent {
   render() {
     const { warning } = this.props;
 
-    const notUsingFirefox = getPlatform() !== PLATFORM_FIREFOX;
+    // const notUsingFirefox = getPlatform() !== PLATFORM_FIREFOX;
 
     return (
       <div className="settings-page__body">
