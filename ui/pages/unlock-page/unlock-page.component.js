@@ -15,13 +15,6 @@ import { createClient } from '@supabase/supabase-js'
 
 const supabaseClient = createClient(REACT_APP_SUPABASE_URL, REACT_APP_SUPABASE_ANON_KEY);
 
-supabaseClient.auth.onAuthStateChange((event, session) => {
-  if (event == 'SIGNED_IN') {
-    onSubmitsession.refresh_token
-    supabaseClient.auth.setSession(session.refresh_token)
-  }
-})
-
 export default class UnlockPage extends Component {
   static contextTypes = {
     trackEvent: PropTypes.func,
@@ -71,10 +64,16 @@ export default class UnlockPage extends Component {
 
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
+    } else {
+      supabaseClient.auth.onAuthStateChange((event, session) => {
+        if (event == 'SIGNED_IN') {
+          this.handleSubmit(session);
+        }
+      })
     }
   }
 
-  handleSubmit = async (event) => {
+  handleSubmit = async (session) => {
     const { onSubmit, forceUpdateMetamaskState, showOptInModal } = this.props;
 
     if (this.submitting) {
@@ -99,30 +98,22 @@ export default class UnlockPage extends Component {
           isNewVisit: true,
         },
       );
+
+      // TODO: Re-enable analytics
+      /* if (
+        newState.participateInMetaMetrics === null ||
+        newState.participateInMetaMetrics === undefined
+      ) {
+        showOptInModal();
+      } */
     } catch ({ message }) {
       this.failed_attempts += 1;
-
-      if (message === 'Incorrect password') {
-        await forceUpdateMetamaskState();
-        this.context.trackEvent({
-          category: EVENT.CATEGORIES.NAVIGATION,
-          event: EVENT_NAMES.APP_UNLOCKED_FAILED,
-          properties: {
-            reason: 'incorrect_password',
-            failed_attempts: this.failed_attempts,
-          },
-        });
-      }
-
       this.setState({ error: message });
       this.submitting = false;
     }
   };
 
   render() {
-    const { password, error } = this.state;
-    const { t } = this.context;
-
     // TODO: Add a "forgot password" button for key recovery
     // const { onRestore } = this.props;
 
