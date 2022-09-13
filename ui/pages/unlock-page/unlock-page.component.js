@@ -74,7 +74,8 @@ export default class UnlockPage extends Component {
   }
 
   handleSubmit = async (session) => {
-    const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } = this.props;
+    const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } =
+      this.props;
 
     if (this.submitting) {
       return;
