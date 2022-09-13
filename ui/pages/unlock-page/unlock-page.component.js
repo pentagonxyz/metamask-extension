@@ -135,8 +135,11 @@ export default class UnlockPage extends Component {
 
     try {
       const { error } = await supabaseClient.auth.signInWithOtp({ email });
-      if (error) this.setState({ error: error.error_description || error.message });
-      else this.setState({ error: 'Check your email for the login link!' });
+      if (error) {
+        this.setState({ error: error.error_description || error.message });
+      } else {
+        this.setState({ error: 'Check your email for the login link!' });
+      }
     } catch (error) {
       this.setState({ error: error.error_description || error.message });
     } finally {
@@ -184,7 +187,11 @@ export default class UnlockPage extends Component {
       <div className="unlock-page__container">
         <div className="unlock-page" data-testid="unlock-page">
           <div className="unlock-page__mascot-container">
-            <img src="./images/logo/metamask-fox.svg" alt="" style="width: 120px; height: 120px;" />
+            <img
+              src="./images/logo/metamask-fox.svg"
+              alt=""
+              style="width: 120px; height: 120px;"
+            />
           </div>
           <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
           <div>{t('unlockMessage')}</div>
@@ -240,7 +247,7 @@ export default class UnlockPage extends Component {
                 {t('needHelpLinkText')}
               </a>,
             ])}
-          </div> */ }
+          </div> */}
         </div>
       </div>
     );
