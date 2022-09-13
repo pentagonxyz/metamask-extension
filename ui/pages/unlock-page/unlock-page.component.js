@@ -184,11 +184,7 @@ export default class UnlockPage extends Component {
       <div className="unlock-page__container">
         <div className="unlock-page" data-testid="unlock-page">
           <div className="unlock-page__mascot-container">
-            <Mascot
-              animationEventEmitter={this.animationEventEmitter}
-              width="120"
-              height="120"
-            />
+            <img src="./images/logo/metamask-fox.svg" alt="" style="width: 120px; height: 120px;" />
           </div>
           <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
           <div>{t('unlockMessage')}</div>
