@@ -115,11 +115,18 @@ export default class UnlockPage extends Component {
   };
 
   render() {
+    const { error } = this.state;
+
     // TODO: Add a "forgot password" button for key recovery
     // const { onRestore } = this.props;
 
     return (
       <div>
+        {error ? (
+          <div style="background: #ff8080; color: white; font-size: 14px; text-align: center; padding: 5px 10px;">
+            {error}
+          </div>
+        ) : null}
         <Auth
           supabaseClient={supabaseClient}
           providers={['google', 'apple']}
