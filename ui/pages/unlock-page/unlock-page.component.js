@@ -2,8 +2,15 @@ import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createClient } from '@supabase/supabase-js';
+import Button from '../../components/ui/button';
+import TextField from '../../components/ui/text-field';
+// import { SUPPORT_LINK } from '../../helpers/constants/common';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
-import { EVENT, EVENT_NAMES } from '../../../shared/constants/metametrics';
+import {
+  EVENT,
+  EVENT_NAMES,
+  // CONTEXT_PROPS,
+} from '../../../shared/constants/metametrics';
 import {
   REACT_APP_SUPABASE_URL,
   REACT_APP_SUPABASE_ANON_KEY,
