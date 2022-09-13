@@ -1,19 +1,19 @@
 import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Auth } from '@supabase/ui';
+import { createClient } from '@supabase/supabase-js';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
-import {
-  EVENT,
-  EVENT_NAMES,
-} from '../../../shared/constants/metametrics';
+import { EVENT, EVENT_NAMES } from '../../../shared/constants/metametrics';
 import {
   REACT_APP_SUPABASE_URL,
   REACT_APP_SUPABASE_ANON_KEY,
 } from '../../../shared/constants/supabase';
-import { Auth } from "@supabase/ui";
-import { createClient } from '@supabase/supabase-js'
 
-const supabaseClient = createClient(REACT_APP_SUPABASE_URL, REACT_APP_SUPABASE_ANON_KEY);
+const supabaseClient = createClient(
+  REACT_APP_SUPABASE_URL,
+  REACT_APP_SUPABASE_ANON_KEY,
+);
 
 export default class UnlockPage extends Component {
   static contextTypes = {
@@ -33,7 +33,7 @@ export default class UnlockPage extends Component {
     /**
      * onClick handler for "Forgot password?" link
      */
-    onRestore: PropTypes.func,
+    // onRestore: PropTypes.func,
     /**
      * onSumbit handler when form is submitted
      */
@@ -45,11 +45,11 @@ export default class UnlockPage extends Component {
     /**
      * Event handler to show metametrics modal
      */
-    showOptInModal: PropTypes.func,
+    // showOptInModal: PropTypes.func,
   };
 
   state = {
-    password: '',
+    // password: '',
     error: null,
   };
 
@@ -66,15 +66,15 @@ export default class UnlockPage extends Component {
       history.push(DEFAULT_ROUTE);
     } else {
       supabaseClient.auth.onAuthStateChange((event, session) => {
-        if (event == 'SIGNED_IN') {
+        if (event === 'SIGNED_IN') {
           this.handleSubmit(session);
         }
-      })
+      });
     }
   }
 
   handleSubmit = async (session) => {
-    const { onSubmit, forceUpdateMetamaskState, showOptInModal } = this.props;
+    const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } = this.props;
 
     if (this.submitting) {
       return;
@@ -85,7 +85,7 @@ export default class UnlockPage extends Component {
 
     try {
       await onSubmit(session.access_token);
-      const newState = await forceUpdateMetamaskState();
+      /* const newState = */ await forceUpdateMetamaskState();
       this.context.trackEvent(
         {
           category: EVENT.CATEGORIES.NAVIGATION,
@@ -121,7 +121,7 @@ export default class UnlockPage extends Component {
       <div>
         <Auth
           supabaseClient={supabaseClient}
-          providers={["google", "apple"]}
+          providers={['google', 'apple']}
           socialLayout="horizontal"
           redirectTo="/vaults"
           socialButtonSize="xlarge"
