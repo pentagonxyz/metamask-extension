@@ -1149,6 +1149,9 @@
   "editSpeedUpEditGasFeeModalTitle": {
     "message": "Edit speed up gas fee"
   },
+  "email": {
+    "message": "Email"
+  },
   "enableAutoDetect": {
     "message": " Enable autodetect"
   },
@@ -3046,6 +3049,9 @@
   },
   "sendBugReport": {
     "message": "Send us a bug report."
+  },
+  "sendMagicLink": {
+    "message": "Send magic link"
   },
   "sendSpecifiedTokens": {
     "message": "Send $1",

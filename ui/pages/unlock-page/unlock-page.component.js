@@ -1,7 +1,6 @@
 import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Auth } from '@supabase/ui';
 import { createClient } from '@supabase/supabase-js';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import { EVENT, EVENT_NAMES } from '../../../shared/constants/metametrics';
@@ -49,7 +48,7 @@ export default class UnlockPage extends Component {
   };
 
   state = {
-    // password: '',
+    email: '',
     error: null,
   };
 
@@ -67,13 +66,13 @@ export default class UnlockPage extends Component {
     } else {
       supabaseClient.auth.onAuthStateChange((event, session) => {
         if (event === 'SIGNED_IN') {
-          this.handleSubmit(session);
+          this.handleLogin(session);
         }
       });
     }
   }
 
-  handleSubmit = async (session) => {
+  handleLogin = async (session) => {
     const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } =
       this.props;
 
@@ -114,26 +113,132 @@ export default class UnlockPage extends Component {
     }
   };
 
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const { email } = this.state;
+
+    if (email === '' || this.submitting) {
+      return;
+    }
+
+    this.setState({ error: null });
+    this.submitting = true;
+
+    try {
+      const { error } = await supabaseClient.auth.signInWithOtp({ email });
+      if (error) throw error;
+      alert('Check your email for the login link!')
+    } catch (error) {
+      this.setState({ error: error.error_description || error.message });
+    } finally {
+      this.submitting = false;
+    }
+  };
+
+  handleInputChange({ target }) {
+    this.setState({ email: target.value, error: null });
+  }
+
+  renderSubmitButton() {
+    const style = {
+      backgroundColor: 'var(--color-primary-default)',
+      color: 'var(--color-primary-inverse)',
+      marginTop: '20px',
+      height: '60px',
+      fontWeight: '400',
+      boxShadow: 'none',
+      borderRadius: '100px',
+    };
+
+    return (
+      <Button
+        type="submit"
+        style={style}
+        disabled={!this.state.email}
+        variant="contained"
+        size="large"
+        onClick={this.handleSubmit}
+      >
+        {this.context.t('sendMagicLink')}
+      </Button>
+    );
+  }
+
   render() {
-    const { error } = this.state;
+    const { email, error } = this.state;
+    const { t } = this.context;
 
     // TODO: Add a "forgot password" button for key recovery
     // const { onRestore } = this.props;
 
     return (
-      <div>
-        {error ? (
-          <div style="background: #ff8080; color: white; font-size: 14px; text-align: center; padding: 5px 10px;">
-            {error}
+      <div className="unlock-page__container">
+        <div className="unlock-page" data-testid="unlock-page">
+          <div className="unlock-page__mascot-container">
+            <Mascot
+              animationEventEmitter={this.animationEventEmitter}
+              width="120"
+              height="120"
+            />
           </div>
-        ) : null}
-        <Auth
-          supabaseClient={supabaseClient}
-          providers={['google', 'apple']}
-          socialLayout="horizontal"
-          redirectTo="/vaults"
-          socialButtonSize="xlarge"
-        />
+          <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
+          <div>{t('unlockMessage')}</div>
+          <form className="unlock-page__form" onSubmit={this.handleSubmit}>
+            <TextField
+              id="email"
+              label={t('email')}
+              type="email"
+              value={email}
+              onChange={(event) => this.handleInputChange(event)}
+              error={error}
+              autoFocus
+              autoComplete="current-email"
+              theme="material"
+              fullWidth
+            />
+          </form>
+          {this.renderSubmitButton()}
+          {/* <div className="unlock-page__links">
+            <Button
+              type="link"
+              key="import-account"
+              className="unlock-page__link"
+              onClick={() => onRestore()}
+            >
+              {t('forgotPassword')}
+            </Button>
+          </div>
+          <div className="unlock-page__support">
+            {t('needHelp', [
+              <a
+                href={SUPPORT_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                key="need-help-link"
+                onClick={() => {
+                  this.context.trackEvent(
+                    {
+                      category: EVENT.CATEGORIES.NAVIGATION,
+                      event: EVENT_NAMES.SUPPORT_LINK_CLICKED,
+                      properties: {
+                        url: SUPPORT_LINK,
+                      },
+                    },
+                    {
+                      contextPropsIntoEventProperties: [
+                        CONTEXT_PROPS.PAGE_TITLE,
+                      ],
+                    },
+                  );
+                }}
+              >
+                {t('needHelpLinkText')}
+              </a>,
+            ])}
+          </div> */ }
+        </div>
       </div>
     );
   }
