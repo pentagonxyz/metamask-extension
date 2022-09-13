@@ -128,8 +128,8 @@ export default class UnlockPage extends Component {
 
     try {
       const { error } = await supabaseClient.auth.signInWithOtp({ email });
-      if (error) throw error;
-      alert('Check your email for the login link!')
+      if (error) this.setState({ error: error.error_description || error.message });
+      else this.setState({ error: 'Check your email for the login link!' });
     } catch (error) {
       this.setState({ error: error.error_description || error.message });
     } finally {
