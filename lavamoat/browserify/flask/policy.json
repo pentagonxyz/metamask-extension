@@ -2780,6 +2780,7 @@
         "@metamask/contract-metadata": true,
         "@metamask/controllers>abort-controller": true,
         "@metamask/controllers>async-mutex": true,
+        "@metamask/controllers>eth-keyring-controller": true,
         "@metamask/controllers>eth-method-registry": true,
         "@metamask/controllers>eth-phishing-detect": true,
         "@metamask/controllers>ethereumjs-wallet": true,
@@ -2794,7 +2795,6 @@
         "eslint>fast-deep-equal": true,
         "eth-ens-namehash": true,
         "eth-json-rpc-infura": true,
-        "eth-keyring-controller": true,
         "eth-query": true,
         "eth-rpc-errors": true,
         "eth-sig-util": true,
@@ -2826,6 +2826,18 @@
     "@metamask/controllers>async-mutex>tslib": {
       "globals": {
         "define": true
+      }
+    },
+    "@metamask/controllers>eth-keyring-controller": {
+      "packages": {
+        "browserify>buffer": true,
+        "browserify>events": true,
+        "eth-keyring-controller>@metamask/bip39": true,
+        "eth-keyring-controller>@metamask/eth-hd-keyring": true,
+        "eth-keyring-controller>browser-passworder": true,
+        "eth-keyring-controller>eth-simple-keyring": true,
+        "eth-keyring-controller>obs-store": true,
+        "eth-sig-util": true
       }
     },
     "@metamask/controllers>eth-method-registry": {
@@ -3877,6 +3889,84 @@
     "@storybook/react>@storybook/store>stable": {
       "globals": {
         "define": true
+      }
+    },
+    "@supabase/supabase-js": {
+      "globals": {
+        "addEventListener": true,
+        "console.error": true
+      },
+      "packages": {
+        "@supabase/supabase-js>@supabase/functions-js": true,
+        "@supabase/supabase-js>@supabase/gotrue-js": true,
+        "@supabase/supabase-js>@supabase/postgrest-js": true,
+        "@supabase/supabase-js>@supabase/realtime-js": true,
+        "@supabase/supabase-js>@supabase/storage-js": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/functions-js": {
+      "globals": {
+        "fetch": true
+      },
+      "packages": {
+        "3box>graphql-request>cross-fetch": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/gotrue-js": {
+      "globals": {
+        "URLSearchParams": true,
+        "__magic__": true,
+        "addEventListener": true,
+        "clearTimeout": true,
+        "console.error": true,
+        "console.log": true,
+        "document.visibilityState": true,
+        "fetch": true,
+        "globalThis": "write",
+        "localStorage": true,
+        "location": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "3box>graphql-request>cross-fetch": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/postgrest-js": {
+      "globals": {
+        "URL": true,
+        "fetch": true
+      },
+      "packages": {
+        "3box>graphql-request>cross-fetch": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/realtime-js": {
+      "globals": {
+        "TextDecoder": true,
+        "URLSearchParams": true,
+        "clearInterval": true,
+        "clearTimeout": true,
+        "console.log": true,
+        "setInterval": true,
+        "setTimeout": true
+      },
+      "packages": {
+        "@supabase/supabase-js>@supabase/realtime-js>websocket": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/realtime-js>websocket": {
+      "packages": {
+        "resolve-url-loader>es6-iterator>es5-ext": true
+      }
+    },
+    "@supabase/supabase-js>@supabase/storage-js": {
+      "globals": {
+        "Blob": true,
+        "FormData": true,
+        "fetch": true
+      },
+      "packages": {
+        "3box>graphql-request>cross-fetch": true
       }
     },
     "@truffle/codec": {
@@ -6787,6 +6877,11 @@
         "@babel/runtime": true
       }
     },
+    "resolve-url-loader>es6-iterator>es5-ext": {
+      "globals": {
+        "__global__": true
+      }
+    },
     "safe-event-emitter": {
       "globals": {
         "setTimeout": true
@@ -6908,17 +7003,6 @@
     "terser>source-map-support>buffer-from": {
       "packages": {
         "browserify>buffer": true
-      }
-    },
-    "textarea-caret": {
-      "globals": {
-        "document.body.appendChild": true,
-        "document.body.removeChild": true,
-        "document.createElement": true,
-        "document.querySelector": true,
-        "getCaretCoordinates": "write",
-        "getComputedStyle": true,
-        "mozInnerScreenX": true
       }
     },
     "uuid": {
