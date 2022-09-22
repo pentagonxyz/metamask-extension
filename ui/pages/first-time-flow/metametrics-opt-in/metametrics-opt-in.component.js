@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import MetaFoxLogo from '../../../components/ui/metafox-logo';
 import PageContainerFooter from '../../../components/ui/page-container/page-container-footer';
 import { EVENT, EVENT_NAMES } from '../../../../shared/constants/metametrics';
-import { INITIALIZE_SELECT_ACTION_ROUTE } from '../../../helpers/constants/routes';
+import { INITIALIZE_UNLOCK_ROUTE } from '../../../helpers/constants/routes';
 
 export default class MetaMetricsOptIn extends Component {
   static propTypes = {
     history: PropTypes.object,
     setParticipateInMetaMetrics: PropTypes.func,
     participateInMetaMetrics: PropTypes.bool,
+    createNewVaultAndGetSeedPhrase: PropTypes.func
   };
 
   static contextTypes = {
@@ -19,7 +20,7 @@ export default class MetaMetricsOptIn extends Component {
 
   render() {
     const { trackEvent, t } = this.context;
-    const { history, setParticipateInMetaMetrics, participateInMetaMetrics } =
+    const { history, setParticipateInMetaMetrics, participateInMetaMetrics, createNewVaultAndGetSeedPhrase } =
       this.props;
 
     return (
@@ -98,8 +99,8 @@ export default class MetaMetricsOptIn extends Component {
             <PageContainerFooter
               onCancel={async () => {
                 await setParticipateInMetaMetrics(false);
-
-                history.push(INITIALIZE_SELECT_ACTION_ROUTE);
+                await createNewVaultAndGetSeedPhrase();
+                history.push(INITIALIZE_UNLOCK_ROUTE);
               }}
               cancelText={t('noThanks')}
               hideCancel={false}
@@ -126,7 +127,8 @@ export default class MetaMetricsOptIn extends Component {
                     );
                   }
                 } finally {
-                  history.push(INITIALIZE_SELECT_ACTION_ROUTE);
+                  await createNewVaultAndGetSeedPhrase();
+                  history.push(INITIALIZE_UNLOCK_ROUTE);
                 }
               }}
               submitText={t('affirmAgree')}

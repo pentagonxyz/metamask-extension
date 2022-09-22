@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { setParticipateInMetaMetrics } from '../../../store/actions';
+import { createNewVaultAndGetSeedPhrase, setParticipateInMetaMetrics } from '../../../store/actions';
 import MetaMetricsOptIn from './metametrics-opt-in.component';
 
 const firstTimeFlowTypeNameMap = {
@@ -19,6 +19,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    createNewVaultAndGetSeedPhrase: (val) =>
+      dispatch(createNewVaultAndGetSeedPhrase(val)),
     setParticipateInMetaMetrics: (val) =>
       dispatch(setParticipateInMetaMetrics(val)),
   };
