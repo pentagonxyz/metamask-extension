@@ -190,7 +190,7 @@ export default class UnlockPage extends Component {
             <img
               src="./images/logo/metamask-fox.svg"
               alt=""
-              style="width: 120px; height: 120px;"
+              style={{width: '120px', height: '120px'}}
             />
           </div>
           <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
