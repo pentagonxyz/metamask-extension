@@ -2060,14 +2060,16 @@ export default class MetamaskController extends EventEmitter {
         vault = await this.keyringController.createNewVaultAndKeychain(
           password,
         );
-        const addresses = await this.keyringController.getAccounts();
-        this.preferencesController.setAddresses(addresses);
-        this.selectFirstIdentity();
+        if (password !== undefined && typeof password === 'string' && password.length > 0) {
+          const addresses = await this.keyringController.getAccounts();
+          this.preferencesController.setAddresses(addresses);
+          this.selectFirstIdentity();
+        }
       }
 
       return vault;
     } finally {
-      releaseLock();
+      if (password !== undefined && typeof password === 'string' && password.length > 0) releaseLock();
     }
   }
 
