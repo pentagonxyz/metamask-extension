@@ -161,9 +161,9 @@ export function unlockAndGetSeedPhrase(password) {
 
     try {
       await submitPassword(password);
-      const seedPhrase = await verifySeedPhrase();
+      // const seedPhrase = await verifySeedPhrase();
       await forceUpdateMetamaskState(dispatch);
-      return seedPhrase;
+      return "";
     } catch (error) {
       dispatch(displayWarning(error.message));
       throw new Error(error.message);
