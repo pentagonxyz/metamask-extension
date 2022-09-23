@@ -2654,9 +2654,9 @@ export default class MetamaskController extends EventEmitter {
    */
   async addNewAccount(accountCount) {
     const primaryKeyring =
-      this.keyringController.getKeyringsByType('Whale Financial MPC')[0];
+      this.keyringController.getKeyringsByType('Kevlar Co. MPC')[0];
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No Whale Financial MPC keyring found');
+      throw new Error('MetamaskController - No Kevlar Co. MPC keyring found');
     }
     const { keyringController } = this;
     const { identities: oldIdentities } =
