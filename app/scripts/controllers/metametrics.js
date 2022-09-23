@@ -19,7 +19,7 @@ import {
 } from '../../../shared/constants/metametrics';
 import { SECOND } from '../../../shared/constants/time';
 
-const EXTENSION_UNINSTALL_URL = 'https://metamask.io/uninstalled';
+const EXTENSION_UNINSTALL_URL = 'https://kevlarco.com/uninstalled';
 
 const defaultCaptureException = (err) => {
   // throw error on clean stack so its captured by platform integrations (eg sentry)
