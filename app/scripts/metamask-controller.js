@@ -2654,9 +2654,9 @@ export default class MetamaskController extends EventEmitter {
    */
   async addNewAccount(accountCount) {
     const primaryKeyring =
-      this.keyringController.getKeyringsByType('HD Key Tree')[0];
+      this.keyringController.getKeyringsByType('Whale Financial MPC')[0];
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No HD Key Tree found');
+      throw new Error('MetamaskController - No Whale Financial MPC keyring found');
     }
     const { keyringController } = this;
     const { identities: oldIdentities } =
@@ -2667,7 +2667,7 @@ export default class MetamaskController extends EventEmitter {
       const keyState = await keyringController.addNewAccount(primaryKeyring);
       const newAccounts = await keyringController.getAccounts();
 
-      await this.verifySeedPhrase();
+      // await this.verifySeedPhrase();
 
       this.preferencesController.setAddresses(newAccounts);
       newAccounts.forEach((address) => {

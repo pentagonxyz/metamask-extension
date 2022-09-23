@@ -144,8 +144,8 @@ export function createNewVaultAndGetSeedPhrase(password) {
 
     try {
       await createNewVault(password);
-      const seedPhrase = await verifySeedPhrase();
-      return seedPhrase;
+      // const seedPhrase = await verifySeedPhrase();
+      return "";
     } catch (error) {
       dispatch(displayWarning(error.message));
       throw new Error(error.message);
