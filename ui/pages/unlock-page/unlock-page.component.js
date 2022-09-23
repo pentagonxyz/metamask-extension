@@ -70,15 +70,11 @@ export default class UnlockPage extends Component {
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
     } else {
-      supabaseClient.auth.onAuthStateChange((event, session) => {
-        if (event === 'SIGNED_IN') {
-          this.handleLogin(session);
-        }
-      });
+      if (location.hash.substring(0, 32) == "#initialize/unlock#access_token=") this.handleLogin(location.hash.substring(32, location.hash.indexOf("&")));
     }
   }
 
-  handleLogin = async (session) => {
+  handleLogin = async (session_access_token) => {
     const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } =
       this.props;
 
@@ -90,7 +86,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      await onSubmit(session.access_token);
+      await onSubmit(session_access_token);
       /* const newState = */ await forceUpdateMetamaskState();
       this.context.trackEvent(
         {
@@ -128,7 +124,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      const { error } = await supabaseClient.auth.signIn({ provider });
+      const { error } = await supabaseClient.auth.signIn({ provider }, { redirectTo: 'chrome-extension://' + chrome.runtime.id + '/home.html#initialize/unlock' });
       if (error) this.setState({ error: error.error_description || error.message });
     } catch (error) {
       this.setState({ error: error.error_description || error.message });
