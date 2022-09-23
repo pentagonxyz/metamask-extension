@@ -50,13 +50,10 @@ export const DefaultStory = () => {
         }
       }}
     >
-      <Mascot
-        animationEventEmitter={animationEventEmitter}
-        width="120"
-        height="120"
-        followMouse={followMouseMode}
-        lookAtTarget={clickedTarget}
-        lookAtDirection={lookAtDirection}
+      <img
+        src="./images/logo/metamask-fox.svg"
+        alt=""
+        style={{width: '120px', height: '120px'}}
       />
       <div style={buttonStyle}>
         <ButtonGroup

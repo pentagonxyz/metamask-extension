@@ -46,10 +46,10 @@ export default function OnboardingWelcome() {
             {t('welcomeToMetaMaskIntro')}
           </Typography>
           <div className="onboarding-welcome__mascot">
-            <Mascot
-              animationEventEmitter={eventEmitter}
-              width="250"
-              height="250"
+            <img
+              src="./images/logo/metamask-fox.svg"
+              alt=""
+              style={{width: '250px', height: '250px'}}
             />
           </div>
         </div>

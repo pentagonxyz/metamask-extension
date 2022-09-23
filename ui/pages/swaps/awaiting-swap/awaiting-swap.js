@@ -267,10 +267,10 @@ export default function AwaitingSwap({
     <div className="awaiting-swap">
       <div className="awaiting-swap__content">
         {!(swapComplete || errorKey) && (
-          <Mascot
-            animationEventEmitter={animationEventEmitter.current}
-            width="90"
-            height="90"
+          <img
+            src="./images/logo/metamask-fox.svg"
+            alt=""
+            style={{width: '90px', height: '90px'}}
           />
         )}
         <div className="awaiting-swap__status-image">{statusImage}</div>
