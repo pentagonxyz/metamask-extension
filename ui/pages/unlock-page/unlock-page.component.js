@@ -55,7 +55,6 @@ export default class UnlockPage extends Component {
   };
 
   state = {
-    email: '',
     error: null,
   };
 
@@ -120,13 +119,8 @@ export default class UnlockPage extends Component {
     }
   };
 
-  handleSubmit = async (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    const { email } = this.state;
-
-    if (email === '' || this.submitting) {
+  handleSubmit = async (provider) => {
+    if (this.submitting) {
       return;
     }
 
@@ -134,12 +128,8 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      const { error } = await supabaseClient.auth.signIn({ email });
-      if (error) {
-        this.setState({ error: error.error_description || error.message });
-      } else {
-        this.setState({ error: 'Check your email for the login link!' });
-      }
+      const { error } = await supabaseClient.auth.signIn({ provider });
+      if (error) this.setState({ error: error.error_description || error.message });
     } catch (error) {
       this.setState({ error: error.error_description || error.message });
     } finally {
@@ -147,11 +137,7 @@ export default class UnlockPage extends Component {
     }
   };
 
-  handleInputChange({ target }) {
-    this.setState({ email: target.value, error: null });
-  }
-
-  renderSubmitButton() {
+  renderSubmitButton(provider) {
     const style = {
       backgroundColor: 'var(--color-primary-default)',
       color: 'var(--color-primary-inverse)',
@@ -166,18 +152,17 @@ export default class UnlockPage extends Component {
       <Button
         type="submit"
         style={style}
-        disabled={!this.state.email}
         variant="contained"
         size="large"
-        onClick={this.handleSubmit}
+        onClick={() => this.handleSubmit(provider)}
       >
-        {this.context.t('sendMagicLink')}
+        {this.context.t('signInWith' + provider.charAt(0).toUpperCase() + provider.slice(1))}
       </Button>
     );
   }
 
   render() {
-    const { email, error } = this.state;
+    const { error } = this.state;
     const { t } = this.context;
 
     // TODO: Add a "forgot password" button for key recovery
@@ -194,22 +179,14 @@ export default class UnlockPage extends Component {
             />
           </div>
           <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
-          <div>{t('unlockMessage')}</div>
-          <form className="unlock-page__form" onSubmit={this.handleSubmit}>
-            <TextField
-              id="email"
-              label={t('email')}
-              type="email"
-              value={email}
-              onChange={(event) => this.handleInputChange(event)}
-              error={error}
-              autoFocus
-              autoComplete="current-email"
-              theme="material"
-              fullWidth
-            />
-          </form>
-          {this.renderSubmitButton()}
+          <div style={{marginBottom: "10px"}}>{t('unlockMessage')}</div>
+          {error ? (
+            <div style={{background: "#ff8080", color: "white", fontSize: "14px", textAlign: "center", padding: "5px 10px", marginTop: "20px"}}>
+              {error}
+            </div>
+          ) : null}
+          {this.renderSubmitButton('google')}
+          {this.renderSubmitButton('apple')}
           {/* <div className="unlock-page__links">
             <Button
               type="link"

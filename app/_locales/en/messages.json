@@ -3050,8 +3050,11 @@
   "sendBugReport": {
     "message": "Send us a bug report."
   },
-  "sendMagicLink": {
-    "message": "Send magic link"
+  "signInWithGoogle": {
+    "message": "Sign in with Google"
+  },
+  "signInWithApple": {
+    "message": "Sign in with Apple"
   },
   "sendSpecifiedTokens": {
     "message": "Send $1",
