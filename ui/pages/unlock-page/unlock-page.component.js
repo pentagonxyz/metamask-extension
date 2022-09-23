@@ -134,7 +134,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      const { error } = await supabaseClient.auth.signInWithOtp({ email });
+      const { error } = await supabaseClient.auth.signIn({ email });
       if (error) {
         this.setState({ error: error.error_description || error.message });
       } else {
