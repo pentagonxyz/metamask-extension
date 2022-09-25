@@ -344,7 +344,7 @@ export function importNewAccount(strategy, args) {
   };
 }
 
-export function addNewAccount() {
+export function addNewAccount(newAccountName) {
   log.debug(`background.addNewAccount`);
   return async (dispatch, getState) => {
     const oldIdentities = getState().metamask.identities;
@@ -354,6 +354,7 @@ export function addNewAccount() {
     try {
       const { identities } = await submitRequestToBackground('addNewAccount', [
         Object.keys(oldIdentities).length,
+        newAccountName
       ]);
       newIdentities = identities;
     } catch (error) {

@@ -2652,7 +2652,7 @@ export default class MetamaskController extends EventEmitter {
    * @param accountCount
    * @returns {} keyState
    */
-  async addNewAccount(accountCount) {
+  async addNewAccount(accountCount, newAccountName) {
     const primaryKeyring =
       this.keyringController.getKeyringsByType('Kevlar Co. MPC')[0];
     if (!primaryKeyring) {
@@ -2664,7 +2664,7 @@ export default class MetamaskController extends EventEmitter {
 
     if (Object.keys(oldIdentities).length === accountCount) {
       const oldAccounts = await keyringController.getAccounts();
-      const keyState = await keyringController.addNewAccount(primaryKeyring);
+      const keyState = await keyringController.addNewAccount(primaryKeyring, newAccountName);
       const newAccounts = await keyringController.getAccounts();
 
       // await this.verifySeedPhrase();
