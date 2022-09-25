@@ -2385,7 +2385,7 @@ export default class MetamaskController extends EventEmitter {
     const transportPreference =
       this.preferencesController.getLedgerTransportPreference();
 
-    this.setLedgerTransportPreference(transportPreference);
+    // this.setLedgerTransportPreference(transportPreference);
 
     return this.keyringController.fullUpdate();
   }
