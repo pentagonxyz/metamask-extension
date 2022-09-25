@@ -10,7 +10,8 @@ export default class MetaMetricsOptIn extends Component {
     history: PropTypes.object,
     setParticipateInMetaMetrics: PropTypes.func,
     participateInMetaMetrics: PropTypes.bool,
-    createNewVaultAndGetSeedPhrase: PropTypes.func
+    createNewVaultAndGetSeedPhrase: PropTypes.func,
+    setCompletedOnboarding: PropTypes.func
   };
 
   static contextTypes = {
@@ -20,7 +21,7 @@ export default class MetaMetricsOptIn extends Component {
 
   render() {
     const { trackEvent, t } = this.context;
-    const { history, setParticipateInMetaMetrics, participateInMetaMetrics, createNewVaultAndGetSeedPhrase } =
+    const { history, setParticipateInMetaMetrics, participateInMetaMetrics, createNewVaultAndGetSeedPhrase, setCompletedOnboarding } =
       this.props;
 
     return (
@@ -100,6 +101,7 @@ export default class MetaMetricsOptIn extends Component {
               onCancel={async () => {
                 await setParticipateInMetaMetrics(false);
                 await createNewVaultAndGetSeedPhrase();
+                await setCompletedOnboarding();
                 history.push(INITIALIZE_UNLOCK_ROUTE);
               }}
               cancelText={t('noThanks')}
@@ -128,6 +130,7 @@ export default class MetaMetricsOptIn extends Component {
                   }
                 } finally {
                   await createNewVaultAndGetSeedPhrase();
+                  await setCompletedOnboarding();
                   history.push(INITIALIZE_UNLOCK_ROUTE);
                 }
               }}
