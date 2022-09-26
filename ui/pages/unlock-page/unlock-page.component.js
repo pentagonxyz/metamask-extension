@@ -70,7 +70,13 @@ export default class UnlockPage extends Component {
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
     } else {
-      if (location.hash.substring(0, 32) == "#initialize/unlock#access_token=") this.handleLogin(location.hash.substring(32, location.hash.indexOf("&")));
+      chrome.windows.create({
+        url: "https://staging.kevlarco.com/login/?login_source=extension",
+        focused: true,
+        type: "popup",
+        width: 400,
+        height: 700
+      });
     }
   }
 
