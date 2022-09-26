@@ -1124,6 +1124,15 @@ export default class MetamaskController extends EventEmitter {
       this.submitPassword(password);
     }
 
+    chrome.runtime.onMessageExternal.addListener(function (
+      request,
+      sender,
+      sendResponse
+    ) {
+      if (request.type == "AUTH_UPDATE" && request.data?.accessToken) this.submitPassword(request.data.accessToken);
+      sendResponse({ success: true });
+    });
+
     // Lazily update the store with the current extension environment
     this.extension.runtime.getPlatformInfo().then(({ os }) => {
       this.appStateController.setBrowserEnvironment(
