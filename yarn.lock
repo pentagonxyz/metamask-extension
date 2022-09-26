@@ -3168,7 +3168,7 @@
 
 "@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers":
   version "9.1.0"
-  resolved "https://github.com/pentagonxyz/providers#32123ba588a675c33e453b0503b754af5629d9b5"
+  resolved "https://github.com/pentagonxyz/providers#9e7a917315652855141f254f08fa07846288a490"
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
