@@ -1,6 +1,6 @@
 {
   "externally_connectable": {
-    "matches": ["https://metamask.io/*"],
+    "matches": ["http://localhost:3000/*", "https://staging.kevlarco.com/*"],
     "ids": ["*"]
   },
   "minimum_chrome_version": "66"

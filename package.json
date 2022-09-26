@@ -105,10 +105,15 @@
     "pubnub/superagent-proxy": "^3.0.0",
     "pull-ws": "^3.3.2",
     "json-schema": "^0.4.0",
+    "zen-observable": "0.8.15",
+    "**/zen-observable": "0.8.15",
+    "**/zen-observable-ts": "1.2.5",
+    "zen-observable-ts": "1.2.5",
     "simple-get": "^4.0.1"
   },
   "dependencies": {
     "3box": "^1.10.2",
+    "@apollo/client": "^3.6.9",
     "@babel/runtime": "^7.5.5",
     "@download/blockies": "^1.0.3",
     "@ensdomains/content-hash": "^2.5.6",
@@ -131,7 +136,7 @@
     "@metamask/metamask-eth-abis": "^3.0.0",
     "@metamask/obs-store": "^5.0.0",
     "@metamask/post-message-stream": "^4.0.0",
-    "@metamask/providers": "https://github.com/pentagonxyz/providers",
+    "@metamask/providers": "^9.0.0",
     "@metamask/rpc-methods": "^0.20.0",
     "@metamask/slip44": "^2.1.0",
     "@metamask/smart-transactions-controller": "^2.3.1",
@@ -235,6 +240,7 @@
     "valid-url": "^1.0.9",
     "web3": "^0.20.7",
     "web3-stream-provider": "^4.0.0",
+    "zen-observable-ts": "1.2.5",
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
@@ -478,7 +484,13 @@
       "@supabase/supabase-js>@supabase/realtime-js>websocket>bufferutil": false,
       "@supabase/supabase-js>@supabase/realtime-js>websocket>es5-ext": false,
       "@supabase/supabase-js>@supabase/realtime-js>websocket>utf-8-validate": false,
-      "resolve-url-loader>es6-iterator>es5-ext": false
+      "resolve-url-loader>es6-iterator>es5-ext": false,
+      "3box>3id-connect>@portis/web3>@portis/web3-provider-engine>eth-json-rpc-infura>json-rpc-engine>babelify>babel-core>babel-register>core-js": false,
+      "3box>3id-connect>@portis/web3>ethereumjs-util>keccak": false,
+      "3box>3id-connect>web3modal>styled-components": false,
+      "3box>orbit-db-storage-adapter>level": false,
+      "3box>orbit-db-storage-adapter>level>leveldown": false,
+      "@fortawesome/fontawesome-free": false
     }
   }
 }

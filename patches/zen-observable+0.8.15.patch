@@ -1,0 +1,36 @@
+diff --git a/node_modules/zen-observable/lib/Observable.js b/node_modules/zen-observable/lib/Observable.js
+index 4cad821..c12dbed 100644
+--- a/node_modules/zen-observable/lib/Observable.js
++++ b/node_modules/zen-observable/lib/Observable.js
+@@ -24,12 +24,8 @@ var getSymbol = function (name) {
+   return hasSymbol(name) ? Symbol[name] : '@@' + name;
+ };
+ 
+-if (hasSymbols() && !hasSymbol('observable')) {
+-  Symbol.observable = Symbol('observable');
+-}
+-
+ var SymbolIterator = getSymbol('iterator');
+-var SymbolObservable = getSymbol('observable');
++var SymbolObservable = hasSymbols() && !hasSymbol('observable') ? Symbol('observable') : getSymbol('observable');
+ var SymbolSpecies = getSymbol('species'); // === Abstract Operations ===
+ 
+ function getMethod(obj, key) {
+diff --git a/node_modules/zen-observable/src/Observable.js b/node_modules/zen-observable/src/Observable.js
+index 9364bc0..fd920e8 100644
+--- a/node_modules/zen-observable/src/Observable.js
++++ b/node_modules/zen-observable/src/Observable.js
+@@ -4,12 +4,8 @@ const hasSymbols = () => typeof Symbol === 'function';
+ const hasSymbol = name => hasSymbols() && Boolean(Symbol[name]);
+ const getSymbol = name => hasSymbol(name) ? Symbol[name] : '@@' + name;
+ 
+-if (hasSymbols() && !hasSymbol('observable')) {
+-  Symbol.observable = Symbol('observable');
+-}
+-
+ const SymbolIterator = getSymbol('iterator');
+-const SymbolObservable = getSymbol('observable');
++const SymbolObservable = hasSymbols() && !hasSymbol('observable') ? Symbol('observable') : getSymbol('observable');
+ const SymbolSpecies = getSymbol('species');
+ 
+ // === Abstract Operations ===

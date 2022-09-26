@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { createClient } from '@supabase/supabase-js';
 import Button from '../../components/ui/button';
-import TextField from '../../components/ui/text-field';
-// import { SUPPORT_LINK } from '../../helpers/constants/common';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import {
   EVENT,
@@ -70,13 +68,6 @@ export default class UnlockPage extends Component {
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
     } else {
-      chrome.windows.create({
-        url: "https://staging.kevlarco.com/login/?login_source=extension",
-        focused: true,
-        type: "popup",
-        width: 400,
-        height: 700
-      });
     }
   }
 
@@ -130,8 +121,22 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      const { error } = await supabaseClient.auth.signIn({ provider }, { redirectTo: 'chrome-extension://' + chrome.runtime.id + '/home.html#initialize/unlock' });
-      if (error) this.setState({ error: error.error_description || error.message });
+      // const { error } = await supabaseClient.auth.signIn(
+      //   { provider },
+      //   {
+      //     redirectTo:
+      //       'chrome-extension://' +
+      //       chrome.runtime.id +
+      //       '/home.html#initialize/unlock',
+      //   },
+      // );
+      chrome.windows.create({
+        url: 'http://localhost:3000/login?login_source=extension',
+        focused: true,
+        type: 'popup',
+        width: 400,
+        height: 700,
+      });
     } catch (error) {
       this.setState({ error: error.error_description || error.message });
     } finally {
@@ -158,7 +163,9 @@ export default class UnlockPage extends Component {
         size="large"
         onClick={() => this.handleSubmit(provider)}
       >
-        {this.context.t('signInWith' + provider.charAt(0).toUpperCase() + provider.slice(1))}
+        {this.context.t(
+          'signInWith' + provider.charAt(0).toUpperCase() + provider.slice(1),
+        )}
       </Button>
     );
   }
@@ -177,13 +184,22 @@ export default class UnlockPage extends Component {
             <img
               src="./images/logo/metamask-fox.svg"
               alt=""
-              style={{width: '120px', height: '120px'}}
+              style={{ width: '120px', height: '120px' }}
             />
           </div>
           <h1 className="unlock-page__title">{t('welcomeBack')}</h1>
-          <div style={{marginBottom: "10px"}}>{t('unlockMessage')}</div>
+          <div style={{ marginBottom: '10px' }}>{t('unlockMessage')}</div>
           {error ? (
-            <div style={{background: "#ff8080", color: "white", fontSize: "14px", textAlign: "center", padding: "5px 10px", marginTop: "20px"}}>
+            <div
+              style={{
+                background: '#ff8080',
+                color: 'white',
+                fontSize: '14px',
+                textAlign: 'center',
+                padding: '5px 10px',
+                marginTop: '20px',
+              }}
+            >
               {error}
             </div>
           ) : null}

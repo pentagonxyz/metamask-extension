@@ -1124,14 +1124,18 @@ export default class MetamaskController extends EventEmitter {
       this.submitPassword(password);
     }
 
-    chrome.runtime.onMessageExternal.addListener(function (
-      request,
-      sender,
-      sendResponse
-    ) {
-      if (request.type == "AUTH_UPDATE" && request.data?.accessToken) this.submitPassword(request.data.accessToken);
-      sendResponse({ success: true });
-    });
+    chrome.runtime.onMessageExternal.addListener(
+      (request, sender, sendResponse) => {
+        console.log(request, 'REQUEST FROM USER RECEIVED');
+        if (request.type == 'CLOSE_ME') {
+          chrome.tabs.remove(sender.tab.id);
+        } else if (request.type == 'AUTH_UPDATE') {
+          console.log('Submitting password');
+          this.submitPassword(request.data.accessToken);
+        }
+        sendResponse({ success: true });
+      },
+    );
 
     // Lazily update the store with the current extension environment
     this.extension.runtime.getPlatformInfo().then(({ os }) => {
@@ -2069,7 +2073,11 @@ export default class MetamaskController extends EventEmitter {
         vault = await this.keyringController.createNewVaultAndKeychain(
           password,
         );
-        if (password !== undefined && typeof password === 'string' && password.length > 0) {
+        if (
+          password !== undefined &&
+          typeof password === 'string' &&
+          password.length > 0
+        ) {
           const addresses = await this.keyringController.getAccounts();
           this.preferencesController.setAddresses(addresses);
           this.selectFirstIdentity();
@@ -2078,7 +2086,12 @@ export default class MetamaskController extends EventEmitter {
 
       return vault;
     } finally {
-      if (password !== undefined && typeof password === 'string' && password.length > 0) releaseLock();
+      if (
+        password !== undefined &&
+        typeof password === 'string' &&
+        password.length > 0
+      )
+        releaseLock();
     }
   }
 
@@ -2673,7 +2686,10 @@ export default class MetamaskController extends EventEmitter {
 
     if (Object.keys(oldIdentities).length === accountCount) {
       const oldAccounts = await keyringController.getAccounts();
-      const keyState = await keyringController.addNewAccount(primaryKeyring, newAccountName);
+      const keyState = await keyringController.addNewAccount(
+        primaryKeyring,
+        newAccountName,
+      );
       const newAccounts = await keyringController.getAccounts();
 
       // await this.verifySeedPhrase();
