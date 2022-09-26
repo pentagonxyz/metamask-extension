@@ -3166,10 +3166,9 @@
     "@metamask/utils" "^2.0.0"
     readable-stream "2.3.3"
 
-"@metamask/providers@^9.0.0":
+"@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers":
   version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@metamask/providers/-/providers-9.1.0.tgz#ccbbfd698eeb777c5c45aee91c3ad97e20eab20b"
-  integrity sha512-ZMfdIZ8PzaK1m0NblQOPTuDaMuTStSxrUYJiDNRi+UDqVd84WItQVXe3jy0k7TzhpjkbzgXrTK7rUcoQRhkwtw==
+  resolved "https://github.com/pentagonxyz/providers#32123ba588a675c33e453b0503b754af5629d9b5"
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
@@ -5147,9 +5146,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.7.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.21.tgz#63ee6688070e456325b6748dc492a7b948593871"
-  integrity sha512-rLFzK5bhM0YPyCoTC8bolBjMk7bwnZ8qeZUBslBfjZQou2ssJdWslx9CZ8DGM+Dx7QXQiiTVZ/6QO6kwtHkZCA==
+  version "18.7.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
+  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
 
 "@types/node@10.12.18":
   version "10.12.18"
@@ -22133,7 +22132,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#127b9748ea7b1e4c4fdcd6889d62e882cfff5baf"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#97bb59442128356ed945e7d8a1e4edb552d37711"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
