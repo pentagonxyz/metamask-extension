@@ -2,6 +2,7 @@ import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../components/ui/button';
+// import { SUPPORT_LINK } from '../../helpers/constants/common';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import {
   EVENT,
@@ -57,7 +58,6 @@ export default class UnlockPage extends Component {
 
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
-    } else {
     }
   }
 

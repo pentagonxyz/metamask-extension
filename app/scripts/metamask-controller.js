@@ -1126,11 +1126,9 @@ export default class MetamaskController extends EventEmitter {
 
     chrome.runtime.onMessageExternal.addListener(
       (request, sender, sendResponse) => {
-        console.log(request, 'REQUEST FROM USER RECEIVED');
         if (request.type == 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type == 'AUTH_UPDATE') {
-          console.log('Submitting password');
           this.submitPassword(request.data.accessToken);
         }
         sendResponse({ success: true });
