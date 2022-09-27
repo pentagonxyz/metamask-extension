@@ -3050,11 +3050,8 @@
   "sendBugReport": {
     "message": "Send us a bug report."
   },
-  "signInWithGoogle": {
-    "message": "Sign in with Google"
-  },
-  "signInWithApple": {
-    "message": "Sign in with Apple"
+  "signInWithKevlar": {
+    "message": "Sign in with Kevlar"
   },
   "sendSpecifiedTokens": {
     "message": "Send $1",

@@ -1,7 +1,6 @@
 import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { createClient } from '@supabase/supabase-js';
 import Button from '../../components/ui/button';
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes';
 import {
@@ -9,15 +8,6 @@ import {
   EVENT_NAMES,
   // CONTEXT_PROPS,
 } from '../../../shared/constants/metametrics';
-import {
-  REACT_APP_SUPABASE_URL,
-  REACT_APP_SUPABASE_ANON_KEY,
-} from '../../../shared/constants/supabase';
-
-const supabaseClient = createClient(
-  REACT_APP_SUPABASE_URL,
-  REACT_APP_SUPABASE_ANON_KEY,
-);
 
 export default class UnlockPage extends Component {
   static contextTypes = {
@@ -112,7 +102,7 @@ export default class UnlockPage extends Component {
     }
   };
 
-  handleSubmit = async (provider) => {
+  handleSubmit = async () => {
     if (this.submitting) {
       return;
     }
@@ -121,17 +111,8 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      // const { error } = await supabaseClient.auth.signIn(
-      //   { provider },
-      //   {
-      //     redirectTo:
-      //       'chrome-extension://' +
-      //       chrome.runtime.id +
-      //       '/home.html#initialize/unlock',
-      //   },
-      // );
       chrome.windows.create({
-        url: 'http://localhost:3000/login?login_source=extension',
+        url: 'https://staging.kevlarco.com/login/?login_source=extension',
         focused: true,
         type: 'popup',
         width: 400,
@@ -144,7 +125,7 @@ export default class UnlockPage extends Component {
     }
   };
 
-  renderSubmitButton(provider) {
+  renderSubmitButton() {
     const style = {
       backgroundColor: 'var(--color-primary-default)',
       color: 'var(--color-primary-inverse)',
@@ -161,11 +142,9 @@ export default class UnlockPage extends Component {
         style={style}
         variant="contained"
         size="large"
-        onClick={() => this.handleSubmit(provider)}
+        onClick={() => this.handleSubmit()}
       >
-        {this.context.t(
-          'signInWith' + provider.charAt(0).toUpperCase() + provider.slice(1),
-        )}
+        {this.context.t('signInWithKevlar')}
       </Button>
     );
   }
@@ -203,8 +182,7 @@ export default class UnlockPage extends Component {
               {error}
             </div>
           ) : null}
-          {this.renderSubmitButton('google')}
-          {this.renderSubmitButton('apple')}
+          {this.renderSubmitButton()}
           {/* <div className="unlock-page__links">
             <Button
               type="link"
