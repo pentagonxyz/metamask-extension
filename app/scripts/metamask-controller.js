@@ -164,7 +164,7 @@ export const METAMASK_CONTROLLER_EVENTS = {
 };
 
 // stream channels
-const PHISHING_SAFELIST = 'metamask-phishing-safelist';
+const PHISHING_SAFELIST = 'kevlar-phishing-safelist';
 
 export default class MetamaskController extends EventEmitter {
   /**
@@ -3437,7 +3437,7 @@ export default class MetamaskController extends EventEmitter {
 
     // messages between inpage and background
     this.setupProviderConnection(
-      mux.createStream('metamask-provider'),
+      mux.createStream('kevlar-provider'),
       sender,
       _subjectType,
     );
