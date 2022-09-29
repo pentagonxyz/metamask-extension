@@ -11829,9 +11829,9 @@ eth-keyring-controller@^7.0.2:
     eth-simple-keyring "^4.2.0"
     obs-store "^4.0.3"
 
-"eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git":
+"eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#mfa-signing":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#4ce73c596e384f42414e3683bebc14f7891e6b9d"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#7fb5d187ebbf39d74676db00af579df8918a5bd0"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
@@ -11839,7 +11839,7 @@ eth-keyring-controller@^7.0.2:
     eth-sig-util "^3.0.1"
     eth-simple-keyring "^4.2.0"
     obs-store "^4.0.3"
-    pentagonxyz/whale-keyring "https://github.com/pentagonxyz/whale-keyring.git#no-tx-serialization"
+    pentagonxyz/whale-keyring "https://github.com/pentagonxyz/whale-keyring.git#mfa-signing"
 
 eth-lattice-keyring@^0.12.0:
   version "0.12.0"
@@ -22055,9 +22055,9 @@ pend@~1.2.0:
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
 
-"pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#no-tx-serialization":
+"pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#mfa-signing":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#7581d962fd6944d3595eecd15d7de7719339d990"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#3db1f2c1af993e8d7443c3c8ddb839faef99eeaf"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"

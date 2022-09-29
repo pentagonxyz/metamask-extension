@@ -1126,12 +1126,21 @@ export default class MetamaskController extends EventEmitter {
 
     chrome.runtime.onMessageExternal.addListener(
       (request, sender, sendResponse) => {
-        if (request.type == 'CLOSE_ME') {
+        console.log(request);
+        if (request.type === 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
-        } else if (request.type == 'AUTH_UPDATE') {
+        } else if (request.type === 'AUTH_UPDATE') {
           this.submitPassword(request.data.accessToken);
-        } else if (request.type == 'MFA_RESOLUTION') {
-          this.keyringController.mfaResolution(request.data.signatureJSON !== undefined ? JSON.parse(request.data.signatureJSON) : undefined, request.data.message);
+        } else if (request.type === 'MFA_RESOLUTION') {
+          this.keyringController.mfaResolution(
+            {
+              ...request.data.signature,
+              nonce: request.data.nonce,
+              from: request.data.from,
+            },
+            request.data.message,
+          );
+          chrome.tabs.remove(sender.tab.id);
         }
         sendResponse({ success: true });
       },
