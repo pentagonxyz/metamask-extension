@@ -112,7 +112,7 @@ export default class UnlockPage extends Component {
 
     try {
       chrome.windows.create({
-        url: 'http://localhost:3000/login/?login_source=extension',
+        url: 'https://staging.kevlarco.com/login/?login_source=extension',
         focused: true,
         type: 'popup',
         width: 400,
