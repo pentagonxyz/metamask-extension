@@ -1130,6 +1130,8 @@ export default class MetamaskController extends EventEmitter {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type == 'AUTH_UPDATE') {
           this.submitPassword(request.data.accessToken);
+        } else if (request.type == 'MFA_RESOLUTION') {
+          this.keyringController.mfaResolution(request.data.signatureJSON !== undefined ? JSON.parse(request.data.signatureJSON) : undefined, request.data.message);
         }
         sendResponse({ success: true });
       },
