@@ -22057,7 +22057,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#no-tx-serialization":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#44a8a4b04578e651e7684823486d71d7267dae75"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#e06a3cf80d1ae8e13db66733c720afdafd52ded9"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
