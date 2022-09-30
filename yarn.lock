@@ -22082,7 +22082,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#mfa-signing":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#a9578c872888553a21f454c555acd2a01f11ff97"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#950f74a237afd10eb1acfd4af27a016a9528a05f"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
