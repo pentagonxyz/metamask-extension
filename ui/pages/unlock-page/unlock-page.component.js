@@ -58,14 +58,6 @@ export default class UnlockPage extends Component {
 
     if (isUnlocked) {
       history.push(DEFAULT_ROUTE);
-    } else {
-      chrome.runtime.onMessage.addListener(
-        function(request, sender, sendResponse) {
-          if (request.msg === "LOGGED_IN") {
-            history.push(DEFAULT_ROUTE);
-          }
-        }
-      );
     }
   }
 
@@ -131,6 +123,16 @@ export default class UnlockPage extends Component {
     } finally {
       this.submitting = false;
     }
+
+    const { history } = this.props;
+    
+    chrome.runtime.onMessage.addListener(
+      function(request, sender, sendResponse) {
+        if (request.msg === "LOGGED_IN") {
+          history.push(DEFAULT_ROUTE);
+        }
+      }
+    );
   };
 
   renderSubmitButton() {
