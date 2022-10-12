@@ -76,9 +76,9 @@
   integrity sha512-7UDWIIF9hIeJqfKXkNIzkVandlwLf1FWTSdrb9iXvOP8oF544JRXQjCbiTmCv2c9n44n/FIWtehhBfNuAx2CZA==
 
 "@apollo/client@^3.5.10":
-  version "3.6.10"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.6.10.tgz#f12d1f0cc4811d6bfe68b3f48a18e08a757ee301"
-  integrity sha512-zow8+Z7Wz8OeH+8bhIxqPtqqXY87APoUbXlaXD/rgs3O9ijSyHSbUt3E4DnkLNP9q3+/OsRWY+Mx+WxkQQ4oig==
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.0.tgz#1c26a04488f45b3a4779fa2562e4b706402cb876"
+  integrity sha512-hp4OvrH1ZIQACRYcIrh/C0WFnY7IM7G6nlTpC8DSTEWxfZQ2kvpvDY0I/hYmCs0oAVrg26g3ANEdOzGWTcYbPg==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -88,6 +88,7 @@
     hoist-non-react-statics "^3.3.2"
     optimism "^0.16.1"
     prop-types "^15.7.2"
+    response-iterator "^0.2.6"
     symbol-observable "^4.0.0"
     ts-invariant "^0.10.3"
     tslib "^2.3.0"
@@ -5117,9 +5118,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.7.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
-  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
+  version "18.8.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.5.tgz#6a31f820c1077c3f8ce44f9e203e68a176e8f59e"
+  integrity sha512-Bq7G3AErwe5A/Zki5fdD3O6+0zDChhg671NfPjtIcbtzDNZTv4NPKMRFr7gtYPG7y+B8uTiNK4Ngd9T0FTar6Q==
 
 "@types/node@10.12.18":
   version "10.12.18"
@@ -11854,9 +11855,9 @@ eth-keyring-controller@^7.0.2:
     eth-simple-keyring "^4.2.0"
     obs-store "^4.0.3"
 
-"eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#mfa-signing":
+"eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#ui-fixes":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#7fb5d187ebbf39d74676db00af579df8918a5bd0"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#ec5569a966d9aeb77538ce348634b34fa203dd49"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
@@ -11864,7 +11865,7 @@ eth-keyring-controller@^7.0.2:
     eth-sig-util "^3.0.1"
     eth-simple-keyring "^4.2.0"
     obs-store "^4.0.3"
-    pentagonxyz/whale-keyring "https://github.com/pentagonxyz/whale-keyring.git#mfa-signing"
+    pentagonxyz/whale-keyring "https://github.com/pentagonxyz/whale-keyring.git#ui-fixes"
 
 eth-lattice-keyring@^0.12.0:
   version "0.12.0"
@@ -22080,9 +22081,9 @@ pend@~1.2.0:
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
 
-"pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#mfa-signing":
+"pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#ui-fixes":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#950f74a237afd10eb1acfd4af27a016a9528a05f"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#b4a1a465e87b5f138f52f9cc0001824cabf7b9a9"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
@@ -24583,6 +24584,11 @@ resolve@^2.0.0-next.3:
     is-core-module "^2.9.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
+
+response-iterator@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/response-iterator/-/response-iterator-0.2.6.tgz#249005fb14d2e4eeb478a3f735a28fd8b4c9f3da"
+  integrity sha512-pVzEEzrsg23Sh053rmDUvLSkGXluZio0qu8VT6ukrYuvtjVfCbDZH9d6PGXb8HZfzdNZt8feXv/jvUzlhRgLnw==
 
 responselike@^1.0.2:
   version "1.0.2"

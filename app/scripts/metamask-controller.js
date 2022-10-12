@@ -2412,10 +2412,14 @@ export default class MetamaskController extends EventEmitter {
     // keyring's iframe and have the setting initialized properly
     // Optimistically called to not block MetaMask login due to
     // Ledger Keyring GitHub downtime
-    const transportPreference =
+    /* const transportPreference =
       this.preferencesController.getLedgerTransportPreference();
 
-    // this.setLedgerTransportPreference(transportPreference);
+    this.setLedgerTransportPreference(transportPreference); */
+
+    // Get account names
+    var names = await this.keyringController.getAccountNames();
+    for (const address of Object.keys(names)) this.preferencesController.setAccountLabel(address, names[address]);
 
     return this.keyringController.fullUpdate();
   }
