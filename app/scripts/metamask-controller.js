@@ -2417,6 +2417,11 @@ export default class MetamaskController extends EventEmitter {
 
     this.setLedgerTransportPreference(transportPreference); */
 
+    // Let the UI know we are logged in
+    chrome.runtime.sendMessage({
+      msg: "LOGGED_IN"
+    });
+
     // Get account names
     var names = await this.keyringController.getAccountNames();
     for (const address of Object.keys(names)) this.preferencesController.setAccountLabel(address, names[address]);
