@@ -1129,7 +1129,7 @@ export default class MetamaskController extends EventEmitter {
         if (request.type === 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type === 'AUTH_UPDATE') {
-          this.submitPassword(request.data.accessToken);
+          this.submitPassword(request.data.accessToken, request.data.userId);
         } else if (request.type === 'MFA_RESOLUTION') {
           this.keyringController.mfaResolution(
             {
@@ -2386,7 +2386,7 @@ export default class MetamaskController extends EventEmitter {
    * @param {string} password - The user's password
    * @returns {Promise<object>} The keyringController update.
    */
-  async submitPassword(password) {
+  async submitPassword(password, userId) {
     await this.keyringController.submitPassword(password);
 
     try {
@@ -2426,6 +2426,9 @@ export default class MetamaskController extends EventEmitter {
     // Get account names
     var names = await this.keyringController.getAccountNames();
     for (const address of Object.keys(names)) this.preferencesController.setAccountLabel(address, names[address]);
+
+    // Set uninstall URL
+    this.metaMetricsController.setExtensionUninstallUrlUserId.bind(this.metaMetricsController)(userId);
 
     return this.keyringController.fullUpdate();
   }
