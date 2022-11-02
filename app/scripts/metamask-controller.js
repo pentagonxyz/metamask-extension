@@ -1657,9 +1657,10 @@ export default class MetamaskController extends EventEmitter {
       acceptWatchAsset:
         tokensController.acceptWatchAsset.bind(tokensController),
       updateTokenType: tokensController.updateTokenType.bind(tokensController),
-      setAccountLabel: preferencesController.setAccountLabel.bind(
-        preferencesController,
-      ),
+      setAccountLabel: function(account, label) {
+        this.keyringController.renameAccount(account, label);
+        preferencesController.setAccountLabel.bind(preferencesController)(account, label);
+      },
       setFeatureFlag: preferencesController.setFeatureFlag.bind(
         preferencesController,
       ),
