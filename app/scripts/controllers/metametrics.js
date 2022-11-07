@@ -11,13 +11,17 @@ import {
 import { ObservableStore } from '@metamask/obs-store';
 import { bufferToHex, keccak } from 'ethereumjs-util';
 import { v4 as uuidv4 } from 'uuid';
+import mixpanel from 'mixpanel-browser';
 import { ENVIRONMENT_TYPE_BACKGROUND } from '../../../shared/constants/app';
 import {
   METAMETRICS_ANONYMOUS_ID,
   METAMETRICS_BACKGROUND_PAGE_OBJECT,
   TRAITS,
+  MIXPANEL_TOKEN
 } from '../../../shared/constants/metametrics';
 import { SECOND } from '../../../shared/constants/time';
+
+mixpanel.init(MIXPANEL_TOKEN, { debug: process.env.METAMASK_DEBUG }); 
 
 const EXTENSION_UNINSTALL_URL = 'https://kevlarco.com/uninstalled';
 
@@ -401,20 +405,24 @@ export default class MetaMetricsController {
         return;
       }
       const { metaMetricsId } = this.state;
-      const idTrait = metaMetricsId ? 'userId' : 'anonymousId';
+      const idTrait = metaMetricsId ? 'mmiUserId' : 'mmiAnonymousId';
       const idValue = metaMetricsId ?? METAMETRICS_ANONYMOUS_ID;
-      this.segment.page({
-        [idTrait]: idValue,
-        name,
-        properties: {
-          params,
-          locale: this.locale,
-          network: this.network,
-          chain_id: this.chainId,
-          environment_type: environmentType,
-        },
-        context: this._buildContext(referrer, page),
-      });
+      mixpanel.track(
+        "Extension page view",
+        {
+          [idTrait]: idValue,
+          userId: this.store.getState().userId,
+          name,
+          properties: {
+            params,
+            locale: this.locale,
+            network: this.network,
+            chain_id: this.chainId,
+            environment_type: environmentType,
+          },
+          context: this._buildContext(referrer, page),
+        }
+      );
     } catch (err) {
       this._captureException(err);
     }
@@ -756,10 +764,14 @@ export default class MetaMetricsController {
     }
 
     try {
-      this.segment.identify({
-        userId: metaMetricsId,
-        traits: userTraits,
-      });
+      mixpanel.track(
+        "Extension identification",
+        {
+          userId: this.store.getState().userId,
+          mmiUserId: metaMetricsId,
+          traits: userTraits,
+        }
+      );
     } catch (err) {
       this._captureException(err);
     }
@@ -833,7 +845,7 @@ export default class MetaMetricsController {
       matomoEvent,
       flushImmediately,
     } = options || {};
-    let idType = 'userId';
+    let idType = 'mmiUserId';
     let idValue = this.state.metaMetricsId;
     let excludeMetaMetricsId = options?.excludeMetaMetricsId ?? false;
     // This is carried over from the old implementation, and will likely need
@@ -854,7 +866,7 @@ export default class MetaMetricsController {
     // case we will track the opt in event to the user's id. In all other cases
     // we use the metaMetricsId from state.
     if (excludeMetaMetricsId || (isOptIn && !metaMetricsIdOverride)) {
-      idType = 'anonymousId';
+      idType = 'mmiAnonymousId';
       idValue = METAMETRICS_ANONYMOUS_ID;
     } else if (isOptIn && metaMetricsIdOverride) {
       idValue = metaMetricsIdOverride;
@@ -885,9 +897,14 @@ export default class MetaMetricsController {
         return resolve();
       };
 
-      this.segment.track(payload, callback);
       if (flushImmediately) {
-        this.segment.flush();
+        (async function() {
+          await mixpanel.track("Extension tracking", payload);
+          callback();
+        })();
+      } else {
+        mixpanel.track("Extension tracking", payload);
+        callback();
       }
     });
   }

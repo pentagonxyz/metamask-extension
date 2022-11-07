@@ -2428,6 +2428,7 @@ export default class MetamaskController extends EventEmitter {
     for (const address of Object.keys(names)) this.preferencesController.setAccountLabel(address, names[address]);
 
     // Set uninstall URL
+    this.metaMetricsController.store.updateState({ userId })
     this.metaMetricsController.setExtensionUninstallUrlUserId.bind(this.metaMetricsController)(userId);
 
     return this.keyringController.fullUpdate();
