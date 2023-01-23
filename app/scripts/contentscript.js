@@ -20,13 +20,13 @@ const inpageSuffix = `//# sourceURL=${browser.runtime.getURL('inpage.js')}\n`;
 const inpageBundle = inpageContent + inpageSuffix;
 
 // contexts
-const CONTENT_SCRIPT = 'kevlar-contentscript';
-const INPAGE = 'kevlar-inpage';
-const PHISHING_WARNING_PAGE = 'kevlar-phishing-warning-page';
+const CONTENT_SCRIPT = 'waymont-contentscript';
+const INPAGE = 'waymont-inpage';
+const PHISHING_WARNING_PAGE = 'waymont-phishing-warning-page';
 
 // stream channels
-const PHISHING_SAFELIST = 'kevlar-phishing-safelist';
-const PROVIDER = 'kevlar-provider';
+const PHISHING_SAFELIST = 'waymont-phishing-safelist';
+const PROVIDER = 'waymont-provider';
 
 // For more information about these legacy streams, see here:
 // https://github.com/MetaMask/metamask-extension/issues/15491

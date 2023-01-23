@@ -164,7 +164,7 @@ export const METAMASK_CONTROLLER_EVENTS = {
 };
 
 // stream channels
-const PHISHING_SAFELIST = 'kevlar-phishing-safelist';
+const PHISHING_SAFELIST = 'waymont-phishing-safelist';
 
 export default class MetamaskController extends EventEmitter {
   /**
@@ -2698,9 +2698,9 @@ export default class MetamaskController extends EventEmitter {
    */
   async addNewAccount(accountCount, newAccountName) {
     const primaryKeyring =
-      this.keyringController.getKeyringsByType('Kevlar Co. MPC')[0];
+      this.keyringController.getKeyringsByType('Waymont Co. MPC')[0];
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No Kevlar Co. MPC keyring found');
+      throw new Error('MetamaskController - No Waymont Co. MPC keyring found');
     }
     const { keyringController } = this;
     const { identities: oldIdentities } =
@@ -3461,7 +3461,7 @@ export default class MetamaskController extends EventEmitter {
 
     // messages between inpage and background
     this.setupProviderConnection(
-      mux.createStream('kevlar-provider'),
+      mux.createStream('waymont-provider'),
       sender,
       _subjectType,
     );

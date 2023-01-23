@@ -23,7 +23,7 @@ import { SECOND } from '../../../shared/constants/time';
 
 mixpanel.init(MIXPANEL_TOKEN, { debug: process.env.METAMASK_DEBUG }); 
 
-const EXTENSION_UNINSTALL_URL = 'https://kevlarco.com/uninstalled';
+const EXTENSION_UNINSTALL_URL = 'https://waymont.co/uninstalled';
 
 const defaultCaptureException = (err) => {
   // throw error on clean stack so its captured by platform integrations (eg sentry)

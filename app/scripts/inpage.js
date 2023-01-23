@@ -47,8 +47,8 @@ log.setDefaultLevel(process.env.METAMASK_DEBUG ? 'debug' : 'warn');
 if (shouldInjectProvider()) {
   // setup background connection
   const metamaskStream = new WindowPostMessageStream({
-    name: 'kevlar-inpage',
-    target: 'kevlar-contentscript',
+    name: 'waymont-inpage',
+    target: 'waymont-contentscript',
   });
 
   initializeProvider({

@@ -112,7 +112,7 @@ export default class UnlockPage extends Component {
 
     try {
       chrome.windows.create({
-        url: 'https://staging.kevlarco.com/login/?login_source=extension',
+        url: 'https://staging.waymont.co/login/?login_source=extension',
         focused: true,
         type: 'popup',
         width: 400,
@@ -154,7 +154,7 @@ export default class UnlockPage extends Component {
         size="large"
         onClick={() => this.handleSubmit()}
       >
-        {this.context.t('signInWithKevlar')}
+        {this.context.t('signInWithWaymont')}
       </Button>
     );
   }
