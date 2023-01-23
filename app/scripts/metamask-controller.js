@@ -826,7 +826,7 @@ export default class MetamaskController extends EventEmitter {
       ),
       preferencesStore: this.preferencesController.store,
       txHistoryLimit: 60,
-      signTransaction: this.keyringController.signTransaction.bind(
+      sendTransaction: this.keyringController.sendTransaction.bind(
         this.keyringController,
       ),
       provider: this.provider,

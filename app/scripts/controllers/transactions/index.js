@@ -117,7 +117,7 @@ const METRICS_STATUS_FAILED = 'failed on-chain';
  * @param {object} opts.networkStore - an observable store for network number
  * @param {object} opts.blockTracker - An instance of eth-blocktracker
  * @param {object} opts.provider - A network provider.
- * @param {Function} opts.signTransaction - function the signs an @ethereumjs/tx
+ * @param {Function} opts.sendTransaction - function the sends an @ethereumjs/tx
  * @param {object} opts.getPermittedAccounts - get accounts that an origin has permissions for
  * @param {Function} opts.signTransaction - ethTx signer that returns a rawTx
  * @param {number} [opts.txHistoryLimit] - number *optional* for limiting how many transactions are in state
@@ -138,7 +138,7 @@ export default class TransactionController extends EventEmitter {
     this.provider = opts.provider;
     this.getPermittedAccounts = opts.getPermittedAccounts;
     this.blockTracker = opts.blockTracker;
-    this.signEthTx = opts.signTransaction;
+    this.sendEthTx = opts.sendTransaction;
     this.inProcessOfSigning = new Set();
     this._trackMetaMetricsEvent = opts.trackMetaMetricsEvent;
     this._getParticipateInMetrics = opts.getParticipateInMetrics;
@@ -1339,8 +1339,7 @@ export default class TransactionController extends EventEmitter {
         'transactions#approveTransaction',
       );
       // sign transaction
-      const rawTx = await this.signTransaction(txId);
-      await this.publishTransaction(txId, rawTx);
+      await this.sendTransaction(txId);
       this._trackTransactionMetricsEvent(txMeta, TRANSACTION_EVENTS.APPROVED);
       // must set transaction to submitted/failed before releasing lock
       nonceLock.releaseLock();
@@ -1388,7 +1387,7 @@ export default class TransactionController extends EventEmitter {
       rawTxes = await Promise.all(
         listOfTxParams.map((txParams) => {
           txParams.nonce = addHexPrefix(nonce.toString(16));
-          return this.signExternalTransaction(txParams);
+          return this.signExternalTransaction(txParams); // NOT AVAILABLE W/ WAYMONT
         }),
       );
     } catch (err) {
@@ -1405,7 +1404,7 @@ export default class TransactionController extends EventEmitter {
     return rawTxes;
   }
 
-  async signExternalTransaction(_txParams) {
+  async sendExternalTransaction(_txParams) {
     const normalizedTxParams = txUtils.normalizeTxParams(_txParams);
     // add network/chain id
     const chainId = this.getChainId();
@@ -1422,10 +1421,8 @@ export default class TransactionController extends EventEmitter {
     const fromAddress = txParams.from;
     const common = await this.getCommonConfiguration(fromAddress);
     const unsignedEthTx = TransactionFactory.fromTxData(txParams, { common });
-    const signedEthTx = await this.signEthTx(unsignedEthTx, fromAddress);
-
-    const rawTx = bufferToHex(signedEthTx.serialize());
-    return rawTx;
+    const transactionHash = await this.sendEthTx(unsignedEthTx, fromAddress);
+    return transactionHash;
   }
 
   /**
@@ -1434,7 +1431,7 @@ export default class TransactionController extends EventEmitter {
    * @param {number} txId - the tx's Id
    * @returns {string} rawTx
    */
-  async signTransaction(txId) {
+  async sendTransaction(txId) {
     const txMeta = this.txStateManager.getTransaction(txId);
     // add network/chain id
     const chainId = this.getChainId();
@@ -1451,23 +1448,8 @@ export default class TransactionController extends EventEmitter {
     const fromAddress = txParams.from;
     const common = await this.getCommonConfiguration(txParams.from);
     const unsignedEthTx = TransactionFactory.fromTxData(txParams, { common });
-    const signedEthTx = await this.signEthTx(unsignedEthTx, fromAddress);
-
-    // add r,s,v values for provider request purposes see createMetamaskMiddleware
-    // and JSON rpc standard for further explanation
-    txMeta.r = bufferToHex(signedEthTx.r);
-    txMeta.s = bufferToHex(signedEthTx.s);
-    txMeta.v = bufferToHex(signedEthTx.v);
-
-    this.txStateManager.updateTransaction(
-      txMeta,
-      'transactions#signTransaction: add r, s, v values',
-    );
-
-    // set state to signed
-    this.txStateManager.setTxStatusSigned(txMeta.id);
-    const rawTx = bufferToHex(signedEthTx.serialize());
-    return rawTx;
+    const transactionHash = await this.sendEthTx(unsignedEthTx, fromAddress);
+    return transactionHash;
   }
 
   /**
