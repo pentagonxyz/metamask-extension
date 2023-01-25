@@ -2429,7 +2429,7 @@ export default class MetamaskController extends EventEmitter {
 
     // Set uninstall URL
     this.metaMetricsController.store.updateState({ userId })
-    this.metaMetricsController.setExtensionUninstallUrlUserId.bind(this.metaMetricsController)(userId);
+    this.metaMetricsController.updateExtensionUninstallUrlUserId.bind(this.metaMetricsController)(userId);
 
     return this.keyringController.fullUpdate();
   }
