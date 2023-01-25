@@ -11857,7 +11857,7 @@ eth-keyring-controller@^7.0.2:
 
 "eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#waymont":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#0ed4b3029f399e6a4475e41fec71ce24d9d87b8a"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#4ea63ee170f9af52648058b7a40d84ed8a9193b8"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
@@ -22088,7 +22088,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#3e8cb5d21f6fc1d6f794928515ad23dc2bed8e29"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#ec875671ef1ee8023930432e83b612fedbf4ce1b"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
