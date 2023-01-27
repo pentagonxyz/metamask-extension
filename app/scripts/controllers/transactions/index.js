@@ -1462,7 +1462,6 @@ export default class TransactionController extends EventEmitter {
    */
   async publishTransaction(txId, txHash) {
     const txMeta = this.txStateManager.getTransaction(txId);
-    txMeta.rawTx = rawTx;
 
     if (txMeta.type === _transaction.TRANSACTION_TYPES.SWAP) {
       const preTxBalance = await this.query.getBalance(txMeta.txParams.from);
