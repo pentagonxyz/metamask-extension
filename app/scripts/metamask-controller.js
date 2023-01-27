@@ -1133,7 +1133,7 @@ export default class MetamaskController extends EventEmitter {
         } else if (request.type === 'MFA_RESOLUTION') {
           this.keyringController.mfaResolution(
             {
-              ...request.data.signature,
+              transactionHash: request.data.transactionHash,
               nonce: request.data.nonce,
               from: request.data.from,
             },

@@ -1339,7 +1339,8 @@ export default class TransactionController extends EventEmitter {
         'transactions#approveTransaction',
       );
       // sign transaction
-      await this.sendTransaction(txId);
+      const txHash = await this.sendTransaction(txId);
+      await this.publishTransaction(txId, txHash);
       this._trackTransactionMetricsEvent(txMeta, TRANSACTION_EVENTS.APPROVED);
       // must set transaction to submitted/failed before releasing lock
       nonceLock.releaseLock();
@@ -1459,33 +1460,21 @@ export default class TransactionController extends EventEmitter {
    * @param {string} rawTx - the hex string of the serialized signed transaction
    * @returns {Promise<void>}
    */
-  async publishTransaction(txId, rawTx) {
+  async publishTransaction(txId, txHash) {
     const txMeta = this.txStateManager.getTransaction(txId);
     txMeta.rawTx = rawTx;
-    if (txMeta.type === TRANSACTION_TYPES.SWAP) {
+
+    if (txMeta.type === _transaction.TRANSACTION_TYPES.SWAP) {
       const preTxBalance = await this.query.getBalance(txMeta.txParams.from);
       txMeta.preTxBalance = preTxBalance.toString(16);
     }
-    this.txStateManager.updateTransaction(
-      txMeta,
-      'transactions#publishTransaction',
-    );
-    let txHash;
-    try {
-      txHash = await this.query.sendRawTransaction(rawTx);
-    } catch (error) {
-      if (error.message.toLowerCase().includes('known transaction')) {
-        txHash = keccak(toBuffer(addHexPrefix(rawTx), 'hex')).toString('hex');
-        txHash = addHexPrefix(txHash);
-      } else {
-        throw error;
-      }
-    }
-    this.setTxHash(txId, txHash);
 
+    this.txStateManager.updateTransaction(txMeta, 'transactions#publishTransaction');
+
+    this.setTxHash(txId, txHash);
     this.txStateManager.setTxStatusSubmitted(txId);
 
-    this._trackTransactionMetricsEvent(txMeta, TRANSACTION_EVENTS.SUBMITTED);
+    this._trackTransactionMetricsEvent(txMeta, _transaction.TRANSACTION_EVENTS.SUBMITTED);
   }
 
   async updatePostTxBalance({ txMeta, txId, numberOfAttempts = 6 }) {
