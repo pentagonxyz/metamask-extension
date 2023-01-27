@@ -1463,7 +1463,7 @@ export default class TransactionController extends EventEmitter {
   async publishTransaction(txId, txHash) {
     const txMeta = this.txStateManager.getTransaction(txId);
 
-    if (txMeta.type === _transaction.TRANSACTION_TYPES.SWAP) {
+    if (txMeta.type === TRANSACTION_TYPES.SWAP) {
       const preTxBalance = await this.query.getBalance(txMeta.txParams.from);
       txMeta.preTxBalance = preTxBalance.toString(16);
     }
@@ -1473,7 +1473,7 @@ export default class TransactionController extends EventEmitter {
     this.setTxHash(txId, txHash);
     this.txStateManager.setTxStatusSubmitted(txId);
 
-    this._trackTransactionMetricsEvent(txMeta, _transaction.TRANSACTION_EVENTS.SUBMITTED);
+    this._trackTransactionMetricsEvent(txMeta, TRANSACTION_EVENTS.SUBMITTED);
   }
 
   async updatePostTxBalance({ txMeta, txId, numberOfAttempts = 6 }) {
