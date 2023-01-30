@@ -1140,6 +1140,15 @@ export default class MetamaskController extends EventEmitter {
             request.data.message,
           );
           chrome.tabs.remove(sender.tab.id);
+        } else if (request.type === 'MFA_REJECTION' || request.type === 'MFA_ERROR') {
+          this.keyringController.mfaResolution(
+            {
+              nonce: request.data.nonce,
+              from: request.data.from,
+            },
+            request.data.message,
+          );
+          chrome.tabs.remove(sender.tab.id);
         }
         sendResponse({ success: true });
       },
