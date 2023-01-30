@@ -1129,7 +1129,7 @@ export default class MetamaskController extends EventEmitter {
         if (request.type === 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type === 'AUTH_UPDATE') {
-          this.submitPassword(request.data.accessToken, request.data.userId);
+          if (sender.url !== "https://dev.kevlarco.com/mfa/setup/") this.submitPassword(request.data.accessToken, request.data.userId);
         } else if (request.type === 'MFA_RESOLUTION') {
           this.keyringController.mfaResolution(
             {
