@@ -1140,7 +1140,16 @@ export default class MetamaskController extends EventEmitter {
             request.data.message,
           );
           chrome.tabs.remove(sender.tab.id);
-        } else if (request.type === 'MFA_REJECTION' || request.type === 'MFA_ERROR') {
+        } else if (request.type === 'MFA_REJECTION') {
+          this.keyringController.mfaResolution(
+            {
+              nonce: request.data.nonce,
+              from: request.data.from,
+            },
+            "Request was rejected by a signing device",
+          );
+          chrome.tabs.remove(sender.tab.id);
+        } else if (request.type === 'MFA_ERROR') {
           this.keyringController.mfaResolution(
             {
               nonce: request.data.nonce,
