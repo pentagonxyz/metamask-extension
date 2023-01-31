@@ -76,9 +76,9 @@
   integrity sha512-7UDWIIF9hIeJqfKXkNIzkVandlwLf1FWTSdrb9iXvOP8oF544JRXQjCbiTmCv2c9n44n/FIWtehhBfNuAx2CZA==
 
 "@apollo/client@^3.5.10":
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.5.tgz#d2ab6e284822296c9102ff57ab3a8dcbaa818052"
-  integrity sha512-HEAhX2n2Y8Y2BwRr0UdteT94OTM7pn64K5/rTk/oLIdg/h7R2d83LdsCGDxSH5sBiqDqlv9vou4xdyTxxRWj/g==
+  version "3.7.6"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.6.tgz#fdc2ce3c440c7edda70fc02b0244a05128fef696"
+  integrity sha512-K0l8+wgcdVDjdgI8O2YuhX1CiQlavGuBp8HR/+PEbc2+jqM/BaVpL0g7YAuXrTW20np/MXHNRDxK20/ujF9hjA==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -11857,7 +11857,7 @@ eth-keyring-controller@^7.0.2:
 
 "eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#waymont":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#db7a6c17d9dda308f506ddae1b6a0ed77ed0b707"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#ad9480b8e7a5d9fe646125378f3e7b7c651acf9a"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
@@ -22088,7 +22088,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#9b67154f2d438bc6d8e15daaebd2f385908d2de8"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#afbf18e5021138d615b3c334c9e9ba182a62b157"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
