@@ -1666,6 +1666,7 @@ export default class MetamaskController extends EventEmitter {
       updateAndSetCustomRpc: this.updateAndSetCustomRpc.bind(this),
       delCustomRpc: this.delCustomRpc.bind(this),
       addCustomNetwork: this.addCustomNetwork.bind(this),
+      forceNextMfaSetup: this.forceNextMfaSetup.bind(this),
       requestAddNetworkApproval: this.requestAddNetworkApproval.bind(this),
       // PreferencesController
       setSelectedAddress: preferencesController.setSelectedAddress.bind(
