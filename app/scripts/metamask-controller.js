@@ -571,6 +571,8 @@ export default class MetamaskController extends EventEmitter {
       keyringTypes: additionalKeyrings,
       initState: initState.KeyringController,
       encryptor: opts.encryptor || undefined,
+      baseApiUrl: process.env.CONF?.BASE_API_URL || 'https://waymont-api-dev.kevlarco.com',
+      baseAppUrl: process.env.CONF?.BASE_APP_URL || "https://dev.kevlarco.com",
     });
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
