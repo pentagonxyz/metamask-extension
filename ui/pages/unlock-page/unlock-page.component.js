@@ -103,6 +103,8 @@ export default class UnlockPage extends Component {
   };
 
   handleSubmit = async () => {
+    const { forceNextMfaSetup } = this.props;
+
     if (this.submitting) {
       return;
     }
@@ -111,6 +113,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
+      forceNextMfaSetup();
       chrome.windows.create({
         url: 'https://dev.kevlarco.com/login/?login_source=extension',
         focused: true,
