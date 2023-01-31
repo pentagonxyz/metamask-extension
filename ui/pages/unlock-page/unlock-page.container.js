@@ -13,7 +13,6 @@ import {
   markPasswordForgotten,
   forceUpdateMetamaskState,
   showModal,
-  forceNextMfaSetup,
 } from '../../store/actions';
 import UnlockPage from './unlock-page.component';
 
@@ -32,7 +31,6 @@ const mapDispatchToProps = (dispatch) => {
     tryUnlockMetamask: (password) => dispatch(tryUnlockMetamask(password)),
     markPasswordForgotten: () => dispatch(markPasswordForgotten()),
     forceUpdateMetamaskState: () => forceUpdateMetamaskState(dispatch),
-    forceNextMfaSetup: () => dispatch(forceNextMfaSetup()),
     showOptInModal: () =>
       dispatch(showModal({ name: 'METAMETRICS_OPT_IN_MODAL' })),
   };

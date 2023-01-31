@@ -2147,10 +2147,6 @@ export default class MetamaskController extends EventEmitter {
     }
   }
 
-  forceNextMfaSetup() {
-    return this.keyringController.forceNextMfaSetup();
-  }
-
   async addCustomNetwork(customRpc) {
     const { chainId, chainName, rpcUrl, ticker, blockExplorerUrl } = customRpc;
 

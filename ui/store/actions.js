@@ -3938,9 +3938,3 @@ export function requestAddNetworkApproval(customRpc, originIsMetaMask) {
     }
   };
 }
-
-export function forceNextMfaSetup() {
-  return async (dispatch) => {
-    await submitRequestToBackground('forceNextMfaSetup');
-  };
-}
