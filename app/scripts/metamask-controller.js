@@ -2149,7 +2149,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   forceNextMfaSetup() {
-    return this.keyringController.forceNextMfaSetup();
+    this.keyringController.forceNextMfaSetup = true;
   }
 
   async addCustomNetwork(customRpc) {
