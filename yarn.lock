@@ -11857,7 +11857,7 @@ eth-keyring-controller@^7.0.2:
 
 "eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#waymont":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#e60ddc526569221b95c5e9aca075a0dd7412c618"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#6de2ace677767bc5b50f7b62817405ab006412d9"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
