@@ -2723,9 +2723,9 @@ export default class MetamaskController extends EventEmitter {
    */
   async addNewAccount(accountCount, newAccountName) {
     const primaryKeyring =
-      this.keyringController.getKeyringsByType('Waymont Co. MPC')[0];
+      this.keyringController.getKeyringsByType('Waymont Co. SCW')[0];
     if (!primaryKeyring) {
-      throw new Error('MetamaskController - No Waymont Co. MPC keyring found');
+      throw new Error('MetamaskController - No Waymont Co. SCW keyring found');
     }
     const { keyringController } = this;
     const { identities: oldIdentities } =
