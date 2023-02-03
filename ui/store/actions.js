@@ -2442,13 +2442,13 @@ export function showPrivateKey(key) {
   };
 }
 
-export function setAccountLabel(account, label) {
+export function setAccountLabel(account, label, clientSideOnly) {
   return (dispatch) => {
     dispatch(showLoadingIndication());
     log.debug(`background.setAccountLabel`);
 
     return new Promise((resolve, reject) => {
-      callBackgroundMethod('setAccountLabel', [account, label], (err) => {
+      callBackgroundMethod('setAccountLabel', [account, label, clientSideOnly], (err) => {
         dispatch(hideLoadingIndication());
 
         if (err) {
