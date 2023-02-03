@@ -71,8 +71,11 @@ export const HARMONY_DISPLAY_NAME = 'Harmony Mainnet Shard 0';
 export const PALM_DISPLAY_NAME = 'Palm';
 
 export const infuraProjectId = process.env.INFURA_PROJECT_ID;
-export const getRpcUrl = ({ network, excludeProjectId = false }) =>
-  `https://${network}.infura.io/v3/${excludeProjectId ? '' : infuraProjectId}`;
+export const getRpcUrl = ({ network, excludeProjectId = false }) => {
+  let infuraNetwork = network.replace(/[A-Z]/g, m => "-" + m.toLowerCase());
+  if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
+  return `https://${infuraNetwork}.infura.io/v3/${excludeProjectId ? '' : infuraProjectId}`;
+}
 
 export const ROPSTEN_RPC_URL = getRpcUrl({ network: ROPSTEN });
 export const RINKEBY_RPC_URL = getRpcUrl({ network: RINKEBY });
