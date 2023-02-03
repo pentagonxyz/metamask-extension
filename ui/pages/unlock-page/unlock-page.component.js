@@ -168,6 +168,12 @@ export default class UnlockPage extends Component {
 
     // TODO: Add a "forgot password" button for key recovery
     // const { onRestore } = this.props;
+    
+    const { isUnlocked, history } = this.props;
+
+    if (isUnlocked) {
+      history.push(DEFAULT_ROUTE);
+    }
 
     return (
       <div className="unlock-page__container">
