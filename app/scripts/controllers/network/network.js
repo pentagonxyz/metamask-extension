@@ -10,12 +10,14 @@ import {
 } from 'swappable-obj-proxy';
 import EthQuery from 'eth-query';
 import {
+  GOERLI,
   RINKEBY,
   MAINNET,
   INFURA_PROVIDER_TYPES,
   NETWORK_TYPE_RPC,
   NETWORK_TYPE_TO_ID_MAP,
   MAINNET_CHAIN_ID,
+  GOERLI_CHAIN_ID,
   RINKEBY_CHAIN_ID,
   INFURA_BLOCKED_KEY,
   TEST_NETWORK_TICKER_MAP,
