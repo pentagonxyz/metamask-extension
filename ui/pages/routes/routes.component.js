@@ -455,6 +455,16 @@ export default class Routes extends Component {
         return this.context.t('connectingToRinkeby');
       case 'goerli':
         return this.context.t('connectingToGoerli');
+      case 'arbitrumGoerli':
+        return this.context.t('connectingToArbitrumGoerli');
+      case 'polygonMumbai':
+        return this.context.t('connectingToPolygonMumbai');
+      case 'optimism':
+        return this.context.t('connectingToOptimism');
+      case 'polygon':
+        return this.context.t('connectingToPolygon');
+      case 'arbitrum':
+        return this.context.t('connectingToArbitrum');
       default:
         return this.context.t('connectingTo', [providerId]);
     }

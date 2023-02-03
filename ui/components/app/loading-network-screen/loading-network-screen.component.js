@@ -51,6 +51,16 @@ export default class LoadingNetworkScreen extends PureComponent {
       name = this.context.t('connectingToRinkeby');
     } else if (providerName === 'goerli') {
       name = this.context.t('connectingToGoerli');
+    } else if (providerName === 'arbitrumGoerli') {
+      name = this.context.t('connectingToArbitrumGoerli');
+    } else if (providerName === 'polygonMumbai') {
+      name = this.context.t('connectingToPolygonMumbai');
+    } else if (providerName === 'optimism') {
+      name = this.context.t('connectingToOptimism');
+    } else if (providerName === 'polygon') {
+      name = this.context.t('connectingToPolygon');
+    } else if (providerName === 'arbitrum') {
+      name = this.context.t('connectingToArbitrum');
     } else {
       name = this.context.t('connectingTo', [providerId]);
     }

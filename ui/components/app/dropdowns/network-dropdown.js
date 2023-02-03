@@ -346,6 +346,9 @@ class NetworkDropdown extends Component {
 
         <div className="network-dropdown-list">
           {this.renderNetworkEntry('mainnet')}
+          {this.renderNetworkEntry('arbitrum')}
+          {this.renderNetworkEntry('polygon')}
+          {this.renderNetworkEntry('optimism')}
 
           {this.renderCustomRpcList(
             rpcListDetailWithoutLocalHost,
@@ -354,10 +357,9 @@ class NetworkDropdown extends Component {
 
           {shouldShowTestNetworks && (
             <>
-              {this.renderNetworkEntry('ropsten')}
-              {this.renderNetworkEntry('kovan')}
-              {this.renderNetworkEntry('rinkeby')}
               {this.renderNetworkEntry('goerli')}
+              {this.renderNetworkEntry('arbitrumGoerli')}
+              {this.renderNetworkEntry('polygonMumbai')}
               {this.renderCustomRpcList(
                 rpcListDetailForLocalHost,
                 this.props.provider,
