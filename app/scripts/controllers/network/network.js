@@ -42,9 +42,9 @@ if (process.env.IN_TEST) {
   };
 } else if (process.env.METAMASK_DEBUG || env === 'test') {
   defaultProviderConfigOpts = {
-    type: RINKEBY,
-    chainId: RINKEBY_CHAIN_ID,
-    ticker: TEST_NETWORK_TICKER_MAP.rinkeby,
+    type: GOERLI,
+    chainId: GOERLI_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP.goerli,
   };
 } else {
   defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID };
