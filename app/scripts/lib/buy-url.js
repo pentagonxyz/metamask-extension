@@ -4,6 +4,8 @@ import { SWAPS_API_V2_BASE_URL } from '../../../shared/constants/swaps';
 import {
   GOERLI_CHAIN_ID,
   KOVAN_CHAIN_ID,
+  ARBITRUM_GOERLI_CHAIN_ID,
+  POLYGON_MUMBAI_CHAIN_ID,
   MAINNET_CHAIN_ID,
   RINKEBY_CHAIN_ID,
   ROPSTEN_CHAIN_ID,
@@ -168,6 +170,10 @@ export default async function getBuyUrl({ chainId, address, service }) {
       return 'https://www.rinkeby.io/';
     case 'kovan-faucet':
       return 'https://github.com/kovan-testnet/faucet';
+    case 'arbitrum-goerli-faucet':
+      return 'https://goerlifaucet.com/';
+    case 'polygon-mumbai-faucet':
+      return 'https://faucet.polygon.technology/';
     case 'goerli-faucet':
       return 'https://goerli-faucet.slock.it/';
     default:
@@ -187,6 +193,10 @@ function getDefaultServiceForChain(chainId) {
       return 'rinkeby-faucet';
     case KOVAN_CHAIN_ID:
       return 'kovan-faucet';
+    case ARBITRUM_GOERLI_CHAIN_ID:
+      return 'arbitrum-goerli-faucet';
+    case POLYGON_MUMBAI_CHAIN_ID:
+      return 'polygon-mumbai-faucet';
     case GOERLI_CHAIN_ID:
       return 'goerli-faucet';
     default:

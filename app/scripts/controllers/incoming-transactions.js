@@ -14,6 +14,7 @@ import {
   CHAIN_ID_TO_TYPE_MAP,
   GOERLI_CHAIN_ID,
   KOVAN_CHAIN_ID,
+  OPTIMISM_CHAIN_ID,
   MAINNET_CHAIN_ID,
   RINKEBY_CHAIN_ID,
   ROPSTEN_CHAIN_ID,
@@ -58,6 +59,7 @@ const etherscanSupportedNetworks = [
   MAINNET_CHAIN_ID,
   RINKEBY_CHAIN_ID,
   ROPSTEN_CHAIN_ID,
+  OPTIMISM_CHAIN_ID,
 ];
 
 export default class IncomingTransactionsController {
@@ -86,6 +88,7 @@ export default class IncomingTransactionsController {
         [MAINNET_CHAIN_ID]: null,
         [RINKEBY_CHAIN_ID]: null,
         [ROPSTEN_CHAIN_ID]: null,
+        [OPTIMISM_CHAIN_ID]: null,
       },
       ...opts.initState,
     };

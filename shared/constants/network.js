@@ -3,6 +3,11 @@ import { capitalize } from 'lodash';
 export const ROPSTEN = 'ropsten';
 export const RINKEBY = 'rinkeby';
 export const KOVAN = 'kovan';
+export const ARBITRUM = 'arbitrum-mainnet';
+export const POLYGON = 'polygon-mainnet';
+export const OPTIMISM = 'optimism-mainnet';
+export const ARBITRUM_GOERLI = 'arbitrum-goerli';
+export const POLYGON_MUMBAI = 'polygon-mumbai';
 export const MAINNET = 'mainnet';
 export const GOERLI = 'goerli';
 export const LOCALHOST = 'localhost';
@@ -12,8 +17,13 @@ export const HOMESTEAD = 'homestead';
 export const MAINNET_NETWORK_ID = '1';
 export const ROPSTEN_NETWORK_ID = '3';
 export const RINKEBY_NETWORK_ID = '4';
+export const ARBITRUM_NETWORK_ID = '42161';
+export const POLYGON_NETWORK_ID = '137';
 export const GOERLI_NETWORK_ID = '5';
 export const KOVAN_NETWORK_ID = '42';
+export const OPTIMISM_NETWORK_ID = '10';
+export const ARBITRUM_GOERLI_NETWORK_ID = '421613';
+export const POLYGON_MUMBAI_NETWORK_ID = '80001';
 export const LOCALHOST_NETWORK_ID = '1337';
 
 export const MAINNET_CHAIN_ID = '0x1';
@@ -26,10 +36,12 @@ export const BSC_CHAIN_ID = '0x38';
 export const OPTIMISM_CHAIN_ID = '0xa';
 export const OPTIMISM_TESTNET_CHAIN_ID = '0x1a4';
 export const POLYGON_CHAIN_ID = '0x89';
+export const POLYGON_MUMBAI_CHAIN_ID = '0x13881';
 export const AVALANCHE_CHAIN_ID = '0xa86a';
 export const FANTOM_CHAIN_ID = '0xfa';
 export const CELO_CHAIN_ID = '0xa4ec';
 export const ARBITRUM_CHAIN_ID = '0xa4b1';
+export const ARBITRUM_GOERLI_CHAIN_ID = '0x66eed';
 export const HARMONY_CHAIN_ID = '0x63564c40';
 export const PALM_CHAIN_ID = '0x2a15c308d';
 
@@ -47,8 +59,10 @@ export const GOERLI_DISPLAY_NAME = 'Goerli';
 export const LOCALHOST_DISPLAY_NAME = 'Localhost 8545';
 export const BSC_DISPLAY_NAME = 'Binance Smart Chain';
 export const POLYGON_DISPLAY_NAME = 'Polygon';
+export const POLYGON_MUMBAI_DISPLAY_NAME = 'Polygon Mumbai';
 export const AVALANCHE_DISPLAY_NAME = 'Avalanche Network C-Chain';
 export const ARBITRUM_DISPLAY_NAME = 'Arbitrum One';
+export const ARBITRUM_GOERLI_DISPLAY_NAME = 'Arbitrum Goerli';
 export const BNB_DISPLAY_NAME =
   'BNB Smart Chain (previously Binance Smart Chain Mainnet)';
 export const OPTIMISM_DISPLAY_NAME = 'Optimism';
@@ -63,8 +77,13 @@ export const getRpcUrl = ({ network, excludeProjectId = false }) =>
 export const ROPSTEN_RPC_URL = getRpcUrl({ network: ROPSTEN });
 export const RINKEBY_RPC_URL = getRpcUrl({ network: RINKEBY });
 export const KOVAN_RPC_URL = getRpcUrl({ network: KOVAN });
+export const ARBITRUM_RPC_URL = getRpcUrl({ network: ARBITRUM });
+export const POLYGON_RPC_URL = getRpcUrl({ network: POLYGON });
+export const OPTIMISM_RPC_URL = getRpcUrl({ network: OPTIMISM });
 export const MAINNET_RPC_URL = getRpcUrl({ network: MAINNET });
 export const GOERLI_RPC_URL = getRpcUrl({ network: GOERLI });
+export const ARBITRUM_GOERLI_RPC_URL = getRpcUrl({ network: ARBITRUM_GOERLI });
+export const POLYGON_MUMBAI_RPC_URL = getRpcUrl({ network: POLYGON_MUMBAI });
 export const LOCALHOST_RPC_URL = 'http://localhost:8545';
 
 export const ETH_SYMBOL = 'ETH';
@@ -90,13 +109,12 @@ export const HARMONY_ONE_TOKEN_IMAGE_URL = './images/harmony-one.svg';
 export const OPTIMISM_TOKEN_IMAGE_URL = './images/optimism.svg';
 export const PALM_TOKEN_IMAGE_URL = './images/palm.svg';
 
-export const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, MAINNET, GOERLI];
+export const INFURA_PROVIDER_TYPES = [ARBITRUM, POLYGON, OPTIMISM, MAINNET, GOERLI, ARBITRUM_GOERLI, POLYGON_MUMBAI];
 
 export const TEST_CHAINS = [
-  ROPSTEN_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
   GOERLI_CHAIN_ID,
-  KOVAN_CHAIN_ID,
+  ARBITRUM_GOERLI_CHAIN_ID,
+  POLYGON_MUMBAI_CHAIN_ID,
   LOCALHOST_CHAIN_ID,
 ];
 
@@ -105,6 +123,8 @@ export const TEST_NETWORK_TICKER_MAP = {
   [RINKEBY]: `${capitalize(RINKEBY)}${ETH_SYMBOL}`,
   [KOVAN]: `${capitalize(KOVAN)}${ETH_SYMBOL}`,
   [GOERLI]: `${capitalize(GOERLI)}${ETH_SYMBOL}`,
+  [ARBITRUM_GOERLI]: `${capitalize(ARBITRUM_GOERLI)}${ETH_SYMBOL}`,
+  [POLYGON_MUMBAI]: `${capitalize(POLYGON_MUMBAI)}${MATIC_SYMBOL}`,
 };
 
 /**
@@ -126,10 +146,35 @@ export const NETWORK_TYPE_TO_ID_MAP = {
     chainId: KOVAN_CHAIN_ID,
     ticker: TEST_NETWORK_TICKER_MAP[KOVAN],
   },
+  [ARBITRUM]: {
+    networkId: ARBITRUM_NETWORK_ID,
+    chainId: ARBITRUM_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP[ARBITRUM],
+  },
+  [POLYGON]: {
+    networkId: POLYGON_NETWORK_ID,
+    chainId: POLYGON_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP[POLYGON],
+  },
+  [OPTIMISM]: {
+    networkId: OPTIMISM_NETWORK_ID,
+    chainId: OPTIMISM_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP[OPTIMISM],
+  },
   [GOERLI]: {
     networkId: GOERLI_NETWORK_ID,
     chainId: GOERLI_CHAIN_ID,
     ticker: TEST_NETWORK_TICKER_MAP[GOERLI],
+  },
+  [ARBITRUM_GOERLI]: {
+    networkId: ARBITRUM_GOERLI_NETWORK_ID,
+    chainId: ARBITRUM_GOERLI_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP[ARBITRUM_GOERLI],
+  },
+  [POLYGON_MUMBAI]: {
+    networkId: POLYGON_MUMBAI_NETWORK_ID,
+    chainId: POLYGON_MUMBAI_CHAIN_ID,
+    ticker: TEST_NETWORK_TICKER_MAP[POLYGON_MUMBAI],
   },
   [MAINNET]: {
     networkId: MAINNET_NETWORK_ID,
@@ -145,21 +190,36 @@ export const NETWORK_TO_NAME_MAP = {
   [ROPSTEN]: ROPSTEN_DISPLAY_NAME,
   [RINKEBY]: RINKEBY_DISPLAY_NAME,
   [KOVAN]: KOVAN_DISPLAY_NAME,
+  [ARBITRUM]: ARBITRUM_DISPLAY_NAME,
+  [POLYGON]: POLYGON_DISPLAY_NAME,
+  [OPTIMISM]: OPTIMISM_DISPLAY_NAME,
   [MAINNET]: MAINNET_DISPLAY_NAME,
   [GOERLI]: GOERLI_DISPLAY_NAME,
+  [ARBITRUM_GOERLI]: ARBITRUM_GOERLI_DISPLAY_NAME,
+  [POLYGON_MUMBAI]: POLYGON_MUMBAI_DISPLAY_NAME,
   [LOCALHOST]: LOCALHOST_DISPLAY_NAME,
 
   [ROPSTEN_NETWORK_ID]: ROPSTEN_DISPLAY_NAME,
   [RINKEBY_NETWORK_ID]: RINKEBY_DISPLAY_NAME,
   [KOVAN_NETWORK_ID]: KOVAN_DISPLAY_NAME,
+  [ARBITRUM_NETWORK_ID]: ARBITRUM_DISPLAY_NAME,
+  [POLYGON_NETWORK_ID]: POLYGON_DISPLAY_NAME,
+  [OPTIMISM_NETWORK_ID]: OPTIMISM_DISPLAY_NAME,
   [GOERLI_NETWORK_ID]: GOERLI_DISPLAY_NAME,
+  [ARBITRUM_GOERLI_NETWORK_ID]: ARBITRUM_GOERLI_DISPLAY_NAME,
+  [POLYGON_MUMBAI_NETWORK_ID]: POLYGON_MUMBAI_DISPLAY_NAME,
   [MAINNET_NETWORK_ID]: MAINNET_DISPLAY_NAME,
   [LOCALHOST_NETWORK_ID]: LOCALHOST_DISPLAY_NAME,
 
   [ROPSTEN_CHAIN_ID]: ROPSTEN_DISPLAY_NAME,
   [RINKEBY_CHAIN_ID]: RINKEBY_DISPLAY_NAME,
   [KOVAN_CHAIN_ID]: KOVAN_DISPLAY_NAME,
+  [ARBITRUM_CHAIN_ID]: ARBITRUM_DISPLAY_NAME,
+  [POLYGON_CHAIN_ID]: POLYGON_DISPLAY_NAME,
+  [OPTIMISM_CHAIN_ID]: OPTIMISM_DISPLAY_NAME,
   [GOERLI_CHAIN_ID]: GOERLI_DISPLAY_NAME,
+  [ARBITRUM_GOERLI_CHAIN_ID]: ARBITRUM_GOERLI_DISPLAY_NAME,
+  [POLYGON_MUMBAI_CHAIN_ID]: POLYGON_MUMBAI_DISPLAY_NAME,
   [MAINNET_CHAIN_ID]: MAINNET_DISPLAY_NAME,
   [LOCALHOST_CHAIN_ID]: LOCALHOST_DISPLAY_NAME,
 };
@@ -175,7 +235,12 @@ export const CHAIN_ID_TO_RPC_URL_MAP = {
   [ROPSTEN_CHAIN_ID]: ROPSTEN_RPC_URL,
   [RINKEBY_CHAIN_ID]: RINKEBY_RPC_URL,
   [KOVAN_CHAIN_ID]: KOVAN_RPC_URL,
+  [ARBITRUM_CHAIN_ID]: ARBITRUM_RPC_URL,
+  [POLYGON_CHAIN_ID]: POLYGON_RPC_URL,
+  [OPTIMISM_CHAIN_ID]: OPTIMISM_RPC_URL,
   [GOERLI_CHAIN_ID]: GOERLI_RPC_URL,
+  [ARBITRUM_GOERLI_CHAIN_ID]: ARBITRUM_GOERLI_RPC_URL,
+  [POLYGON_MUMBAI_CHAIN_ID]: POLYGON_MUMBAI_RPC_URL,
   [MAINNET_CHAIN_ID]: MAINNET_RPC_URL,
   [LOCALHOST_CHAIN_ID]: LOCALHOST_RPC_URL,
 };
@@ -191,12 +256,19 @@ export const CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP = {
   [HARMONY_CHAIN_ID]: HARMONY_ONE_TOKEN_IMAGE_URL,
   [OPTIMISM_CHAIN_ID]: OPTIMISM_TOKEN_IMAGE_URL,
   [PALM_CHAIN_ID]: PALM_TOKEN_IMAGE_URL,
+  [ARBITRUM_GOERLI_CHAIN_ID]: ETH_TOKEN_IMAGE_URL,
+  [POLYGON_MUMBAI_CHAIN_ID]: MATIC_TOKEN_IMAGE_URL,
 };
 
 export const NETWORK_ID_TO_ETHERS_NETWORK_NAME_MAP = {
   [ROPSTEN_NETWORK_ID]: ROPSTEN,
   [RINKEBY_NETWORK_ID]: RINKEBY,
+  [ARBITRUM_NETWORK_ID]: ARBITRUM,
+  [POLYGON_NETWORK_ID]: POLYGON,
+  [OPTIMISM_NETWORK_ID]: OPTIMISM,
   [GOERLI_NETWORK_ID]: GOERLI,
+  [ARBITRUM_GOERLI_NETWORK_ID]: ARBITRUM_GOERLI,
+  [POLYGON_MUMBAI_NETWORK_ID]: POLYGON_MUMBAI,
   [MAINNET_NETWORK_ID]: HOMESTEAD,
 };
 
@@ -282,12 +354,24 @@ export const BUYABLE_CHAINS_MAP = {
     nativeCurrency: TEST_NETWORK_TICKER_MAP[RINKEBY],
     network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
   },
+  [ARBITRUM_CHAIN_ID]: {
+    nativeCurrency: TEST_NETWORK_TICKER_MAP[ARBITRUM],
+    network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
+  },
   [GOERLI_CHAIN_ID]: {
     nativeCurrency: TEST_NETWORK_TICKER_MAP[GOERLI],
     network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
   },
   [KOVAN_CHAIN_ID]: {
     nativeCurrency: TEST_NETWORK_TICKER_MAP[KOVAN],
+    network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
+  },
+  [ARBITRUM_GOERLI_CHAIN_ID]: {
+    nativeCurrency: TEST_NETWORK_TICKER_MAP[ARBITRUM_GOERLI],
+    network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
+  },
+  [OPTIMISM_CHAIN_ID]: {
+    nativeCurrency: TEST_NETWORK_TICKER_MAP[OPTIMISM],
     network: BUYABLE_CHAIN_ETHEREUM_NETWORK_NAME,
   },
   [BSC_CHAIN_ID]: {
@@ -300,6 +384,19 @@ export const BUYABLE_CHAINS_MAP = {
     },
   },
   [POLYGON_CHAIN_ID]: {
+    nativeCurrency: MATIC_SYMBOL,
+    network: 'polygon',
+    transakCurrencies: [MATIC_SYMBOL, 'USDT', 'USDC', 'DAI'],
+    moonPay: {
+      defaultCurrencyCode: 'matic_polygon',
+      showOnlyCurrencies: 'matic_polygon,usdc_polygon',
+    },
+    wyre: {
+      srn: 'matic',
+      currencyCode: MATIC_SYMBOL,
+    },
+  },
+  [POLYGON_MUMBAI_CHAIN_ID]: {
     nativeCurrency: MATIC_SYMBOL,
     network: 'polygon',
     transakCurrencies: [MATIC_SYMBOL, 'USDT', 'USDC', 'DAI'],

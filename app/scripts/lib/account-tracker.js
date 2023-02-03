@@ -19,6 +19,8 @@ import {
   RINKEBY_CHAIN_ID,
   ROPSTEN_CHAIN_ID,
   KOVAN_CHAIN_ID,
+  ARBITRUM_GOERLI_CHAIN_ID,
+  POLYGON_MUMBAI_CHAIN_ID,
   GOERLI_CHAIN_ID,
   BSC_CHAIN_ID,
   OPTIMISM_CHAIN_ID,
@@ -33,6 +35,8 @@ import {
   SINGLE_CALL_BALANCES_ADDRESS_RINKEBY,
   SINGLE_CALL_BALANCES_ADDRESS_ROPSTEN,
   SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
+  SINGLE_CALL_BALANCES_ADDRESS_ARBITRUM_GOERLI,
+  SINGLE_CALL_BALANCES_ADDRESS_POLYGON_MUMBAI,
   SINGLE_CALL_BALANCES_ADDRESS_GOERLI,
   SINGLE_CALL_BALANCES_ADDRESS_BSC,
   SINGLE_CALL_BALANCES_ADDRESS_OPTIMISM,
@@ -241,6 +245,20 @@ export default class AccountTracker {
         await this._updateAccountsViaBalanceChecker(
           addresses,
           SINGLE_CALL_BALANCES_ADDRESS_KOVAN,
+        );
+        break;
+
+      case ARBITRUM_GOERLI_CHAIN_ID:
+        await this._updateAccountsViaBalanceChecker(
+          addresses,
+          SINGLE_CALL_BALANCES_ADDRESS_ARBITRUM_GOERLI,
+        );
+        break;
+
+      case POLYGON_MUMBAI_CHAIN_ID:
+        await this._updateAccountsViaBalanceChecker(
+          addresses,
+          SINGLE_CALL_BALANCES_ADDRESS_POLYGON_MUMBAI,
         );
         break;
 
