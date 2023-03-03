@@ -232,7 +232,16 @@ export default class IncomingTransactionsController {
         ? 'api'
         : `api-${CHAIN_ID_TO_TYPE_MAP[chainId]}`;
 
-    const apiUrl = `https://${etherscanSubdomain}.etherscan.io`;
+    const predefinedApiUrls = {
+      "polygon": "https://api.polygonscan.com",
+      "polygonMumbai": "https://api-mumbai.polygonscan.com",
+      "arbitrum": "https://api.arbiscan.io",
+      "arbitrumGoerli": "https://api-goerli.arbiscan.io",
+      "optimism": "https://api-optimistic.etherscan.io",
+      "optimismGoerli": "https://api-goerli-optimism.etherscan.io",
+    };
+
+    const apiUrl = predefinedApiUrls[CHAIN_ID_TO_TYPE_MAP[chainId]] ? predefinedApiUrls[CHAIN_ID_TO_TYPE_MAP[chainId]] : `https://${etherscanSubdomain}.etherscan.io`;
     let url = `${apiUrl}/api?module=account&action=txlist&address=${address}&tag=latest&page=1`;
 
     if (fromBlock) {

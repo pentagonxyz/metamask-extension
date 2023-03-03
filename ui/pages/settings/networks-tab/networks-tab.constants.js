@@ -80,7 +80,7 @@ const defaultNetworksData = [
     rpcUrl: getRpcUrl({ network: POLYGON_MUMBAI, excludeProjectId: true }),
     chainId: POLYGON_MUMBAI_CHAIN_ID,
     ticker: TEST_NETWORK_TICKER_MAP[POLYGON_MUMBAI],
-    blockExplorerUrl: 'https://mumbai.polygonscan.io',
+    blockExplorerUrl: 'https://mumbai.polygonscan.com',
   },
 ];
 
