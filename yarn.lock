@@ -22084,7 +22084,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont-reaudit":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#cfab3c3bc8169720d12687b27e2c662c1bd2f602"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#8fbad8824a57907c44ade1ee4c67adcb0abe8fe7"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
