@@ -863,7 +863,7 @@ export default function MetaFoxHorizontalLogo({ className }) {
       return (
         <svg
           height={LOGO_HEIGHT}
-          viewBox="0 0 313 96"
+          viewBox="10 22 278 52"
           width={LOGO_WIDTH}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
