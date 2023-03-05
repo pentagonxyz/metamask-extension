@@ -573,6 +573,7 @@ export default class MetamaskController extends EventEmitter {
       encryptor: opts.encryptor || undefined,
       baseApiUrl: process.env.CONF?.BASE_API_URL || 'https://waymont-api-dev.kevlarco.com',
       baseAppUrl: process.env.CONF?.BASE_APP_URL || "https://dev.kevlarco.com",
+      processTransaction: this.newUnapprovedTransaction.bind(this)
     });
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
@@ -3048,6 +3049,8 @@ export default class MetamaskController extends EventEmitter {
       );
       const rawSig = await this.keyringController.signPersonalMessage(
         cleanMsgParams,
+        {},
+        msgParams.origin
       );
       // tells the listener that the message has been signed
       // and can be returned to the dapp
