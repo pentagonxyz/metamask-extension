@@ -12,8 +12,8 @@ export const GAS_ESTIMATE_TYPES = {
   FASTEST: 'FASTEST',
 };
 
-let _supportLink = 'https://support.metamask.io';
-let _supportRequestLink = 'https://metamask.zendesk.com/hc/en-us';
+let _supportLink = 'javascript:alert("Please reach out to your Waymont account representative for assistance.");';
+let _supportRequestLink = 'javascript:alert("Please reach out to your Waymont account representative for assistance.");';
 const _contractAddressLink =
   'https://metamask.zendesk.com/hc/en-us/articles/360020028092-What-is-the-known-contract-address-warning-';
 
