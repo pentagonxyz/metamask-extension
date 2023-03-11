@@ -66,7 +66,7 @@
     "message": "秘密のリカバリーフレーズでウォレットにアクセス"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMaskはユーザーのパスワードを復元できません。代わりに秘密のリカバリーフレーズを使用して所有者を確認し、ウォレットを復元して新しいパスワードを設定します。まずはじめに、ウォレットの作成時に提供された秘密のリカバリーフレーズを入力してください。$1",
+    "message": "Waymontはユーザーのパスワードを復元できません。代わりに秘密のリカバリーフレーズを使用して所有者を確認し、ウォレットを復元して新しいパスワードを設定します。まずはじめに、ウォレットの作成時に提供された秘密のリカバリーフレーズを入力してください。$1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -116,7 +116,7 @@
     "message": "ニックネームを追加"
   },
   "addAcquiredTokens": {
-    "message": "MetaMaskを使用して取得したトークンを追加します"
+    "message": "Waymontを使用して取得したトークンを追加します"
   },
   "addAlias": {
     "message": "別名を追加"
@@ -132,10 +132,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "これにより、このネットワークはMetaMask内で使用できるようになります。"
+    "message": "これにより、このネットワークはWaymont内で使用できるようになります。"
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMaskはカスタム ネットワークを検証しません。"
+    "message": "Waymontはカスタム ネットワークを検証しません。"
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "$1の詳細。",
@@ -256,15 +256,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Waymont",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Waymont Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Waymont Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -324,7 +324,7 @@
     "message": "オートロックタイマー (分)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "MetaMaskがロックされるまでのアイドル時間を分単位で設定します。"
+    "message": "Waymontがロックされるまでのアイドル時間を分単位で設定します。"
   },
   "average": {
     "message": "平均"
@@ -336,7 +336,7 @@
     "message": "一覧に戻る"
   },
   "backupApprovalInfo": {
-    "message": "このシークレット コードは、デバイスをなくしたとき、パスワードを忘れたとき、MetaMaskの再インストールが必要なとき、または別のデバイスでウォレットにアクセスするときに必要です。"
+    "message": "このシークレット コードは、デバイスをなくしたとき、パスワードを忘れたとき、Waymontの再インストールが必要なとき、または別のデバイスでウォレットにアクセスするときに必要です。"
   },
   "backupApprovalNotice": {
     "message": "シークレットリカバリコードをバックアップして、ウォレットと資金の安全を確保してください。"
@@ -357,10 +357,10 @@
     "message": "基本"
   },
   "betaMetamaskDescription": {
-    "message": "MetaMaskは何百万人もに信頼されている安全なウォレットで、誰もがWeb3の世界にアクセスできるようにしています。"
+    "message": "Waymontは何百万人もに信頼されている安全なウォレットで、誰もがWeb3の世界にアクセスできるようにしています。"
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "このバージョンを使うと、リリース前に今後の機能をテストできます。皆様からのご意見は、可能な限り最高のバージョンのMetaMaskを開発するうえで参考にさせていただきます。MetaMaskベータの使用には、標準の$1および弊社の$2が適用されます。ベータ版のため、バグのリスクが高くなる可能性があります。 続行することにより、これらのリスクと、弊社の利用規約およびベータ規約に記載されているリスクを承認し、これらに同意したものとみなされます。",
+    "message": "このバージョンを使うと、リリース前に今後の機能をテストできます。皆様からのご意見は、可能な限り最高のバージョンのMetaMaskを開発するうえで参考にさせていただきます。Waymontベータの使用には、標準の$1および弊社の$2が適用されます。ベータ版のため、バグのリスクが高くなる可能性があります。 続行することにより、これらのリスクと、弊社の利用規約およびベータ規約に記載されているリスクを承認し、これらに同意したものとみなされます。",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -370,10 +370,10 @@
     "message": "利用規約"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMaskベータバージョン"
+    "message": "Waymontベータバージョン"
   },
   "betaWelcome": {
-    "message": "MetaMaskベータへようこそ"
+    "message": "Waymontベータへようこそ"
   },
   "blockExplorerAccountAction": {
     "message": "アカウント",
@@ -407,7 +407,7 @@
     "message": "連絡先リストを作成する"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMaskは、世界中でデザイン・開発されています。"
+    "message": "Waymontは、世界中でデザイン・開発されています。"
   },
   "busy": {
     "message": "ビジー状態"
@@ -432,21 +432,21 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithMoonPayDescription": {
-    "message": "MoonPay は 145 か国以上で、Visa、Mastercard、Apple / Google / Samsung Pay、銀行送金などの一般的な支払方法に対応しています。トークンは MetaMask アカウントに入金されます。"
+    "message": "MoonPay は 145 か国以上で、Visa、Mastercard、Apple / Google / Samsung Pay、銀行送金などの一般的な支払方法に対応しています。トークンは Waymont アカウントに入金されます。"
   },
   "buyCryptoWithTransak": {
     "message": "Transak で $1 を購入",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithTransakDescription": {
-    "message": "Transak は、100 か国以上でクレジット・デビットカード、Apple Pay、MobiKwik、銀行送金 (場所による) に対応しています。$1 は MetaMask アカウントに直接入金されます。",
+    "message": "Transak は、100 か国以上でクレジット・デビットカード、Apple Pay、MobiKwik、銀行送金 (場所による) に対応しています。$1 は Waymont アカウントに直接入金されます。",
     "description": "$1 represents the crypto symbol to be purchased"
   },
   "buyWithWyre": {
     "message": "Wyreで$1を購入"
   },
   "buyWithWyreDescription": {
-    "message": "簡単なオンボーディングプロセスで最高 $ 1000 購入可能。迅速かつインタラクティブな高限度額の購入検証。デビット・クレジットカード、Apple Pay、銀行送金に対応。100か国以上で利用可能。トークンは MetaMask アカウントに入金されます。"
+    "message": "簡単なオンボーディングプロセスで最高 $ 1000 購入可能。迅速かつインタラクティブな高限度額の購入検証。デビット・クレジットカード、Apple Pay、銀行送金に対応。100か国以上で利用可能。トークンは Waymont アカウントに入金されます。"
   },
   "bytes": {
     "message": "バイト"
@@ -501,7 +501,7 @@
     "description": "$1 is the chain id currently entered in the network form and $2 is the return value of nativeCurrency.symbol from chainlist.network"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "ハードウェアウォレットに接続するには、MetaMaskをGoogle Chromeで使用する必要があります。"
+    "message": "ハードウェアウォレットに接続するには、WaymontをGoogle Chromeで使用する必要があります。"
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "ここをクリックして、WebHIDでLedgerを接続します",
@@ -580,7 +580,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "MetaMaskを使用して接続"
+    "message": "Waymontを使用して接続"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "このサイトに接続されているアカウントを$1個持っています。",
@@ -590,7 +590,7 @@
     "message": "このサイトに接続されているアカウントを1個持っています。"
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMaskはこのサイトに接続されていません。web3サイトに接続するには、そのサイトの接続ボタンをクリックしてください。"
+    "message": "Waymontはこのサイトに接続されていません。web3サイトに接続するには、そのサイトの接続ボタンをクリックしてください。"
   },
   "connectedSites": {
     "message": "接続済みのサイト"
@@ -788,7 +788,7 @@
     "message": "データ"
   },
   "dataBackupFoundInfo": {
-    "message": "一部のアカウントデータはMetaMaskの前回のインストール時にバックアップされました。これには、設定、連絡先、およびトークンが含まれている可能性があります。このデータを今すぐ復元しますか?"
+    "message": "一部のアカウントデータはWaymontの前回のインストール時にバックアップされました。これには、設定、連絡先、およびトークンが含まれている可能性があります。このデータを今すぐ復元しますか?"
   },
   "dataHex": {
     "message": "16進法"
@@ -1091,7 +1091,7 @@
     "message": "フレーズは絶対に誰にも教えないでください。"
   },
   "endOfFlowMessage5": {
-    "message": "フィッシングにご注意ください! MetaMaskがシークレットリカバリーフレーズをいきなり要求することは絶対にありません。"
+    "message": "フィッシングにご注意ください! Waymontがシークレットリカバリーフレーズをいきなり要求することは絶対にありません。"
   },
   "endOfFlowMessage6": {
     "message": "シークレットリカバリーフレーズを再度バックアップする場合は、[設定] -> [セキュリティ] でそれを見つけることができます。"
@@ -1101,7 +1101,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMaskはシークレットリカバリーフレーズを復元できません。"
+    "message": "Waymontはシークレットリカバリーフレーズを復元できません。"
   },
   "endOfFlowMessage9": {
     "message": "詳細。"
@@ -1159,7 +1159,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMaskにエラーが発生しました",
+    "message": "Waymontにエラーが発生しました",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1253,11 +1253,11 @@
     "description": "This explains the risks of using MetaMask Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Flask API はすべて実験的なものです。これらは通知なしに変更または削除される可能性があり、安定した MetaMask に移行することなく永久に Flask に残る可能性もあります。自己責任でご使用ください。",
+    "message": "Flask API はすべて実験的なものです。これらは通知なしに変更または削除される可能性があり、安定した Waymont に移行することなく永久に Flask に残る可能性もあります。自己責任でご使用ください。",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Flask の使用中は、通常の MetaMask 拡張機能を無効にしてください。",
+    "message": "Flask の使用中は、通常の Waymont 拡張機能を無効にしてください。",
     "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
@@ -1442,7 +1442,7 @@
     "message": "ハードウェアウォレットを接続"
   },
   "hardwareWalletsMsg": {
-    "message": "MetaMaskに接続するハードウェアウォレットを選択してください。"
+    "message": "Waymontに接続するハードウェアウォレットを選択してください。"
   },
   "here": {
     "message": "こちら",
@@ -1503,7 +1503,7 @@
     "message": "アカウントのインポート中にエラーが発生しました。"
   },
   "importAccountMsg": {
-    "message": " インポートされたアカウントは、最初に作成したMetaMaskアカウントのシークレットリカバリーフレーズと関連付けられません。インポートされたアカウントの詳細を表示"
+    "message": " インポートされたアカウントは、最初に作成したWaymontアカウントのシークレットリカバリーフレーズと関連付けられません。インポートされたアカウントの詳細を表示"
   },
   "importAccountSeedPhrase": {
     "message": "シークレットリカバリーフレーズを使用してウォレットをインポート"
@@ -1553,7 +1553,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMaskがブロックチェーンのホストに接続できません。考えられる理由$1を確認してください。",
+    "message": "Waymontがブロックチェーンのホストに接続できません。考えられる理由$1を確認してください。",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1710,7 +1710,7 @@
     "message": "Ledger Liveアプリを開いてロックを解除してください"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "LedgerをMetaMaskに接続する方法をカスタマイズします。$1が推奨されますが、他のオプションも利用できます。詳細はこちらをご覧ください: $2",
+    "message": "LedgerをWaymontに接続する方法をカスタマイズします。$1が推奨されますが、他のオプションも利用できます。詳細はこちらをご覧ください: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1840,7 +1840,7 @@
     "message": "メッセージ"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "アカウントの接続をMetaMaskでさらに制御できるようになりました。"
+    "message": "アカウントの接続をWaymontでさらに制御できるようになりました。"
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "接続されているアカウントを管理するには、これをクリックします。"
@@ -1852,10 +1852,10 @@
     "message": "イーサリアムと分散型Webに接続しています。"
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swapsはメンテナンス中です。後でもう一度確認してください。"
+    "message": "Waymont Swapsはメンテナンス中です。後でもう一度確認してください。"
   },
   "metamaskVersion": {
-    "message": "MetaMaskのバージョン"
+    "message": "Waymontのバージョン"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "いつでも設定からオプトアウトできるようにします"
@@ -1868,7 +1868,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMaskが実行する内容"
+    "message": "Waymontが実行する内容"
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "キー、アドレス、トランザクション、残高、ハッシュなど、いかなる個人情報も収集されることはありません"
@@ -1895,16 +1895,16 @@
     "message": "匿名化されたクリック・ページビューイベントを送信します"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "MetaMaskの品質向上へのご協力のお願い"
+    "message": "Waymontの品質向上へのご協力のお願い"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMaskでは、ユーザーによる拡張機能の利用状況についてよりよく理解するため、基本的な使用状況データを収集させていただきたいと考えています。このデータは、当社の製品およびイーサリアムエコシステムの使いやすさとユーザーエクスペリエンスを継続的に改善するために使用されます。"
+    "message": "Waymontでは、ユーザーによる拡張機能の利用状況についてよりよく理解するため、基本的な使用状況データを収集させていただきたいと考えています。このデータは、当社の製品およびイーサリアムエコシステムの使いやすさとユーザーエクスペリエンスを継続的に改善するために使用されます。"
   },
   "metametricsOptInDescription2": {
     "message": "弊社の製品をより使いやすくするために、基本的な使用データを収集したいと考えています. これらの指標は..."
   },
   "metametricsTitle": {
-    "message": "6百万人以上のユーザーと共に、MetaMaskの改善にご協力ください"
+    "message": "6百万人以上のユーザーと共に、Waymontの改善にご協力ください"
   },
   "mismatchedChainLinkText": {
     "message": "ネットワークの詳細の確認",
@@ -1936,7 +1936,7 @@
     "message": "トークンが見当たりませんか？"
   },
   "mobileSyncWarning": {
-    "message": "「拡張機能と同期」機能は一時的に無効になっています。拡張ウォレットをMetaMaskモバイルで使用する場合は、モバイルアプリでウォレットの設定オプションに戻り、「シークレットリカバリーフレーズでインポート」オプションを選択します。拡張ウォレットのシークレットフレーズを使用して、ウォレットをモバイルにインポートします。"
+    "message": "「拡張機能と同期」機能は一時的に無効になっています。拡張ウォレットをWaymontモバイルで使用する場合は、モバイルアプリでウォレットの設定オプションに戻り、「シークレットリカバリーフレーズでインポート」オプションを選択します。拡張ウォレットのシークレットフレーズを使用して、ウォレットをモバイルにインポートします。"
   },
   "mustSelectOne": {
     "message": "トークンを1つ以上選択する必要があります。"
@@ -1948,7 +1948,7 @@
     "message": "名前"
   },
   "needCryptoInWallet": {
-    "message": "MetaMask で分散型アプリケーションとやり取りするには、ウォレットに $1 が必要です。",
+    "message": "Waymont で分散型アプリケーションとやり取りするには、ウォレットに $1 が必要です。",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "needHelp": {
@@ -1959,7 +1959,7 @@
     "message": "フィードバックを提供"
   },
   "needHelpLinkText": {
-    "message": "MetaMaskサポート"
+    "message": "Waymontサポート"
   },
   "needHelpSubmitTicket": {
     "message": "チケットを送信"
@@ -2056,7 +2056,7 @@
     "message": "新しいコントラクト"
   },
   "newNFTDetectedMessage": {
-    "message": "Opensea からの NFT の自動検出とウォレットへの表示をMetaMask に許可してください。"
+    "message": "Opensea からの NFT の自動検出とウォレットへの表示をWaymont に許可してください。"
   },
   "newNFTsDetected": {
     "message": "新機能! NFT検出"
@@ -2068,7 +2068,7 @@
     "message": "新しいパスワード (最低8文字)"
   },
   "newToMetaMask": {
-    "message": "MetaMaskを初めてご利用の場合"
+    "message": "Waymontを初めてご利用の場合"
   },
   "newTokensImportedMessage": {
     "message": "$1 をインポートしました。",
@@ -2207,7 +2207,7 @@
     "message": "人気のネットワークを追加"
   },
   "notifications1Description": {
-    "message": "MetaMask Mobileのユーザーが、モバイルウォレット内でトークンを交換できるようになりました。QRコードをスキャンしてモバイルアプリを取得し、スワップを開始します。",
+    "message": "Waymont Mobileのユーザーが、モバイルウォレット内でトークンを交換できるようになりました。QRコードをスキャンしてモバイルアプリを取得し、スワップを開始します。",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
@@ -2219,7 +2219,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "MetaMaskの最新のセキュリティベストプラクティスについて学び、MetaMaskの公式サポートから最新のセキュリティ情報を入手してください。",
+    "message": "MetaMaskの最新のセキュリティベストプラクティスについて学び、Waymontの公式サポートから最新のセキュリティ情報を入手してください。",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -2231,7 +2231,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "ウォレットのトークンのスワップに最高の価格をご利用ください。MetaMaskで、Binance Smart Chainの複数の分散型エクスチェンジアグリゲーターや専門のマーケットメーカーと接続できるようになりました。",
+    "message": "ウォレットのトークンのスワップに最高の価格をご利用ください。Waymontで、Binance Smart Chainの複数の分散型エクスチェンジアグリゲーターや専門のマーケットメーカーと接続できるようになりました。",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -2243,11 +2243,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Chromeバージョン91以降は、Ledgerのサポートを可能にしていたAPI (U2F) がハードウェアウォレットをサポートしなくなります。MetaMaskでは、ユーザーがLedger Liveのデスクトップアプリを介してLedgerデバイスに継続的に接続できる、新しいLedger Liveサポートを導入しました。",
+    "message": "Chromeバージョン91以降は、Ledgerのサポートを可能にしていたAPI (U2F) がハードウェアウォレットをサポートしなくなります。Waymontでは、ユーザーがLedger Liveのデスクトップアプリを介してLedgerデバイスに継続的に接続できる、新しいLedger Liveサポートを導入しました。",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "MetaMaskでLedgerアカウントを使用する際は、新しいタブが開き、Ledger Liveアプリを開くよう指示されます。アプリが開いたら、MetaMaskアカウントへのWebSocket接続を許可するよう指示されます。以上です。",
+    "message": "MetaMaskでLedgerアカウントを使用する際は、新しいタブが開き、Ledger Liveアプリを開くよう指示されます。アプリが開いたら、WaymontアカウントへのWebSocket接続を許可するよう指示されます。以上です。",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2259,7 +2259,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0には、Ledgerデバイスを使用時のEIP-1559トランザクションのサポートが新たに追加されました。",
+    "message": "Waymont v10.1.0には、Ledgerデバイスを使用時のEIP-1559トランザクションのサポートが新たに追加されました。",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -2275,7 +2275,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "MetaMask v10.4.0以降では、LedgerデバイスのMetaMaskへの接続にLedger Liveが不要になりました。",
+    "message": "MetaMask v10.4.0以降では、LedgerデバイスのWaymontへの接続にLedger Liveが不要になりました。",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2345,16 +2345,16 @@
     "message": "ブラウザの拡張機能アイコンをクリックします"
   },
   "onboardingPinExtensionDescription": {
-    "message": "MetaMaskをブラウザにピン留めすることで、アクセスしやすくなり、トランザクションの確認を簡単に表示できるようになります。"
+    "message": "Waymontをブラウザにピン留めすることで、アクセスしやすくなり、トランザクションの確認を簡単に表示できるようになります。"
   },
   "onboardingPinExtensionDescription2": {
-    "message": "拡張機能をクリックしてMetaMaskを開き、ワンクリックでウォレットにアクセスできます。"
+    "message": "拡張機能をクリックしてWaymontを開き、ワンクリックでウォレットにアクセスできます。"
   },
   "onboardingPinExtensionDescription3": {
     "message": "ブラウザの拡張機能アイコンをクリックすると、すぐにアクセスできます"
   },
   "onboardingPinExtensionLabel": {
-    "message": "MetaMaskをピン留めする"
+    "message": "Waymontをピン留めする"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2363,7 +2363,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "MetaMaskのインストールが完了しました!"
+    "message": "Waymontのインストールが完了しました!"
   },
   "onboardingReturnNotice": {
     "message": "「$1」はこのタブを閉じます。$2に戻ってください。",
@@ -2384,7 +2384,7 @@
     "message": "信頼するサイトにのみ接続してください。"
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "WebHIDでLedgerを接続するには、MetaMaskを全画面モードで開いてください。",
+    "message": "WebHIDでLedgerを接続するには、Waymontを全画面モードで開いてください。",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
@@ -2412,7 +2412,7 @@
     "message": "MetaMetricsに参加"
   },
   "participateInMetaMetricsDescription": {
-    "message": "MetaMetricsに参加して、MetaMaskの改善にご協力ください"
+    "message": "MetaMetricsに参加して、Waymontの改善にご協力ください"
   },
   "password": {
     "message": "パスワード"
@@ -2421,7 +2421,7 @@
     "message": "パスワードの長さが足りません"
   },
   "passwordSetupDetails": {
-    "message": "このパスワードは、このデバイスでのみMetaMaskウォレットのロックを解除します。MetaMaskはこのパスワードを復元できません。"
+    "message": "このパスワードは、このデバイスでのみMetaMaskウォレットのロックを解除します。Waymontはこのパスワードを復元できません。"
   },
   "passwordStrength": {
     "message": "パスワードの強度: $1",
@@ -2431,7 +2431,7 @@
     "message": "強力なパスワードは、デバイスが盗まれたり侵入されたりした場合に、ウォレットのセキュリティを高めます。"
   },
   "passwordTermsWarning": {
-    "message": "私はMetaMaskがこのパスワードを復元できないことを理解しています。$1"
+    "message": "私はWaymontがこのパスワードを復元できないことを理解しています。$1"
   },
   "passwordsDontMatch": {
     "message": "パスワードが一致しません"
@@ -2468,7 +2468,7 @@
     "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_customConfirmation": {
-    "message": "MetaMask に確認を表示します。",
+    "message": "Waymont に確認を表示します。",
     "description": "The description for the `snap_confirm` permission"
   },
   "permission_ethereumAccounts": {
@@ -2601,7 +2601,7 @@
     "message": "シークレットリカバリーフレーズは誰とも決して共有しないでください"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "MetaMaskチームが、ユーザーのシークレットリカバリーフレーズを確認することは絶対にありません"
+    "message": "Waymontチームが、ユーザーのシークレットリカバリーフレーズを確認することは絶対にありません"
   },
   "recoveryPhraseReminderSubText": {
     "message": "シークレットリカバリーフレーズは、ご利用のすべてのアカウントを制御します。"
@@ -2677,7 +2677,7 @@
     "message": "ウォレットのリセット"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask はパスワードのコピーを保管しません。アカウントのロックを解除できない場合は、ウォレットをリセットする必要があります。これは、ウォレットのセットアップ時に使用した秘密のリカバリーフレーズを入力することで行えます。"
+    "message": "Waymont はパスワードのコピーを保管しません。アカウントのロックを解除できない場合は、ウォレットをリセットする必要があります。これは、ウォレットのセットアップ時に使用した秘密のリカバリーフレーズを入力することで行えます。"
   },
   "resetWalletUsingSRP": {
     "message": "この操作により、このデバイスから現在のウォレットと秘密のリカバリーフレーズ、および作成されたアカウントのリストが削除されます。秘密のリカバリーフレーズでリセットすると、リセットに使用された秘密のリカバリーフレーズに基づくアカウントのリストが表示されます。この新しいリストには、残高のあるアカウントが自動的に含まれます。また、以前作成された$1をすることもできます。インポートしたカスタムアカウントは$2である必要があり、アカウントに追加されたカスタムトークンも$3である必要があります。"
@@ -2686,7 +2686,7 @@
     "message": "続行する前に、正しい秘密のリカバリーフレーズを使用していることを確認してください。これは元に戻せません。"
   },
   "restartMetamask": {
-    "message": "MetaMask を再起動"
+    "message": "Waymont を再起動"
   },
   "restore": {
     "message": "復元"
@@ -2815,7 +2815,7 @@
     "message": "誰かにリカバリーフレーズを尋ねられたら、騙そうとしている可能性が高いです。"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "シークレットリカバリ フレーズはMetaMaskを含め、決して誰とも共有しないでください!"
+    "message": "シークレットリカバリ フレーズはWaymontを含め、決して誰とも共有しないでください!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "シークレットリカバリーフレーズとは何ですか?"
@@ -2854,7 +2854,7 @@
     "message": "アカウントを選択してください"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "このアカウントはすでにMetaMaskに接続されています"
+    "message": "このアカウントはすでにWaymontに接続されています"
   },
   "selectEachPhrase": {
     "message": "各フレーズを選択して、正しいことを確認してください。"
@@ -2908,7 +2908,7 @@
     "message": "高度なプライバシー設定を設定"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMaskはこれらの信頼できるサードパーティーサービスを使用して、製品の使いやすさと安全性を向上させています。"
+    "message": "Waymontはこれらの信頼できるサードパーティーサービスを使用して、製品の使いやすさと安全性を向上させています。"
   },
   "setApprovalForAll": {
     "message": "すべてを承認に設定"
@@ -3130,7 +3130,7 @@
     "message": "ステータスログの取得中にエラーが発生しました。"
   },
   "stateLogFileName": {
-    "message": "MetaMaskステータスログ"
+    "message": "Waymontステータスログ"
   },
   "stateLogs": {
     "message": "ステータスログ"
@@ -3151,7 +3151,7 @@
     "message": "Lattice1の接続準備ができていることを確認してください"
   },
   "step1LatticeWalletMsg": {
-    "message": "セットアップが完了しオンラインになると、MetaMaskをLattice1デバイスに接続できます。デバイスのロックを解除し、デバイスIDを準備してください。ハードウェアウォレットの使用に関する詳細は、$1",
+    "message": "セットアップが完了しオンラインになると、WaymontをLattice1デバイスに接続できます。デバイスのロックを解除し、デバイスIDを準備してください。ハードウェアウォレットの使用に関する詳細は、$1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3209,7 +3209,7 @@
     "message": "もう一度スワップをお試しください。次回は同様のリスクを避けられるようサポートします。"
   },
   "stxDescription": {
-    "message": "MetaMask Swaps がはるかに賢くなりました！スマートトランザクションを有効にすると、MetaMask がプログラムに従ってスワップを最適化できるようになるため、以下のようなメリットがあります。"
+    "message": "MetaMask Swaps がはるかに賢くなりました！スマートトランザクションを有効にすると、Waymont がプログラムに従ってスワップを最適化できるようになるため、以下のようなメリットがあります。"
   },
   "stxErrorNotEnoughFunds": {
     "message": "スマートトランザクションに十分な資金がありません。"
@@ -3347,7 +3347,7 @@
     "message": "限度額を編集"
   },
   "swapEnableDescription": {
-    "message": "これは必須であり、MetaMaskに$1をスワップする許可を付与します。",
+    "message": "これは必須であり、Waymontに$1をスワップする許可を付与します。",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3397,14 +3397,14 @@
     "message": "前の画面のガス料金は、この2つのトランザクションに分けられています。"
   },
   "swapGasFeesSummary": {
-    "message": "ガス代は、$1ネットワークでトランザクションを処理するクリプトマイナーに支払われます。MetaMaskはガス代から利益を得ません。",
+    "message": "ガス代は、$1ネットワークでトランザクションを処理するクリプトマイナーに支払われます。Waymontはガス代から利益を得ません。",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "スリッページが非常に大きいです。"
   },
   "swapIncludesMMFee": {
-    "message": "$1%のMetaMask手数料が含まれています。",
+    "message": "$1%のWaymont手数料が含まれています。",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3414,7 +3414,7 @@
     "message": "最大スリッページ"
   },
   "swapMetaMaskFee": {
-    "message": "MetaMask手数料"
+    "message": "Waymont手数料"
   },
   "swapMetaMaskFeeDescription": {
     "message": "弊社は毎回最上位の流動性ソースから最良の価格を見つけます。$1%の手数料が自動的にこの見積もりに含まれます。",
@@ -3595,7 +3595,7 @@
     "message": "アクティビティに表示"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "これによりMetaMask内で選択されたネットワークが、以前に追加されたものに切り替わります。"
+    "message": "これによりWaymont内で選択されたネットワークが、以前に追加されたものに切り替わります。"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "このサイトによるネットワークの切り替えを許可しますか?"
@@ -3635,16 +3635,16 @@
     "message": "このコードをスキャンするとき、画面を誰にも見られていないことを確認してください"
   },
   "syncWithMobileComplete": {
-    "message": "データの同期に成功しました。MetaMaskモバイルアプリをご活用ください!"
+    "message": "データの同期に成功しました。Waymontモバイルアプリをご活用ください!"
   },
   "syncWithMobileDesc": {
-    "message": "アカウントと情報を、モバイルデバイスと同期させることができます。MetaMaskモバイルアプリを開き、「設定」に進み、「ブラウザ拡張機能から同期」をタップします。"
+    "message": "アカウントと情報を、モバイルデバイスと同期させることができます。Waymontモバイルアプリを開き、「設定」に進み、「ブラウザ拡張機能から同期」をタップします。"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "MetaMaskモバイルアプリを初めて開く場合は、スマートフォンを以下のステップに従って操作してください。"
+    "message": "Waymontモバイルアプリを初めて開く場合は、スマートフォンを以下のステップに従って操作してください。"
   },
   "syncWithMobileScanThisCode": {
-    "message": "MetaMaskモバイルアプリでこのコードをスキャンします"
+    "message": "Waymontモバイルアプリでこのコードをスキャンします"
   },
   "syncWithMobileTitle": {
     "message": "モバイルと同期"
@@ -3677,7 +3677,7 @@
     "message": "テーマ"
   },
   "themeDescription": {
-    "message": "ご希望の MetaMask テーマを選択してください。"
+    "message": "ご希望の Waymont テーマを選択してください。"
   },
   "thisWillCreate": {
     "message": "これにより、新しいウォレットとシークレットリカバリーフレーズが作成されます"
@@ -3776,7 +3776,7 @@
     "message": "サイトが提案されました"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "最新のブロックに基づくMetaMaskの推奨ガス代を使用するように編集します。"
+    "message": "最新のブロックに基づくWaymontの推奨ガス代を使用するように編集します。"
   },
   "transactionDetailGasHeading": {
     "message": "ガス代見積もり"
@@ -3791,7 +3791,7 @@
     "message": "ガス代はネットワークにより設定され、ネットワークトラフィックとトランザクションの複雑さに基づき変動します。"
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "ガス代は、$1ネットワークでトランザクションを処理するクリプトマイナーにに支払われます。MetaMaskはガス代から利益を得ません。"
+    "message": "ガス代は、$1ネットワークでトランザクションを処理するクリプトマイナーにに支払われます。Waymontはガス代から利益を得ません。"
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "金額 + ガス代"
@@ -3861,7 +3861,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "MetaMask がうまく起動しませんでした。このエラーは断続的に発生する可能性があるため、拡張機能を再起動してみてください。"
+    "message": "Waymont がうまく起動しませんでした。このエラーは断続的に発生する可能性があるため、拡張機能を再起動してみてください。"
   },
   "troubleTokenBalances": {
     "message": "トークンバランスのロードに問題があります。トークンバランスを表示できます",
@@ -3883,7 +3883,7 @@
     "message": "現時点ではこのコントラクトでトランザクションインサイトはサポートされていません。"
   },
   "typePassword": {
-    "message": "MetaMaskパスワードを入力してください"
+    "message": "Waymontパスワードを入力してください"
   },
   "typeYourSRP": {
     "message": "秘密のリカバリーフレーズを入力してください"
@@ -4024,10 +4024,10 @@
     "message": "ウォレットが正常に保護されました。シークレットリカバリーフレーズを安全かつ機密に保管してください。これはユーザーの責任です!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMaskはシークレットリカバリーフレーズを復元できません。"
+    "message": "Waymontはシークレットリカバリーフレーズを復元できません。"
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMaskがユーザーのシークレットリカバリーフレーズを確認することは絶対にありません。"
+    "message": "Waymontがユーザーのシークレットリカバリーフレーズを確認することは絶対にありません。"
   },
   "walletCreationSuccessReminder3": {
     "message": "誰に対しても$1。資金が盗まれる恐れがあります",
@@ -4058,7 +4058,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "MetaMaskにようこそ"
+    "message": "Waymontにようこそ"
   },
   "welcomeBack": {
     "message": "ようこそ!"
@@ -4070,7 +4070,7 @@
     "message": "分散型アプリを閲覧"
   },
   "welcomeLoginDescription": {
-    "message": "MetaMaskを使用して分散型アプリにログイン。サインアップは不要です。"
+    "message": "Waymontを使用して分散型アプリにログイン。サインアップは不要です。"
   },
   "welcomeLoginTitle": {
     "message": "ウォレットにようこそ"
@@ -4079,7 +4079,7 @@
     "message": "始めましょう"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "MetaMaskは何百万人もに信頼されている安全なウォレットで、すべての人々によるWeb3の世界へのアクセスを可能にしています。"
+    "message": "Waymontは何百万人もに信頼されている安全なウォレットで、すべての人々によるWeb3の世界へのアクセスを可能にしています。"
   },
   "whatsNew": {
     "message": "新機能",

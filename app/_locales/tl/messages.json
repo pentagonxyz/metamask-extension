@@ -66,7 +66,7 @@
     "message": "I-access ang iyong wallet gamit ang iyong Secret Recovery Phrase"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "Hindi mabawi ng MetaMask ang iyong password. Gagamitin namin ang iyong Secret Recovery Phrase upang patunayan ang iyong pagmamay-ari, i-restore ang iyong wallet at mag-set up ng bagong password. Una, ilagay ang Secret Recovery Phrase na ibinigay sa iyo noong ginawa mo ang iyong wallet. $1",
+    "message": "Hindi mabawi ng Waymont ang iyong password. Gagamitin namin ang iyong Secret Recovery Phrase upang patunayan ang iyong pagmamay-ari, i-restore ang iyong wallet at mag-set up ng bagong password. Una, ilagay ang Secret Recovery Phrase na ibinigay sa iyo noong ginawa mo ang iyong wallet. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -116,7 +116,7 @@
     "message": "Magdagdag ng palayaw"
   },
   "addAcquiredTokens": {
-    "message": "Idagdag ang mga token na nakuha mo gamit ang MetaMask"
+    "message": "Idagdag ang mga token na nakuha mo gamit ang Waymont"
   },
   "addAlias": {
     "message": "Magdagdag ng alias"
@@ -132,10 +132,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng MetaMask."
+    "message": "Magpapahintulot ito sa network na ito na gamitin sa loob ng Waymont."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "Ang MetaMask ay hindi nag-ve-verify ng mga custom na network."
+    "message": "Ang Waymont ay hindi nag-ve-verify ng mga custom na network."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Alamin ang tungkol sa $1.",
@@ -256,15 +256,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Waymont",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Waymont Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Waymont Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -324,7 +324,7 @@
     "message": "Timer sa Awtomatikong Pag-lock (minuto)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang MetaMask."
+    "message": "Itakda ang oras ng pag-idle sa ilang minuto bago ma-lock ang Waymont."
   },
   "average": {
     "message": "Average"
@@ -336,7 +336,7 @@
     "message": "Bumalik sa Lahat"
   },
   "backupApprovalInfo": {
-    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang MetaMask, o gusto mong i-access ang iyong wallet sa ibang device."
+    "message": "Ang lihim na code na ito ay kinakailangan para ma-recover ang iyong wallet sakaling maiwala mo ang iyong device, makalimutan ang iyong password, kailanganin mong i-install ulit ang Waymont, o gusto mong i-access ang iyong wallet sa ibang device."
   },
   "backupApprovalNotice": {
     "message": "I-back up ang iyong Lihim na Code sa Pag-recover para mapanatiling secure ang iyong wallet at mga pondo."
@@ -360,7 +360,7 @@
     "message": "Ang Metamask na pinagkakatiwalaan ng milyun-milyon ay isang ligtas na wallet na ginagawang accessible ang mundo ng web3 para sa lahat."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Gamitin ang bersyong ito para subukan ang mga paparating na feature bago ilabas ang mga ito. Ang iyong paggamit at feedback ay nakakatulong sa amin na bumuo ng posibleng pinakamahusay na bersyon ng MetaMask. Ang paggamit mo ng MetaMask Beta ay napapailalim sa aming karaniwang $1 gayundin sa aming $2. Bilang Beta, maaaring tumaas ang panganib ng mga bug. Sa pagpapatuloy, tinatanggap at kinikilala mo ang mga panganib na ito, gayundin ang mga panganib na makikita sa aming Mga Tuntunin at Mga Tuntunin ng Beta.",
+    "message": "Gamitin ang bersyong ito para subukan ang mga paparating na feature bago ilabas ang mga ito. Ang iyong paggamit at feedback ay nakakatulong sa amin na bumuo ng posibleng pinakamahusay na bersyon ng MetaMask. Ang paggamit mo ng Waymont Beta ay napapailalim sa aming karaniwang $1 gayundin sa aming $2. Bilang Beta, maaaring tumaas ang panganib ng mga bug. Sa pagpapatuloy, tinatanggap at kinikilala mo ang mga panganib na ito, gayundin ang mga panganib na makikita sa aming Mga Tuntunin at Mga Tuntunin ng Beta.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -370,10 +370,10 @@
     "message": "Mga Tuntunin"
   },
   "betaMetamaskVersion": {
-    "message": "Bersyon ng MetaMask Beta"
+    "message": "Bersyon ng Waymont Beta"
   },
   "betaWelcome": {
-    "message": "Welcome sa MetaMask Beta"
+    "message": "Welcome sa Waymont Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Account",
@@ -407,7 +407,7 @@
     "message": "Bumuo ng iyong listahan ng contact"
   },
   "builtAroundTheWorld": {
-    "message": "Ang MetaMask ay dinisenyo at itinatag sa buong mundo."
+    "message": "Ang Waymont ay dinisenyo at itinatag sa buong mundo."
   },
   "busy": {
     "message": "Busy"
@@ -432,21 +432,21 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithMoonPayDescription": {
-    "message": "Suportado ng MoonPay ang mga kilalang paraan ng pagbabayad, kabilang ang Visa, Mastercard, Apple / Google / Samsung Pay, at mga bank transfer sa higit 145 na bansa. Ang mga token ay madedeposito sa iyong MetaMask account."
+    "message": "Suportado ng MoonPay ang mga kilalang paraan ng pagbabayad, kabilang ang Visa, Mastercard, Apple / Google / Samsung Pay, at mga bank transfer sa higit 145 na bansa. Ang mga token ay madedeposito sa iyong Waymont account."
   },
   "buyCryptoWithTransak": {
     "message": "Bumili ng $1 gamit ang Transak",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithTransakDescription": {
-    "message": "Suportado ng Transak ang mga credit at debit card, Apple Pay, MobiKwik, at mga bank transfer (depende sa lokasyon) sa higit 100 bansa. Ang $1 ay direktang madedeposito sa iyong MetaMask account.",
+    "message": "Suportado ng Transak ang mga credit at debit card, Apple Pay, MobiKwik, at mga bank transfer (depende sa lokasyon) sa higit 100 bansa. Ang $1 ay direktang madedeposito sa iyong Waymont account.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
   "buyWithWyre": {
     "message": "Bumili ng $1 gamit ang Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Madaling onboarding para sa mga pagbili hanggang $ 1000. Mabilis na interactive na high limit na pag-verify ng pagbili. Sinusuportahan ang Debit/Credit Card, Apple Pay, Bank Transfers. Available sa 100+ na mga bansa. Deposito ng mga token sa iyong MetaMask Account"
+    "message": "Madaling onboarding para sa mga pagbili hanggang $ 1000. Mabilis na interactive na high limit na pag-verify ng pagbili. Sinusuportahan ang Debit/Credit Card, Apple Pay, Bank Transfers. Available sa 100+ na mga bansa. Deposito ng mga token sa iyong Waymont Account"
   },
   "bytes": {
     "message": "Bytes"
@@ -501,7 +501,7 @@
     "description": "$1 is the chain id currently entered in the network form and $2 is the return value of nativeCurrency.symbol from chainlist.network"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Kailangan mong gamitin ang MetaMask sa Google Chrome para maikonekta sa iyong Hardware Wallet."
+    "message": "Kailangan mong gamitin ang Waymont sa Google Chrome para maikonekta sa iyong Hardware Wallet."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Mag-click dito upang ikonekta ang iyong Ledger sa pamamagitan ng WebHID",
@@ -580,7 +580,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Kumonekta sa MetaMask"
+    "message": "Kumonekta sa Waymont"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Mayroon kang $1 account na nakakonekta sa site na ito.",
@@ -590,7 +590,7 @@
     "message": "Mayroon kang 1 account na nakakonekta sa site na ito."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "Ang MetaMask ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
+    "message": "Ang Waymont ay hindi nakakonekta sa site na ito. Para kumonekta sa isang web3 site, hanapin ang button na kumonekta sa site nila."
   },
   "connectedSites": {
     "message": "Mga nakakonektang site"
@@ -665,7 +665,7 @@
     "message": "Interaksyon ng Kontrata"
   },
   "convertTokenToNFTDescription": {
-    "message": "Natukoy namin na ang asset na ito ay isang NFT. Ang MetaMask ay mayroon na ngayong ganap na native support para sa mga NFT. Gusto mo bang alisin ito sa iyong listahan ng token at idagdag ito bilang isang NFT?"
+    "message": "Natukoy namin na ang asset na ito ay isang NFT. Ang Waymont ay mayroon na ngayong ganap na native support para sa mga NFT. Gusto mo bang alisin ito sa iyong listahan ng token at idagdag ito bilang isang NFT?"
   },
   "convertTokenToNFTExistDescription": {
     "message": "Napansin namin na naidagdag ang asset na ito bilang NFT. Gusto mo ba itong alisin mula sa listahan ng iyong token?"
@@ -788,7 +788,7 @@
     "message": "Datos"
   },
   "dataBackupFoundInfo": {
-    "message": "Ang ilan sa data ng iyong account ay na-back up sa nakaraang pag-install ng MetaMask. Maaaring kasama rito ang iyong mga setting, contact, at token. Gusto mo bang i-restore na ang data na ito?"
+    "message": "Ang ilan sa data ng iyong account ay na-back up sa nakaraang pag-install ng Waymont. Maaaring kasama rito ang iyong mga setting, contact, at token. Gusto mo bang i-restore na ang data na ito?"
   },
   "dataHex": {
     "message": "Hex"
@@ -1091,7 +1091,7 @@
     "message": "Huwag kailanmang ibahagi ang parirala sa sinuman."
   },
   "endOfFlowMessage5": {
-    "message": "Mag-ingat sa phishing! Hindi kailanman basta na lang hihingin ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Mag-ingat sa phishing! Hindi kailanman basta na lang hihingin ng Waymont ang iyong Secret Recovery Phrase."
   },
   "endOfFlowMessage6": {
     "message": "Kung kailangan mong i-back up ulit ang iyong Secret Recovery Phrase, makikita mo ito sa Mga Setting -> Seguridad."
@@ -1101,7 +1101,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "Hindi mababawi ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Hindi mababawi ng Waymont ang iyong Secret Recovery Phrase."
   },
   "endOfFlowMessage9": {
     "message": "Matuto pa."
@@ -1159,7 +1159,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "Nagkaroon ng error sa MetaMask",
+    "message": "Nagkaroon ng error sa Waymont",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1253,11 +1253,11 @@
     "description": "This explains the risks of using MetaMask Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Ang lahat ng API ng Flask ay eksperimental. Maaaring baguhin o alisin ang mga ito nang walang abiso, o maaari silang manatili sa Flask nang walang katapusan nang hindi nalilipat sa matatag na MetaMask. Gamitin ang mga ito sa iyong sariling pananagutan.",
+    "message": "Ang lahat ng API ng Flask ay eksperimental. Maaaring baguhin o alisin ang mga ito nang walang abiso, o maaari silang manatili sa Flask nang walang katapusan nang hindi nalilipat sa matatag na Waymont. Gamitin ang mga ito sa iyong sariling pananagutan.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Siguraduhing i-disable ang iyong regular na MetaMask extension kapag ginagamit ang Flask.",
+    "message": "Siguraduhing i-disable ang iyong regular na Waymont extension kapag ginagamit ang Flask.",
     "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
@@ -1442,7 +1442,7 @@
     "message": "Magkonekta ng hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Pumili ng hardware wallet na gusto mong gamitin kasama ng MetaMask."
+    "message": "Pumili ng hardware wallet na gusto mong gamitin kasama ng Waymont."
   },
   "here": {
     "message": "dito",
@@ -1503,7 +1503,7 @@
     "message": "Error sa pag-import ng account."
   },
   "importAccountMsg": {
-    "message": "Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng MetaMask account. Matuto pa tungkol sa mga na-import account"
+    "message": "Ang mga na-import na account ay hindi mauugnay sa orihinal mong nagawang Secret Recovery Phrase ng Waymont account. Matuto pa tungkol sa mga na-import account"
   },
   "importAccountSeedPhrase": {
     "message": "Mag-import ng account gamit ang Secret Recovery Phrase"
@@ -1553,7 +1553,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "Hindi makakonekta ang MetaMask sa blockchain host. I-review ang posibleng mga dahilan $1.",
+    "message": "Hindi makakonekta ang Waymont sa blockchain host. I-review ang posibleng mga dahilan $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1710,7 +1710,7 @@
     "message": "Buksan at i-unlock ang Ledger Live App"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "I-customize kung paano ka kokonekta sa iyong Ledger sa MetaMask. Ang $1 ay nirerekomenda, pero ang ibang mga opsyon ay available. Magbasa pa dito: $2",
+    "message": "I-customize kung paano ka kokonekta sa iyong Ledger sa Waymont. Ang $1 ay nirerekomenda, pero ang ibang mga opsyon ay available. Magbasa pa dito: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1840,7 +1840,7 @@
     "message": "Mensahe"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa MetaMask."
+    "message": "Mas may kontrol ka na ngayon sa mga koneksyon ng iyong account sa Waymont."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "I-click ito para pamahalaan ang mga nakakonekta mong account."
@@ -1852,10 +1852,10 @@
     "message": "Ikinokonekta ka sa Ethereum at sa Decentralized Web."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Kasalukuyang minementina ang MetaMask Swaps. Bumalik sa ibang pagkakataon."
+    "message": "Kasalukuyang minementina ang Waymont Swaps. Bumalik sa ibang pagkakataon."
   },
   "metamaskVersion": {
-    "message": "Bersyon ng MetaMask"
+    "message": "Bersyon ng Waymont"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Palagi kang papayagang mag-opt out sa pamamagitan ng Mga Setting"
@@ -1868,7 +1868,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "Ang MetaMask ay.."
+    "message": "Ang Waymont ay.."
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Huwag mangolekta ng mga key, address, transaksyon, balanse, hash, o anumang personal na impormasyon"
@@ -1895,16 +1895,16 @@
     "message": "Magpapadala ng mga anonymous na kaganapang pag-click at pagtingin sa page"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Tulungan Kaming Mapahusay ang MetaMask"
+    "message": "Tulungan Kaming Mapahusay ang Waymont"
   },
   "metametricsOptInDescription": {
-    "message": "Gustong kunin ng MetaMask ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
+    "message": "Gustong kunin ng Waymont ang data ng paggamit para mas maunawaan kung paano ginagamit ng mga user namin ang extension. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin at Ethereum ecosystem."
   },
   "metametricsOptInDescription2": {
     "message": "Nais naming mangalap ng pangunahing data ng paggamit upang mapabuti ang kakayahang magamit ang aming produkto. Ang mga sukatan na ito ay..."
   },
   "metametricsTitle": {
-    "message": "Sumali sa 6M+ user upang mapabuti ang MetaMask"
+    "message": "Sumali sa 6M+ user upang mapabuti ang Waymont"
   },
   "mismatchedChainLinkText": {
     "message": "i-verify ang mga detalye ng network",
@@ -1936,7 +1936,7 @@
     "message": "Hindi makita ang token mo?"
   },
   "mobileSyncWarning": {
-    "message": "Ang feature na 'I-sync gamit ang extension' ay pansamantalang hindi gumagana. Kung gusto mong gamitin ang iyong extension wallet sa MetaMask mobile, pagkatapos ay sa iyong mobile app: bumalik sa mga opsyon sa pag-setup ng wallet at piliin ang opsyong 'Mag-import gamit ang Secret Recovery Phrase'. Gamitin ang lihim na parirala ng iyong extension wallet upang pagkatapos ay i-import ang iyong wallet sa mobile."
+    "message": "Ang feature na 'I-sync gamit ang extension' ay pansamantalang hindi gumagana. Kung gusto mong gamitin ang iyong extension wallet sa Waymont mobile, pagkatapos ay sa iyong mobile app: bumalik sa mga opsyon sa pag-setup ng wallet at piliin ang opsyong 'Mag-import gamit ang Secret Recovery Phrase'. Gamitin ang lihim na parirala ng iyong extension wallet upang pagkatapos ay i-import ang iyong wallet sa mobile."
   },
   "mustSelectOne": {
     "message": "Dapat pumili ng kahit 1 token lang."
@@ -1948,7 +1948,7 @@
     "message": "Pangalan"
   },
   "needCryptoInWallet": {
-    "message": "Para makipag-ugnayan sa mga desentralisadong applicaiton gamit ang MetaMask, kakailanganin mo ng $1 sa iyong wallet.",
+    "message": "Para makipag-ugnayan sa mga desentralisadong applicaiton gamit ang Waymont, kakailanganin mo ng $1 sa iyong wallet.",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "needHelp": {
@@ -1959,7 +1959,7 @@
     "message": "Ibahagi ang iyong Feedback"
   },
   "needHelpLinkText": {
-    "message": "Suporta sa MetaMask"
+    "message": "Suporta sa Waymont"
   },
   "needHelpSubmitTicket": {
     "message": "Magsumite ng Tiket"
@@ -2056,7 +2056,7 @@
     "message": "Bagong Kontrata"
   },
   "newNFTDetectedMessage": {
-    "message": "Payagan ang MetaMask na awtomatikong makita ang mga NFT mula sa Opensea at ipakita sa iyong wallet."
+    "message": "Payagan ang Waymont na awtomatikong makita ang mga NFT mula sa Opensea at ipakita sa iyong wallet."
   },
   "newNFTsDetected": {
     "message": "Bago! Pag-detect ng NFT"
@@ -2068,7 +2068,7 @@
     "message": "Bagong password (min na 8 char)"
   },
   "newToMetaMask": {
-    "message": "Bago ka ba sa MetaMask?"
+    "message": "Bago ka ba sa Waymont?"
   },
   "newTokensImportedMessage": {
     "message": "Matagumpay mong na-import ang $1.",
@@ -2207,7 +2207,7 @@
     "message": "Magdagdag ng mga Sikat na Network"
   },
   "notifications1Description": {
-    "message": "Ang mga user ng MetaMask Mobile ay maaari na ngayong mag-swap ng mga token sa loob ng kanilang mobile wallet. I-scan ang QR code para makuha ang mobile app at magsimulang mag-swap.",
+    "message": "Ang mga user ng Waymont Mobile ay maaari na ngayong mag-swap ng mga token sa loob ng kanilang mobile wallet. I-scan ang QR code para makuha ang mobile app at magsimulang mag-swap.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
@@ -2219,7 +2219,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Manatiling may alam sa pinakamagagandang kasanayan sa seguridad ng MetaMask at kunin ang pinakabagong tips ng seguridad mula sa opisyal na suporta ng MetaMask.",
+    "message": "Manatiling may alam sa pinakamagagandang kasanayan sa seguridad ng MetaMask at kunin ang pinakabagong tips ng seguridad mula sa opisyal na suporta ng Waymont.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -2231,7 +2231,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Kunin ang pinakamagagandang papremyo sa pag-swap ng token sa loob ng iyong wallet. Ikinokonekta ka na ngayon ng MetaMask sa maraming decentralized exchange aggregator at mga propesyonal na market maker sa Binance Smart Chain.",
+    "message": "Kunin ang pinakamagagandang papremyo sa pag-swap ng token sa loob ng iyong wallet. Ikinokonekta ka na ngayon ng Waymont sa maraming decentralized exchange aggregator at mga propesyonal na market maker sa Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -2243,11 +2243,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Simula sa Chrome version 91, ang API na nagpapagana ng aming Ledger support (U2F) ay hindi na sumusuporta sa mga hardware wallet. Ang MetaMask ay nagpatupad ng bagong Ledger Live support na nagpapahintulot sa iyo na magpatuloy na kumonekta sa iyong Ledger device sa pamamgitan ng Ledger Live desktop app.",
+    "message": "Simula sa Chrome version 91, ang API na nagpapagana ng aming Ledger support (U2F) ay hindi na sumusuporta sa mga hardware wallet. Ang Waymont ay nagpatupad ng bagong Ledger Live support na nagpapahintulot sa iyo na magpatuloy na kumonekta sa iyong Ledger device sa pamamgitan ng Ledger Live desktop app.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Kapag ginagamit ang iyong Ledger account sa MetaMask, ang bagong tab ay magbubukas at hihilingin sa iyo ng buksan ang Ledger Live app.  Kapag nabuksan na ang app, hihilingin sa iyo na payagan ang koneksyon ng WebSocket sa iyong MetaMask account.  Ganun lang!",
+    "message": "Kapag ginagamit ang iyong Ledger account sa MetaMask, ang bagong tab ay magbubukas at hihilingin sa iyo ng buksan ang Ledger Live app.  Kapag nabuksan na ang app, hihilingin sa iyo na payagan ang koneksyon ng WebSocket sa iyong Waymont account.  Ganun lang!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2259,7 +2259,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "Isinama ng MetaMask v10.1.0 ang bagong support para sa mga transaksyong EIP-1559 kapag gumagamit ng mga Ledger device.",
+    "message": "Isinama ng Waymont v10.1.0 ang bagong support para sa mga transaksyong EIP-1559 kapag gumagamit ng mga Ledger device.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -2275,7 +2275,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Para sa MetaMask v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa MetaMask.",
+    "message": "Para sa MetaMask v10.4.0, hindi mo na kailangang ikonekta ang Ledger Live sa iyong Ledger device sa Waymont.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2345,16 +2345,16 @@
     "message": "Mag-click sa con ng browser extension"
   },
   "onboardingPinExtensionDescription": {
-    "message": "I-pin ang MetaMask sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
+    "message": "I-pin ang Waymont sa iyong browser para madali itong ma-access at madaling makita ang mga kumpirmasyon ng transaksyon."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Maaari mong buksan ang MetaMask sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
+    "message": "Maaari mong buksan ang Waymont sa pamamagitan ng pag-click sa extension at pag-accesss sa wallet mo sa 1 click lang."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Mag-click sa icon ng browser extension para agad itong ma-access"
   },
   "onboardingPinExtensionLabel": {
-    "message": "I-pin ang MetaMask"
+    "message": "I-pin ang Waymont"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2363,7 +2363,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Ang pag-install ng iyong MetaMask ay kumpleto na!"
+    "message": "Ang pag-install ng iyong Waymont ay kumpleto na!"
   },
   "onboardingReturnNotice": {
     "message": "Isasara ng \"$1\" ang tab na ito at ididirekta ka pabalik sa $2",
@@ -2384,7 +2384,7 @@
     "message": "Kumonekta lang sa mga site na pinagkakatiwalaan mo."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Buksan ang MetaMask sa buong screen para ikonekta ang ledger mo sa pamamagitan ng WebHID.",
+    "message": "Buksan ang Waymont sa buong screen para ikonekta ang ledger mo sa pamamagitan ng WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
@@ -2412,7 +2412,7 @@
     "message": "Sumali sa MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang MetaMask"
+    "message": "Sumali sa MetaMetrics para mas mapahusay namin ang Waymont"
   },
   "password": {
     "message": "Password"
@@ -2421,7 +2421,7 @@
     "message": "Hindi sapat ang haba ng password"
   },
   "passwordSetupDetails": {
-    "message": "Ang password na ito ay magbubukas lamang ng iyong MetaMask wallet sa device na ito. Hindi matatakpan ng MetaMask ang password na ito."
+    "message": "Ang password na ito ay magbubukas lamang ng iyong MetaMask wallet sa device na ito. Hindi matatakpan ng Waymont ang password na ito."
   },
   "passwordStrength": {
     "message": "Tibay ng password: $1",
@@ -2431,7 +2431,7 @@
     "message": "Mapapabuti ng matibay na password ang seguridad ng iyong wallet kung sakaling manakaw o makompromiso ang iyong device."
   },
   "passwordTermsWarning": {
-    "message": "Nauunawaan ko na hindi matatakpan ng MetaMask ang password na ito para sa akin. $1"
+    "message": "Nauunawaan ko na hindi matatakpan ng Waymont ang password na ito para sa akin. $1"
   },
   "passwordsDontMatch": {
     "message": "Hindi Magkatugma ang Mga Password"
@@ -2468,7 +2468,7 @@
     "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_customConfirmation": {
-    "message": "Ipakita ang kumpirmasyon sa MetaMask.",
+    "message": "Ipakita ang kumpirmasyon sa Waymont.",
     "description": "The description for the `snap_confirm` permission"
   },
   "permission_ethereumAccounts": {
@@ -2601,7 +2601,7 @@
     "message": "Huwag kailanman ibahagi ang iyong Secret Recovery Phrase sa sinuman"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Hindi kailanman hihingin ng MetaMask team ang iyong Secret Recovery Phrase"
+    "message": "Hindi kailanman hihingin ng Waymont team ang iyong Secret Recovery Phrase"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Kinokontrol ng iyong Secret Recovery Phrase ang lahat ng iyong account."
@@ -2677,7 +2677,7 @@
     "message": "I-reset ang Wallet"
   },
   "resetWalletSubHeader": {
-    "message": "Hindi nagpapanatili ang MetaMask ng kopya ng iyong password. Kung nagkakaproblema ka sa pag-unlock ng iyong account, kakailanganin mong i-reset ang iyong wallet. Magagawa mo ito sa pamamagitan ng pagbibigay ng Secret Recovery Phrase na ginamit mo noong mag-set up ka ng iyong wallet."
+    "message": "Hindi nagpapanatili ang Waymont ng kopya ng iyong password. Kung nagkakaproblema ka sa pag-unlock ng iyong account, kakailanganin mong i-reset ang iyong wallet. Magagawa mo ito sa pamamagitan ng pagbibigay ng Secret Recovery Phrase na ginamit mo noong mag-set up ka ng iyong wallet."
   },
   "resetWalletUsingSRP": {
     "message": "Tatanggalin ng aksyong ito mula sa iyong device ang iyong kasalukuyang wallet at Secret Recovery Phrase, kasama ang listahan ng mga account na iyong isinaayos. Pagkatapos i-reset ang Secret Recovery Phrase, makikita mo ang listahan ng mga account batay sa Secret Recovery Phrase na iyong ginamit para mag-reset. Awtomatikong kasama sa bagong listahan na ito ang mga account na may balanse. Magagawa mo rin ang $1 na nilikha dati. Ang mga custom account na iyong na-import ay kinakailangang $2, at ang alinmang mga custom token na iyong idinagdag sa account ay kailangan $3 din."
@@ -2686,7 +2686,7 @@
     "message": "Tiyakin na ginagamit mo ang wastong Secret Recovery Phrase bago magpatuloy. Hindi mo na ito maaaring pawalang-bisa."
   },
   "restartMetamask": {
-    "message": "I-restart ang MetaMask"
+    "message": "I-restart ang Waymont"
   },
   "restore": {
     "message": "I-restore"
@@ -2815,7 +2815,7 @@
     "message": "Kung may humingi ng iyong recovery phrase, malamang na sinusubukan ka nilang i-scam at nakawin ang mga pondo ng iyong wallet"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Huwag kailanman ibahagi ang iyong Secret Recovery Phrase, kahit sa MetaMask!"
+    "message": "Huwag kailanman ibahagi ang iyong Secret Recovery Phrase, kahit sa Waymont!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Ano ang Secret Recovery Phrase?"
@@ -2854,7 +2854,7 @@
     "message": "Pumili ng Account"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Ang acount na ito ay nakakonekta na sa MetaMask"
+    "message": "Ang acount na ito ay nakakonekta na sa Waymont"
   },
   "selectEachPhrase": {
     "message": "Pakipili ang bawat phrase para matiyak na tama ito."
@@ -2908,7 +2908,7 @@
     "message": "Magtakda ng advanced privacy settings"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "Ginagamit ng MetaMask ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
+    "message": "Ginagamit ng Waymont ang mga pinagkakatiwalaang serbisyo ng third-party na ito para mapahusay ang kakayahang magamit at kaligtasan ng produkto."
   },
   "setApprovalForAll": {
     "message": "Itakda ang Pag-apruba para sa Lahat"
@@ -3130,7 +3130,7 @@
     "message": "Error sa pagkuha ng mga log ng estado."
   },
   "stateLogFileName": {
-    "message": "Mga Log ng Estado ng MetaMask"
+    "message": "Mga Log ng Estado ng Waymont"
   },
   "stateLogs": {
     "message": "Mga Log ng Estado"
@@ -3151,7 +3151,7 @@
     "message": "Siguruhin na ang iyong Lattice1 ay handang ikonekta"
   },
   "step1LatticeWalletMsg": {
-    "message": "Maaari mong ikonekta ang MetaMask sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID. Para sa higit pa sa paggamit ng mga wallet ng hardware, $1",
+    "message": "Maaari mong ikonekta ang Waymont sa iyong Lattice1 device kapag na-set up na ito at online. I-unlock ang iyong device at ihanda ang iyong Device ID. Para sa higit pa sa paggamit ng mga wallet ng hardware, $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3209,7 +3209,7 @@
     "message": "Subukan muli ang iyong pagpapalit. Narito kami para protektahan ka sa mga katulad na panganib sa susunod."
   },
   "stxDescription": {
-    "message": "Mas humusay pa ang mga Pagpapalit sa MetaMask! Papayagan ng Pagpapagana sa mga Smart Transaction ang MetaMask na pahusayin ang iyong Pagpapalit gamit ang program para makatulong sa: "
+    "message": "Mas humusay pa ang mga Pagpapalit sa MetaMask! Papayagan ng Pagpapagana sa mga Smart Transaction ang Waymont na pahusayin ang iyong Pagpapalit gamit ang program para makatulong sa: "
   },
   "stxErrorNotEnoughFunds": {
     "message": "Hindi sapat na pondo para sa smart transaction."
@@ -3347,7 +3347,7 @@
     "message": "I-edit ang limitasyon"
   },
   "swapEnableDescription": {
-    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa MetaMask na i-swap ang iyong $1.",
+    "message": "Kinakailangan ito at nagbibigay ito ng pahintulot sa Waymont na i-swap ang iyong $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3397,14 +3397,14 @@
     "message": "Ang mga gas fee sa nakaraang screen ay hinati sa dalawang transaksyon."
   },
   "swapGasFeesSummary": {
-    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga gas fee.",
+    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang Waymont ay hindi kumikita mula sa mga gas fee.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Napakataas ng halaga ng slippage."
   },
   "swapIncludesMMFee": {
-    "message": "Kasama ang $1% MetaMask fee.",
+    "message": "Kasama ang $1% Waymont fee.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3414,10 +3414,10 @@
     "message": "Max na slippage"
   },
   "swapMetaMaskFee": {
-    "message": "Bayarin sa MetaMask"
+    "message": "Bayarin sa Waymont"
   },
   "swapMetaMaskFeeDescription": {
-    "message": "Hinahanap namin ang pinakasulit na presyo mula sa mga nangungunang pinagkukunan ng liquidity, sa lahat ng pagkakataon. Ang bayarin na $1% ay awtomatikong fina-factor sa bawat quote, na sumusuporta sa kasalukuyang development para mas mapahusay ang MetaMask.",
+    "message": "Hinahanap namin ang pinakasulit na presyo mula sa mga nangungunang pinagkukunan ng liquidity, sa lahat ng pagkakataon. Ang bayarin na $1% ay awtomatikong fina-factor sa bawat quote, na sumusuporta sa kasalukuyang development para mas mapahusay ang Waymont.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapNQuotesWithDot": {
@@ -3595,7 +3595,7 @@
     "message": "Tingnan sa aktibidad"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Maglilipat ito sa napiling network sa loob ng MetaMask sa dating idinagdag na network:"
+    "message": "Maglilipat ito sa napiling network sa loob ng Waymont sa dating idinagdag na network:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Payagan ang site na ito para lumipat ng network?"
@@ -3635,16 +3635,16 @@
     "message": "Tiyaking walang ibang nakakakita sa iyong screen kapag na-scan mo ang code na ito"
   },
   "syncWithMobileComplete": {
-    "message": "Matagumpay na na-sync ang iyong data. I-enjoy ang MetaMask mobile app!"
+    "message": "Matagumpay na na-sync ang iyong data. I-enjoy ang Waymont mobile app!"
   },
   "syncWithMobileDesc": {
-    "message": "Puwede mong i-sync ang iyong mga account at impormasyon sa mobile device mo. Buksan ang MetaMask mobile app, pumunta sa \"Mga Setting\" at i-tap ang \"I-sync mula sa Browser Extension\""
+    "message": "Puwede mong i-sync ang iyong mga account at impormasyon sa mobile device mo. Buksan ang Waymont mobile app, pumunta sa \"Mga Setting\" at i-tap ang \"I-sync mula sa Browser Extension\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Kung unang pagkakataon mong bubuksan ang MetaMask Mobile app, sundin lang ang mga hakbang sa iyong telepono."
+    "message": "Kung unang pagkakataon mong bubuksan ang Waymont Mobile app, sundin lang ang mga hakbang sa iyong telepono."
   },
   "syncWithMobileScanThisCode": {
-    "message": "I-scan ang code na ito gamit ang iyong MetaMask mobile app"
+    "message": "I-scan ang code na ito gamit ang iyong Waymont mobile app"
   },
   "syncWithMobileTitle": {
     "message": "I-sync sa mobile"
@@ -3677,7 +3677,7 @@
     "message": "Tema"
   },
   "themeDescription": {
-    "message": "Piliin ang mas gusto mong tema ng MetaMask."
+    "message": "Piliin ang mas gusto mong tema ng Waymont."
   },
   "thisWillCreate": {
     "message": "Gagawa ito ng bagong wallet at Secret Recovery Phrase"
@@ -3776,7 +3776,7 @@
     "message": "Minungkahing site"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "I-edit upang gamitin ang nirerekomendang gas fee ng MetaMask batay sa pinakabagong block."
+    "message": "I-edit upang gamitin ang nirerekomendang gas fee ng Waymont batay sa pinakabagong block."
   },
   "transactionDetailGasHeading": {
     "message": "Tinantiyang gas fee"
@@ -3791,7 +3791,7 @@
     "message": "Ang mga gas fee ay itinakda ng network at nagbabago-bago batay sa network traffic at pagiging kumplikado ng transaksyon."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang MetaMask ay hindi kumikita mula sa mga gas fee."
+    "message": "Ang mga gas fee ay binabayaran sa mga crypto miner na nagpoproseso ng mga transaksyon sa $1 na network. Ang Waymont ay hindi kumikita mula sa mga gas fee."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Halaga + gas fee"
@@ -3861,7 +3861,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "Nagkaproblema ang MetaMask sa pagsisimula. Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension."
+    "message": "Nagkaproblema ang Waymont sa pagsisimula. Maaaring paulit-ulit ang error na ito, kaya subukang i-restart ang extension."
   },
   "troubleTokenBalances": {
     "message": "Nagkaproblema kami sa pag-load ng mga balanse ng iyong token. Puwede mong tingnan ang mga iyon ",
@@ -3883,7 +3883,7 @@
     "message": "Hindi magagamit ang mga pag-alam sa transaksyon para sa contract na ito sa oras na ito."
   },
   "typePassword": {
-    "message": "Uri ng password ng iyong MetaMask"
+    "message": "Uri ng password ng iyong Waymont"
   },
   "typeYourSRP": {
     "message": "I-type ang iyong Secret Recovery Phrase"
@@ -4024,10 +4024,10 @@
     "message": "Tagumpay mong naprotektahan ang iyong wallet. Panatilihing ligtas ang iyong Secret Recovery Phrase at sikreto - pananagutan mo ito!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "Di mababawi ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Di mababawi ng Waymont ang iyong Secret Recovery Phrase."
   },
   "walletCreationSuccessReminder2": {
-    "message": "Kailanman ay hindi hihingin ng MetaMask ang iyong Secret Recovery Phrase."
+    "message": "Kailanman ay hindi hihingin ng Waymont ang iyong Secret Recovery Phrase."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 sa sinuman o panganib na manakaw ang iyong pondo",
@@ -4058,7 +4058,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Welcome sa MetaMask"
+    "message": "Welcome sa Waymont"
   },
   "welcomeBack": {
     "message": "Maligayang Pagbabalik!"
@@ -4070,7 +4070,7 @@
     "message": "Magsaliksik sa mga decentralized app"
   },
   "welcomeLoginDescription": {
-    "message": "Gamitin ang iyong MetaMask para mag-login sa mga decentralized app, hindi na kailangang mag-sign up."
+    "message": "Gamitin ang iyong Waymont para mag-login sa mga decentralized app, hindi na kailangang mag-sign up."
   },
   "welcomeLoginTitle": {
     "message": "Mag-hello sa iyong wallet"

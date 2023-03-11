@@ -2118,7 +2118,7 @@
     "message": "Share your feedback"
   },
   "needHelpLinkText": {
-    "message": "MetaMask support"
+    "message": "Waymont support"
   },
   "needHelpSubmitTicket": {
     "message": "Submit a ticket"
@@ -3615,7 +3615,7 @@
     "message": "Slippage amount is very high."
   },
   "swapIncludesMMFee": {
-    "message": "Includes a $1% MetaMask fee.",
+    "message": "Includes a $1% Waymont fee.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3625,7 +3625,7 @@
     "message": "Max slippage"
   },
   "swapMetaMaskFee": {
-    "message": "MetaMask fee"
+    "message": "Waymont fee"
   },
   "swapMetaMaskFeeDescription": {
     "message": "We find the best price from the top liquidity sources, every time. A fee of $1% is automatically factored into this quote.",

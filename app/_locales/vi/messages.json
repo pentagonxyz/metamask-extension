@@ -66,7 +66,7 @@
     "message": "Truy cập ví của bạn bằng Cụm từ khôi phục bí mật"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMask không thể khôi phục mật khẩu của bạn. Chúng tôi sẽ sử dụng Cụm từ khôi phục bí mật của bạn để xác thực quyền sở hữu, khôi phục ví và thiết lập mật khẩu mới. Trước tiên, hãy nhập Cụm từ khôi phục bí mật mà bạn đã được cấp khi tạo ví. $1",
+    "message": "Waymont không thể khôi phục mật khẩu của bạn. Chúng tôi sẽ sử dụng Cụm từ khôi phục bí mật của bạn để xác thực quyền sở hữu, khôi phục ví và thiết lập mật khẩu mới. Trước tiên, hãy nhập Cụm từ khôi phục bí mật mà bạn đã được cấp khi tạo ví. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -116,7 +116,7 @@
     "message": "Thêm tên riêng"
   },
   "addAcquiredTokens": {
-    "message": "Thêm token mà bạn đã mua bằng MetaMask"
+    "message": "Thêm token mà bạn đã mua bằng Waymont"
   },
   "addAlias": {
     "message": "Thêm biệt danh"
@@ -132,10 +132,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Thao tác này sẽ cho phép sử dụng mạng này trong MetaMask."
+    "message": "Thao tác này sẽ cho phép sử dụng mạng này trong Waymont."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask không xác minh mạng tùy chỉnh."
+    "message": "Waymont không xác minh mạng tùy chỉnh."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "Tìm hiểu về $1.",
@@ -256,15 +256,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Waymont",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Waymont Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Waymont Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -324,7 +324,7 @@
     "message": "Hẹn giờ tự động khóa (phút)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Đặt khoảng thời gian không hoạt động tính bằng phút trước khi MetaMask khóa."
+    "message": "Đặt khoảng thời gian không hoạt động tính bằng phút trước khi Waymont khóa."
   },
   "average": {
     "message": "Trung bình"
@@ -336,7 +336,7 @@
     "message": "Quay lại toàn bộ danh sách"
   },
   "backupApprovalInfo": {
-    "message": "Đây là mã bí mật bắt buộc phải dùng để khôi phục ví trong trường hợp bạn bị mất thiết bị, quên mật khẩu, phải cài đặt lại MetaMask hoặc muốn truy cập ví của mình trên một thiết bị khác."
+    "message": "Đây là mã bí mật bắt buộc phải dùng để khôi phục ví trong trường hợp bạn bị mất thiết bị, quên mật khẩu, phải cài đặt lại Waymont hoặc muốn truy cập ví của mình trên một thiết bị khác."
   },
   "backupApprovalNotice": {
     "message": "Sao lưu Cụm mật khẩu khôi phục bí mật để đảm bảo an toàn cho ví và tiền của bạn."
@@ -357,10 +357,10 @@
     "message": "Cơ bản"
   },
   "betaMetamaskDescription": {
-    "message": "Được hàng triệu người tin dùng, MetaMask là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
+    "message": "Được hàng triệu người tin dùng, Waymont là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Sử dụng phiên bản này để thử nghiệm các tính năng sắp ra mắt trước khi chúng được phát hành. Việc sử dụng và phản hồi của bạn sẽ giúp chúng tôi xây dựng phiên bản MetaMask tốt nhất có thể. Việc bạn sử dụng MetaMask Beta phải tuân theo $1 tiêu chuẩn cũng như $2 của chúng tôi. Vì đây là phiên bản Beta, nguy cơ xuất hiện lỗi sẽ nhiều hơn bình thường. Bằng cách tiếp tục, bạn chấp nhận và thừa nhận những nguy cơ này, cũng như những nguy cơ theo Điều Khoản Beta và Điều Khoản của chúng tôi.",
+    "message": "Sử dụng phiên bản này để thử nghiệm các tính năng sắp ra mắt trước khi chúng được phát hành. Việc sử dụng và phản hồi của bạn sẽ giúp chúng tôi xây dựng phiên bản MetaMask tốt nhất có thể. Việc bạn sử dụng Waymont Beta phải tuân theo $1 tiêu chuẩn cũng như $2 của chúng tôi. Vì đây là phiên bản Beta, nguy cơ xuất hiện lỗi sẽ nhiều hơn bình thường. Bằng cách tiếp tục, bạn chấp nhận và thừa nhận những nguy cơ này, cũng như những nguy cơ theo Điều Khoản Beta và Điều Khoản của chúng tôi.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -370,10 +370,10 @@
     "message": "Điều khoản"
   },
   "betaMetamaskVersion": {
-    "message": "Phiên Bản MetaMask Beta"
+    "message": "Phiên Bản Waymont Beta"
   },
   "betaWelcome": {
-    "message": "Chào mừng đến với MetaMask Beta"
+    "message": "Chào mừng đến với Waymont Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Tài khoản",
@@ -407,7 +407,7 @@
     "message": "Xây dựng danh sách liên hệ của bạn"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask được thiết kế và xây dựng trên khắp thế giới."
+    "message": "Waymont được thiết kế và xây dựng trên khắp thế giới."
   },
   "busy": {
     "message": "Đang bận"
@@ -432,21 +432,21 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithMoonPayDescription": {
-    "message": "MoonPay hỗ trợ các phương thức thanh toán phổ biến, bao gồm Visa, Mastercard, Apple / Google / Samsung Pay và chuyển khoản ngân hàng tại hơn 145 quốc gia. Nạp token vào tài khoản MetaMask của bạn."
+    "message": "MoonPay hỗ trợ các phương thức thanh toán phổ biến, bao gồm Visa, Mastercard, Apple / Google / Samsung Pay và chuyển khoản ngân hàng tại hơn 145 quốc gia. Nạp token vào tài khoản Waymont của bạn."
   },
   "buyCryptoWithTransak": {
     "message": "Mua $1 bằng Transak",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithTransakDescription": {
-    "message": "Transak hỗ trợ thẻ tín dụng và ghi nợ, Apple Pay, MobiKwik và chuyển khoản ngân hàng (tùy thuộc vào vị trí) tại hơn 100 quốc gia. Nạp trực tiếp $1 vào tài khoản MetaMask của bạn.",
+    "message": "Transak hỗ trợ thẻ tín dụng và ghi nợ, Apple Pay, MobiKwik và chuyển khoản ngân hàng (tùy thuộc vào vị trí) tại hơn 100 quốc gia. Nạp trực tiếp $1 vào tài khoản Waymont của bạn.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
   "buyWithWyre": {
     "message": "Mua $1 qua Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Dễ dàng tham gia đối với các giao dịch mua lên đến $1.000. Xác minh mua hàng giới hạn cao và tương tác nhanh. Hỗ trợ Thẻ Tín dụng/Ghi nợ, Apple Pay, Chuyển khoản Ngân hàng. Hiện có tại hơn 100 quốc gia. Nạp token vào Tài khoản MetaMask của bạn"
+    "message": "Dễ dàng tham gia đối với các giao dịch mua lên đến $1.000. Xác minh mua hàng giới hạn cao và tương tác nhanh. Hỗ trợ Thẻ Tín dụng/Ghi nợ, Apple Pay, Chuyển khoản Ngân hàng. Hiện có tại hơn 100 quốc gia. Nạp token vào Tài khoản Waymont của bạn"
   },
   "bytes": {
     "message": "Byte"
@@ -501,7 +501,7 @@
     "description": "$1 is the chain id currently entered in the network form and $2 is the return value of nativeCurrency.symbol from chainlist.network"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Bạn cần sử dụng MetaMask trên Google Chrome để kết nối với Ví cứng của bạn."
+    "message": "Bạn cần sử dụng Waymont trên Google Chrome để kết nối với Ví cứng của bạn."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Nhấn vào đây để kết nối với thiết bị Ledger của bạn qua WebHID",
@@ -580,7 +580,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Kết nối với MetaMask"
+    "message": "Kết nối với Waymont"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Bạn có $1 tài khoản kết nối với trang web này.",
@@ -590,7 +590,7 @@
     "message": "Bạn có 1 tài khoản kết nối với trang web này."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask chưa kết nối với trang web này. Để kết nối với một trang web trên web3, hãy tìm nút kết nối trên trang web của họ."
+    "message": "Waymont chưa kết nối với trang web này. Để kết nối với một trang web trên web3, hãy tìm nút kết nối trên trang web của họ."
   },
   "connectedSites": {
     "message": "Trang web đã kết nối"
@@ -665,7 +665,7 @@
     "message": "Tương tác với hợp đồng"
   },
   "convertTokenToNFTDescription": {
-    "message": "Chúng tôi phát hiện tài sản này là một NFT. MetaMask hiện đã hỗ trợ toàn diện và đầy đủ cho NFT. Bạn có muốn xóa tài sản khỏi danh sách token và thêm tài sản dưới dạng NFT không?"
+    "message": "Chúng tôi phát hiện tài sản này là một NFT. Waymont hiện đã hỗ trợ toàn diện và đầy đủ cho NFT. Bạn có muốn xóa tài sản khỏi danh sách token và thêm tài sản dưới dạng NFT không?"
   },
   "convertTokenToNFTExistDescription": {
     "message": "Chúng tôi phát hiện tài sản này đã được thêm dưới dạng NFT. Bạn có muốn xóa tài sản khỏi danh sách token không?"
@@ -788,7 +788,7 @@
     "message": "Dữ liệu"
   },
   "dataBackupFoundInfo": {
-    "message": "Một số dữ liệu tài khoản của bạn đã được sao lưu trong lần cài đặt MetaMask trước đó. Dữ liệu này có thể bao gồm các tùy chọn cài đặt, danh bạ và token. Bạn có muốn khôi phục dữ liệu này bây giờ không?"
+    "message": "Một số dữ liệu tài khoản của bạn đã được sao lưu trong lần cài đặt Waymont trước đó. Dữ liệu này có thể bao gồm các tùy chọn cài đặt, danh bạ và token. Bạn có muốn khôi phục dữ liệu này bây giờ không?"
   },
   "dataHex": {
     "message": "Thập lục phân"
@@ -1091,7 +1091,7 @@
     "message": "Tuyệt đối không chia sẻ cụm mật khẩu với bất kỳ ai."
   },
   "endOfFlowMessage5": {
-    "message": "Hãy cẩn thận với hành vi lừa đảo! MetaMask sẽ không bao giờ tự ý hỏi Cụm mật khẩu khôi phục bí mật của bạn."
+    "message": "Hãy cẩn thận với hành vi lừa đảo! Waymont sẽ không bao giờ tự ý hỏi Cụm mật khẩu khôi phục bí mật của bạn."
   },
   "endOfFlowMessage6": {
     "message": "Nếu bạn cần sao lưu lại Cụm mật khẩu khôi phục bí mật, bạn có thể tìm thấy chức năng này trong phần Cài đặt -> Bảo mật."
@@ -1101,7 +1101,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask không thể khôi phục Cụm mật khẩu khôi phục bí mật của bạn."
+    "message": "Waymont không thể khôi phục Cụm mật khẩu khôi phục bí mật của bạn."
   },
   "endOfFlowMessage9": {
     "message": "Tìm hiểu thêm."
@@ -1159,7 +1159,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask đã gặp lỗi",
+    "message": "Waymont đã gặp lỗi",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1253,11 +1253,11 @@
     "description": "This explains the risks of using MetaMask Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Tất cả các API của Flask đều là thử nghiệm. Chúng có thể bị thay đổi hoặc xóa mà không cần thông báo, hoặc chúng có thể ở trên Flask vô thời hạn mà không bao giờ được chuyển sang phiên bản MetaMask ổn định. Bạn phải tự chịu rủi ro khi sử dụng chúng.",
+    "message": "Tất cả các API của Flask đều là thử nghiệm. Chúng có thể bị thay đổi hoặc xóa mà không cần thông báo, hoặc chúng có thể ở trên Flask vô thời hạn mà không bao giờ được chuyển sang phiên bản Waymont ổn định. Bạn phải tự chịu rủi ro khi sử dụng chúng.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Đảm bảo bạn đã tắt tiện ích mở rộng MetaMask thông thường khi sử dụng Flask.",
+    "message": "Đảm bảo bạn đã tắt tiện ích mở rộng Waymont thông thường khi sử dụng Flask.",
     "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
@@ -1442,7 +1442,7 @@
     "message": "Kết nối với một ví cứng"
   },
   "hardwareWalletsMsg": {
-    "message": "Chọn một ví cứng mà bạn muốn sử dụng với MetaMask."
+    "message": "Chọn một ví cứng mà bạn muốn sử dụng với Waymont."
   },
   "here": {
     "message": "tại đây",
@@ -1503,7 +1503,7 @@
     "message": "Lỗi khi nhập tài khoản."
   },
   "importAccountMsg": {
-    "message": "Tài khoản đã nhập sẽ không được liên kết với Cụm mật khẩu khôi phục bí mật cho tài khoản MetaMask đã tạo ban đầu của bạn. Tìm hiểu thêm về các tài khoản đã nhập"
+    "message": "Tài khoản đã nhập sẽ không được liên kết với Cụm mật khẩu khôi phục bí mật cho tài khoản Waymont đã tạo ban đầu của bạn. Tìm hiểu thêm về các tài khoản đã nhập"
   },
   "importAccountSeedPhrase": {
     "message": "Nhập một ví bằng Cụm mật khẩu khôi phục bí mật"
@@ -1553,7 +1553,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask không thể kết nối với máy chủ chuỗi khối. Hãy xem xét các lý do tiềm ẩn $1.",
+    "message": "Waymont không thể kết nối với máy chủ chuỗi khối. Hãy xem xét các lý do tiềm ẩn $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1710,7 +1710,7 @@
     "message": "Mở và mở khóa Ứng Dụng Ledger Live"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "Tùy chỉnh cách thức kết nối Ledger với MetaMask. Nên dùng $1, nhưng cũng có sẵn các tùy chọn khác. Đọc thêm tại đây: $2",
+    "message": "Tùy chỉnh cách thức kết nối Ledger với Waymont. Nên dùng $1, nhưng cũng có sẵn các tùy chọn khác. Đọc thêm tại đây: $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1840,7 +1840,7 @@
     "message": "Thông báo"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Giờ đây, bạn có nhiều quyền kiểm soát hơn đối với các kết nối của tài khoản trong MetaMask."
+    "message": "Giờ đây, bạn có nhiều quyền kiểm soát hơn đối với các kết nối của tài khoản trong Waymont."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Nhấn vào để quản lý các tài khoản đã kết nối của bạn."
@@ -1852,10 +1852,10 @@
     "message": "Kết nối bạn với Ethereum và trang Web phi tập trung."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "Tính năng Hoán đổi trên MetaMask đang được bảo trì. Vui lòng kiểm tra lại sau."
+    "message": "Tính năng Hoán đổi trên Waymont đang được bảo trì. Vui lòng kiểm tra lại sau."
   },
   "metamaskVersion": {
-    "message": "Phiên bản MetaMask"
+    "message": "Phiên bản Waymont"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Luôn cho phép bạn chọn không tham gia thông qua phần Cài đặt"
@@ -1868,7 +1868,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask sẽ.."
+    "message": "Waymont sẽ.."
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Không bao giờ thu thập mã khóa, địa chỉ, giao dịch, số dư, mã băm hoặc bất kỳ thông tin cá nhân nào"
@@ -1895,16 +1895,16 @@
     "message": "Gửi các lượt nhấn và xem trang đã được ẩn danh"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Giúp chúng tôi cải thiện MetaMask"
+    "message": "Giúp chúng tôi cải thiện Waymont"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask muốn thu thập dữ liệu sử dụng để hiểu rõ hơn về cách người dùng tương tác với tiện ích. Chúng tôi sẽ dùng dữ liệu này để liên tục cải thiện độ hữu ích và trải nghiệm người dùng trên sản phẩm của mình và hệ sinh thái Ethereum."
+    "message": "Waymont muốn thu thập dữ liệu sử dụng để hiểu rõ hơn về cách người dùng tương tác với tiện ích. Chúng tôi sẽ dùng dữ liệu này để liên tục cải thiện độ hữu ích và trải nghiệm người dùng trên sản phẩm của mình và hệ sinh thái Ethereum."
   },
   "metametricsOptInDescription2": {
     "message": "Chúng tôi muốn thu thập dữ liệu sử dụng cơ bản để cải thiện mức độ hữu ích của sản phẩm. Các chỉ số này sẽ..."
   },
   "metametricsTitle": {
-    "message": "Tham gia cùng hơn 6 Triệu người dùng để cải thiện MetaMask"
+    "message": "Tham gia cùng hơn 6 Triệu người dùng để cải thiện Waymont"
   },
   "mismatchedChainLinkText": {
     "message": "xác minh thông tin về mạng",
@@ -1936,7 +1936,7 @@
     "message": "Không thấy token của mình?"
   },
   "mobileSyncWarning": {
-    "message": "Tính năng 'Đồng bộ với tiện ích' tạm thời bị tắt. Nếu bạn muốn sử dụng ví tiện ích trên thiết bị di động MetaMask, thì trên ứng dụng di động: hãy quay lại các tùy chọn thiết lập ví và chọn phương án 'Nhập bằng Cụm Mật Khẩu Khôi Phục Bí Mật'. Sử dụng cụm mật khẩu bí mật của ví tiện ích để nhập ví của bạn vào thiết bị di động."
+    "message": "Tính năng 'Đồng bộ với tiện ích' tạm thời bị tắt. Nếu bạn muốn sử dụng ví tiện ích trên thiết bị di động Waymont, thì trên ứng dụng di động: hãy quay lại các tùy chọn thiết lập ví và chọn phương án 'Nhập bằng Cụm Mật Khẩu Khôi Phục Bí Mật'. Sử dụng cụm mật khẩu bí mật của ví tiện ích để nhập ví của bạn vào thiết bị di động."
   },
   "mustSelectOne": {
     "message": "Phải chọn ít nhất 1 token."
@@ -1948,7 +1948,7 @@
     "message": "Tên"
   },
   "needCryptoInWallet": {
-    "message": "Để tương tác với các ứng dụng phi tập trung bằng MetaMask, bạn sẽ cần $1 trong ví.",
+    "message": "Để tương tác với các ứng dụng phi tập trung bằng Waymont, bạn sẽ cần $1 trong ví.",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "needHelp": {
@@ -1959,7 +1959,7 @@
     "message": "Chia sẻ Phản Hồi của bạn"
   },
   "needHelpLinkText": {
-    "message": "Hỗ trợ về MetaMask"
+    "message": "Hỗ trợ về Waymont"
   },
   "needHelpSubmitTicket": {
     "message": "Gửi Phiếu"
@@ -2056,7 +2056,7 @@
     "message": "Hợp đồng mới"
   },
   "newNFTDetectedMessage": {
-    "message": "Cho phép MetaMask tự động phát hiện NFT từ OpenSea và hiển thị trên ví MetaMask của bạn."
+    "message": "Cho phép MetaMask tự động phát hiện NFT từ OpenSea và hiển thị trên ví Waymont của bạn."
   },
   "newNFTsDetected": {
     "message": "Mới! Phát hiện NFT"
@@ -2068,7 +2068,7 @@
     "message": "Mật khẩu mới (tối thiểu 8 ký tự)"
   },
   "newToMetaMask": {
-    "message": "Bạn mới sử dụng MetaMask?"
+    "message": "Bạn mới sử dụng Waymont?"
   },
   "newTokensImportedMessage": {
     "message": "Bạn đã nhập thành công $1.",
@@ -2207,7 +2207,7 @@
     "message": "Thêm các mạng phổ biến"
   },
   "notifications1Description": {
-    "message": "Giờ đây, người dùng MetaMask trên điện thoại di động có thể hoán đổi token trong ví di động của họ. Quét mã QR để tải ứng dụng di động và bắt đầu hoán đổi.",
+    "message": "Giờ đây, người dùng Waymont trên điện thoại di động có thể hoán đổi token trong ví di động của họ. Quét mã QR để tải ứng dụng di động và bắt đầu hoán đổi.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
@@ -2219,7 +2219,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Luôn cập nhật các phương pháp bảo mật tốt nhất của MetaMask và nhận các mẹo mới nhất về bảo mật từ nhóm hỗ trợ chính thức của MetaMask.",
+    "message": "Luôn cập nhật các phương pháp bảo mật tốt nhất của MetaMask và nhận các mẹo mới nhất về bảo mật từ nhóm hỗ trợ chính thức của Waymont.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -2231,7 +2231,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Nhận giá hoán đổi token tốt nhất ngay trong ví của bạn. Giờ đây, MetaMask sẽ kết nối bạn với nhiều trình tổng hợp sàn giao dịch phi tập trung và nhà tạo lập thị trường chuyên nghiệp trên Binance Smart Chain.",
+    "message": "Nhận giá hoán đổi token tốt nhất ngay trong ví của bạn. Giờ đây, Waymont sẽ kết nối bạn với nhiều trình tổng hợp sàn giao dịch phi tập trung và nhà tạo lập thị trường chuyên nghiệp trên Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -2243,11 +2243,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Kể từ phiên bản Chrome 91, API từng cho phép hỗ trợ Ledger (U2F) của chúng tôi không còn hỗ trợ ví cứng nữa. MetaMask đã triển khai một tính năng hỗ trợ Ledger Live mới cho phép bạn tiếp tục kết nối với thiết bị Ledger của mình thông qua ứng dụng Ledger Live trên máy tính.",
+    "message": "Kể từ phiên bản Chrome 91, API từng cho phép hỗ trợ Ledger (U2F) của chúng tôi không còn hỗ trợ ví cứng nữa. Waymont đã triển khai một tính năng hỗ trợ Ledger Live mới cho phép bạn tiếp tục kết nối với thiết bị Ledger của mình thông qua ứng dụng Ledger Live trên máy tính.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Khi tương tác với tài khoản Ledger của bạn trong MetaMask, một tab mới sẽ mở ra và bạn sẽ được yêu cầu mở ứng dụng Ledger Live.  Khi ứng dụng này mở ra, bạn sẽ được yêu cầu cho phép kết nối WebSocket với tài khoản MetaMask của mình.  Đơn giản vậy thôi!",
+    "message": "Khi tương tác với tài khoản Ledger của bạn trong MetaMask, một tab mới sẽ mở ra và bạn sẽ được yêu cầu mở ứng dụng Ledger Live.  Khi ứng dụng này mở ra, bạn sẽ được yêu cầu cho phép kết nối WebSocket với tài khoản Waymont của mình.  Đơn giản vậy thôi!",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2259,7 +2259,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 bao gồm hỗ trợ mới cho các giao dịch EIP-1559 khi sử dụng thiết bị Ledger.",
+    "message": "Waymont v10.1.0 bao gồm hỗ trợ mới cho các giao dịch EIP-1559 khi sử dụng thiết bị Ledger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -2275,7 +2275,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Kể từ phiên bản MetaMask v10.4.0, bạn không cần phần mềm Ledger Live để kết nối thiết bị Ledger của mình với MetaMask nữa.",
+    "message": "Kể từ phiên bản MetaMask v10.4.0, bạn không cần phần mềm Ledger Live để kết nối thiết bị Ledger của mình với Waymont nữa.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2345,16 +2345,16 @@
     "message": "Nhấn vào biểu tượng tiện ích trên trình duyệt"
   },
   "onboardingPinExtensionDescription": {
-    "message": "Ghim MetaMask trên trình duyệt để bạn có thể truy cập và dễ dàng xem các xác nhận giao dịch."
+    "message": "Ghim Waymont trên trình duyệt để bạn có thể truy cập và dễ dàng xem các xác nhận giao dịch."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Bạn có thể mở MetaMask bằng cách nhấn vào tiện ích và truy cập ví của mình chỉ với 1 cú nhấp chuột."
+    "message": "Bạn có thể mở Waymont bằng cách nhấn vào tiện ích và truy cập ví của mình chỉ với 1 cú nhấp chuột."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Nhấn vào biểu tượng tiện ích trên trình duyệt để truy cập tức thì"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Ghim MetaMask"
+    "message": "Ghim Waymont"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2363,7 +2363,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Quá trình cài đặt MetaMask đã hoàn tất!"
+    "message": "Quá trình cài đặt Waymont đã hoàn tất!"
   },
   "onboardingReturnNotice": {
     "message": "\"$1\" sẽ đóng tab này và quay về $2",
@@ -2384,7 +2384,7 @@
     "message": "Chỉ kết nối với các trang web mà bạn tin tưởng."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Mở MetaMask ở chế độ toàn màn hình để kết nối thiết bị Ledger của bạn qua WebHID.",
+    "message": "Mở Waymont ở chế độ toàn màn hình để kết nối thiết bị Ledger của bạn qua WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
@@ -2412,7 +2412,7 @@
     "message": "Tham gia MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Tham gia MetaMetrics để giúp chúng tôi cải thiện MetaMask"
+    "message": "Tham gia MetaMetrics để giúp chúng tôi cải thiện Waymont"
   },
   "password": {
     "message": "Mật khẩu"
@@ -2421,7 +2421,7 @@
     "message": "Mật khẩu không đủ dài"
   },
   "passwordSetupDetails": {
-    "message": "Mật khẩu này sẽ chỉ mở khóa ví MetaMask của bạn trên thiết bị này. MetaMask không thể khôi phục mật khẩu này."
+    "message": "Mật khẩu này sẽ chỉ mở khóa ví MetaMask của bạn trên thiết bị này. Waymont không thể khôi phục mật khẩu này."
   },
   "passwordStrength": {
     "message": "Độ mạnh của mật khẩu: $1",
@@ -2431,7 +2431,7 @@
     "message": "Một mật khẩu mạnh có thể giúp tăng cường bảo mật cho ví nếu thiết bị của bạn bị đánh cắp hoặc xâm phạm."
   },
   "passwordTermsWarning": {
-    "message": "Tôi hiểu rằng MetaMask không thể khôi phục mật khẩu này cho tôi. $1"
+    "message": "Tôi hiểu rằng Waymont không thể khôi phục mật khẩu này cho tôi. $1"
   },
   "passwordsDontMatch": {
     "message": "Mật khẩu không khớp"
@@ -2468,7 +2468,7 @@
     "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_customConfirmation": {
-    "message": "Hiển thị xác nhận trong MetaMask.",
+    "message": "Hiển thị xác nhận trong Waymont.",
     "description": "The description for the `snap_confirm` permission"
   },
   "permission_ethereumAccounts": {
@@ -2601,7 +2601,7 @@
     "message": "Tuyệt đối không cho ai biết Cụm mật khẩu khôi phục bí mật"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "Nhóm MetaMask sẽ không bao giờ hỏi Cụm mật khẩu khôi phục bí mật của bạn"
+    "message": "Nhóm Waymont sẽ không bao giờ hỏi Cụm mật khẩu khôi phục bí mật của bạn"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Cụm mật khẩu khôi phục bí mật sẽ kiểm soát mọi thứ trong tài khoản của bạn."
@@ -2677,7 +2677,7 @@
     "message": "Đặt lại ví"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask không lưu giữ bản sao mật khẩu của bạn. Nếu bạn đang gặp sự cố khi mở khóa tài khoản, bạn sẽ cần đặt lại ví của mình. Bạn có thể thực hiện bằng cách cung cấp Cụm từ khôi phục bí mật mà bạn đã sử dụng khi thiết lập ví."
+    "message": "Waymont không lưu giữ bản sao mật khẩu của bạn. Nếu bạn đang gặp sự cố khi mở khóa tài khoản, bạn sẽ cần đặt lại ví của mình. Bạn có thể thực hiện bằng cách cung cấp Cụm từ khôi phục bí mật mà bạn đã sử dụng khi thiết lập ví."
   },
   "resetWalletUsingSRP": {
     "message": "Hành động này sẽ xóa ví hiện tại và Cụm từ khôi phục bí mật khỏi thiết bị này, cùng với danh sách các tài khoản mà bạn quản lý. Sau khi đặt lại bằng Cụm từ khôi phục bí mật, bạn sẽ thấy danh sách các tài khoản dựa trên Cụm từ khôi phục bí mật mà bạn sử dụng để đặt lại. Danh sách mới này sẽ tự động bổ sung các tài khoản có số dư. Bạn cũng sẽ có thể $1 đã tạo trước đó. Các tài khoản tùy chỉnh mà bạn đã nhập sẽ cần $2, và mọi token tùy chỉnh mà bạn thêm vào tài khoản cũng sẽ cần $3."
@@ -2686,7 +2686,7 @@
     "message": "Đảm bảo bạn đang sử dụng đúng Cụm từ khôi phục bí mật trước khi tiếp tục vì bạn sẽ không thể hoàn tác."
   },
   "restartMetamask": {
-    "message": "Khởi động lại MetaMask"
+    "message": "Khởi động lại Waymont"
   },
   "restore": {
     "message": "Khôi phục"
@@ -2815,7 +2815,7 @@
     "message": "Nếu ai đó hỏi bạn cụm mật khẩu khôi phục bí mật, thì họ đang cố gắng lừa đảo và đánh cắp tiền trong ví của bạn"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Đừng bao giờ cho ai biết cụm mật khẩu khôi phục bí mật, kể cả MetaMask!"
+    "message": "Đừng bao giờ cho ai biết cụm mật khẩu khôi phục bí mật, kể cả Waymont!"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Cụm mật khẩu khôi phục bí mật là gì?"
@@ -2854,7 +2854,7 @@
     "message": "Chọn một tài khoản"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Tài khoản này đã được kết nối với MetaMask"
+    "message": "Tài khoản này đã được kết nối với Waymont"
   },
   "selectEachPhrase": {
     "message": "Vui lòng chọn từng cụm mật khẩu theo thứ tự để đảm bảo sự chính xác."
@@ -2908,7 +2908,7 @@
     "message": "Thiết lập cài đặt quyền riêng tư nâng cao"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask sử dụng các dịch vụ của bên thứ ba đáng tin cậy này để nâng cao sự hữu ích và an toàn của sản phẩm."
+    "message": "Waymont sử dụng các dịch vụ của bên thứ ba đáng tin cậy này để nâng cao sự hữu ích và an toàn của sản phẩm."
   },
   "setApprovalForAll": {
     "message": "Cài đặt phê duyệt tất cả"
@@ -3130,7 +3130,7 @@
     "message": "Lỗi khi truy xuất nhật ký trạng thái."
   },
   "stateLogFileName": {
-    "message": "Nhật ký trạng thái của MetaMask"
+    "message": "Nhật ký trạng thái của Waymont"
   },
   "stateLogs": {
     "message": "Nhật ký trạng thái"
@@ -3151,7 +3151,7 @@
     "message": "Đảm bảo Lattice1 của bạn đã sẵn sàng để kết nối"
   },
   "step1LatticeWalletMsg": {
-    "message": "Bạn có thể kết nối MetaMask với Lattice1 sau khi thiết bị đã được thiết lập và trực tuyến. Mở khóa thiết bị và chuẩn bị sẵn ID Thiết Bị. Để biết thêm về cách sử dụng ví cứng, $1",
+    "message": "Bạn có thể kết nối Waymont với Lattice1 sau khi thiết bị đã được thiết lập và trực tuyến. Mở khóa thiết bị và chuẩn bị sẵn ID Thiết Bị. Để biết thêm về cách sử dụng ví cứng, $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3209,7 +3209,7 @@
     "message": "Hãy thử hoán đổi lại. Chúng tôi ở đây để bảo vệ bạn trước những rủi ro tương tự trong lần tới."
   },
   "stxDescription": {
-    "message": "Tính năng Hoán đổi của MetaMask nay đã thông minh hơn rất nhiều! Kích hoạt Giao dịch thông minh sẽ cho phép MetaMask tối ưu quy trình Hoán đổi để giúp bạn:"
+    "message": "Tính năng Hoán đổi của MetaMask nay đã thông minh hơn rất nhiều! Kích hoạt Giao dịch thông minh sẽ cho phép Waymont tối ưu quy trình Hoán đổi để giúp bạn:"
   },
   "stxErrorNotEnoughFunds": {
     "message": "Không có đủ tiền để thực hiện giao dịch thông minh."
@@ -3347,7 +3347,7 @@
     "message": "Chỉnh sửa giới hạn"
   },
   "swapEnableDescription": {
-    "message": "Thao tác này là bắt buộc và cấp cho MetaMask quyền hoán đổi $1 của bạn.",
+    "message": "Thao tác này là bắt buộc và cấp cho Waymont quyền hoán đổi $1 của bạn.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3397,14 +3397,14 @@
     "message": "Phí gas trên màn hình trước được chia đôi giữa hai giao dịch này."
   },
   "swapGasFeesSummary": {
-    "message": "Phí gas được trả cho thợ đào tiền điện tử, họ là những người xử lý các giao dịch trên mạng $1. MetaMask không thu lợi nhuận từ phí gas.",
+    "message": "Phí gas được trả cho thợ đào tiền điện tử, họ là những người xử lý các giao dịch trên mạng $1. Waymont không thu lợi nhuận từ phí gas.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Số tiền trượt giá rất cao."
   },
   "swapIncludesMMFee": {
-    "message": "Bao gồm $1% phí của MetaMask.",
+    "message": "Bao gồm $1% phí của Waymont.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3414,7 +3414,7 @@
     "message": "Mức trượt giá tối đa"
   },
   "swapMetaMaskFee": {
-    "message": "Phí của MetaMask"
+    "message": "Phí của Waymont"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Chúng tôi luôn tìm giá tốt nhất từ các nguồn thanh khoản hàng đầu. Phí $1% được tự động tính vào báo giá này.",
@@ -3595,7 +3595,7 @@
     "message": "Xem hoạt động"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Thao tác này sẽ chuyển mạng được chọn trong MetaMask sang một mạng đã thêm trước đó:"
+    "message": "Thao tác này sẽ chuyển mạng được chọn trong Waymont sang một mạng đã thêm trước đó:"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Cho phép trang web này chuyển mạng?"
@@ -3635,16 +3635,16 @@
     "message": "Đảm bảo rằng không có ai nhìn vào màn hình của bạn khi quét mã này"
   },
   "syncWithMobileComplete": {
-    "message": "Đã đồng bộ thành công dữ liệu của bạn. Tận hưởng ứng dụng MetaMask trên thiết bị di động!"
+    "message": "Đã đồng bộ thành công dữ liệu của bạn. Tận hưởng ứng dụng Waymont trên thiết bị di động!"
   },
   "syncWithMobileDesc": {
-    "message": "Bạn có thể đồng bộ tài khoản và thông tin của mình với thiết bị di động. Mở ứng dụng MetaMask trên thiết bị di động, chuyển đến phần \"Cài đặt\" và nhấn vào \"Đồng bộ với tiện ích trình duyệt\""
+    "message": "Bạn có thể đồng bộ tài khoản và thông tin của mình với thiết bị di động. Mở ứng dụng Waymont trên thiết bị di động, chuyển đến phần \"Cài đặt\" và nhấn vào \"Đồng bộ với tiện ích trình duyệt\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Nếu mới mở ứng dụng MetaMask trên thiết bị di động lần đầu tiên, bạn chỉ cần làm theo các bước hướng dẫn trên điện thoại."
+    "message": "Nếu mới mở ứng dụng Waymont trên thiết bị di động lần đầu tiên, bạn chỉ cần làm theo các bước hướng dẫn trên điện thoại."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Quét mã này bằng ứng dụng MetaMask trên thiết bị di động"
+    "message": "Quét mã này bằng ứng dụng Waymont trên thiết bị di động"
   },
   "syncWithMobileTitle": {
     "message": "Đồng bộ với thiết bị di động"
@@ -3677,7 +3677,7 @@
     "message": "Chủ đề"
   },
   "themeDescription": {
-    "message": "Chọn chủ đề MetaMask yêu thích của bạn."
+    "message": "Chọn chủ đề Waymont yêu thích của bạn."
   },
   "thisWillCreate": {
     "message": "Thao tác này sẽ tạo một ví mới và Cụm mật khẩu khôi phục bí mật"
@@ -3776,7 +3776,7 @@
     "message": "Trang web gợi ý"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "Chỉnh sửa để sử dụng mức phí gas được đề xuất của MetaMask dựa trên khối mới nhất."
+    "message": "Chỉnh sửa để sử dụng mức phí gas được đề xuất của Waymont dựa trên khối mới nhất."
   },
   "transactionDetailGasHeading": {
     "message": "Phí gas ước tính"
@@ -3791,7 +3791,7 @@
     "message": "Phí gas do mạng thiết lập và sẽ dao động dựa trên lưu lượng mạng và độ phức tạp của giao dịch."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Phí gas được trả cho thợ đào tiền điện tử, họ là những người xử lý các giao dịch trên mạng $1. MetaMask không thu lợi nhuận từ phí gas."
+    "message": "Phí gas được trả cho thợ đào tiền điện tử, họ là những người xử lý các giao dịch trên mạng $1. Waymont không thu lợi nhuận từ phí gas."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Số lượng + phí gas"
@@ -3861,7 +3861,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "MetaMask đã gặp sự cố khi khởi động. Lỗi này có thể xảy ra không liên tục, vì vậy hãy thử khởi động lại tiện ích."
+    "message": "Waymont đã gặp sự cố khi khởi động. Lỗi này có thể xảy ra không liên tục, vì vậy hãy thử khởi động lại tiện ích."
   },
   "troubleTokenBalances": {
     "message": "Chúng tôi đã gặp phải vấn đề khi tải số dư token của bạn. Bạn có thể xem số dư ",
@@ -3883,7 +3883,7 @@
     "message": "Thông tin chi tiết về giao dịch không được hỗ trợ cho hợp đồng này tại thời điểm này."
   },
   "typePassword": {
-    "message": "Nhập mật khẩu MetaMask của bạn"
+    "message": "Nhập mật khẩu Waymont của bạn"
   },
   "typeYourSRP": {
     "message": "Nhập Cụm từ khôi phục bí mật của bạn"
@@ -4024,10 +4024,10 @@
     "message": "Bạn đã bảo vệ thành công ví của mình. Hãy đảm bảo an toàn và bí mật cho Cụm Mật Khẩu Khôi Phục Bí Mật của bạn -- đây là trách nhiệm của bạn!"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask không thể khôi phục Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
+    "message": "Waymont không thể khôi phục Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask sẽ không bao giờ hỏi về Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
+    "message": "Waymont sẽ không bao giờ hỏi về Cụm Mật Khẩu Khôi Phục Bí Mật của bạn."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 với bất kỳ ai, nếu không bạn sẽ có nguy cơ bị mất tiền",
@@ -4058,7 +4058,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Chào mừng bạn đến với MetaMask"
+    "message": "Chào mừng bạn đến với Waymont"
   },
   "welcomeBack": {
     "message": "Chào mừng bạn trở lại!"
@@ -4070,7 +4070,7 @@
     "message": "Khám phá các ứng dụng phi tập trung"
   },
   "welcomeLoginDescription": {
-    "message": "Sử dụng MetaMask của bạn để đăng nhập vào các ứng dụng phi tập trung - không cần đăng ký."
+    "message": "Sử dụng Waymont của bạn để đăng nhập vào các ứng dụng phi tập trung - không cần đăng ký."
   },
   "welcomeLoginTitle": {
     "message": "Gửi lời chào đến ví của bạn"
@@ -4079,7 +4079,7 @@
     "message": "Bắt đầu nào"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Được hàng triệu người tin dùng, MetaMask là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
+    "message": "Được hàng triệu người tin dùng, Waymont là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
   },
   "whatsNew": {
     "message": "Xem tính năng mới",

@@ -66,7 +66,7 @@
     "message": "Accédez à votre portefeuille en utilisant votre phrase secrète de récupération"
   },
   "accessYourWalletWithSRPDescription": {
-    "message": "MetaMask ne peut pas récupérer votre mot de passe. Nous utiliserons votre phrase secrète de récupération pour vérifier votre identité, restaurer votre portefeuille et définir un nouveau mot de passe. Veuillez tout d’abord saisir la phrase secrète de récupération qui vous a été fournie lorsque vous avez créé votre portefeuille. $1",
+    "message": "Waymont ne peut pas récupérer votre mot de passe. Nous utiliserons votre phrase secrète de récupération pour vérifier votre identité, restaurer votre portefeuille et définir un nouveau mot de passe. Veuillez tout d’abord saisir la phrase secrète de récupération qui vous a été fournie lorsque vous avez créé votre portefeuille. $1",
     "description": "$1 is the words 'Learn More' from key 'learnMore', separated here so that it can be added as a link"
   },
   "accessingYourCamera": {
@@ -116,7 +116,7 @@
     "message": "Ajouter un pseudo"
   },
   "addAcquiredTokens": {
-    "message": "Ajouter les jetons que vous avez acquis par l’intermédiaire de MetaMask"
+    "message": "Ajouter les jetons que vous avez acquis par l’intermédiaire de Waymont"
   },
   "addAlias": {
     "message": "Ajouter un alias"
@@ -132,10 +132,10 @@
     "description": "$1 is a blockchain explorer for a specific network, e.g. Etherscan for Ethereum"
   },
   "addEthereumChainConfirmationDescription": {
-    "message": "Cela permettra d’utiliser ce réseau dans MetaMask."
+    "message": "Cela permettra d’utiliser ce réseau dans Waymont."
   },
   "addEthereumChainConfirmationRisks": {
-    "message": "MetaMask ne vérifie pas les réseaux personnalisés."
+    "message": "Waymont ne vérifie pas les réseaux personnalisés."
   },
   "addEthereumChainConfirmationRisksLearnMore": {
     "message": "En savoir plus sur $1.",
@@ -256,15 +256,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Waymont",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Waymont Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Waymont Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -324,7 +324,7 @@
     "message": "Minuterie de déconnexion automatique (minutes)"
   },
   "autoLockTimeLimitDescription": {
-    "message": "Réglez la durée d’inactivité en minutes avant que MetaMask ne se déconnecte automatiquement."
+    "message": "Réglez la durée d’inactivité en minutes avant que Waymont ne se déconnecte automatiquement."
   },
   "average": {
     "message": "Moyen"
@@ -336,7 +336,7 @@
     "message": "Retour à Tous"
   },
   "backupApprovalInfo": {
-    "message": "Ce code secret est requis pour récupérer votre portefeuille si jamais vous perdez votre appareil, oubliez votre mot de passe, devez réinstaller MetaMask ou souhaitez accéder à votre portefeuille depuis un autre appareil."
+    "message": "Ce code secret est requis pour récupérer votre portefeuille si jamais vous perdez votre appareil, oubliez votre mot de passe, devez réinstaller Waymont ou souhaitez accéder à votre portefeuille depuis un autre appareil."
   },
   "backupApprovalNotice": {
     "message": "Sauvegardez votre phrase de récupération secret pour garder votre portefeuille et vos fonds en sécurité."
@@ -357,10 +357,10 @@
     "message": "Général"
   },
   "betaMetamaskDescription": {
-    "message": "MetaMask est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Waymont est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
   },
   "betaMetamaskDescriptionExplanation": {
-    "message": "Utilisez cette version pour tester les futures fonctionnalités avant leur lancement. Votre utilisation et vos commentaires nous aident à développer la meilleure version possible de MetaMask. Votre utilisation de la version bêta de MetaMask est conditionnée par notre norme $1, ainsi que par notre $2. Il s’agit de la version bêta, présentant un risque de bogues plus élevé. En continuant, vous acceptez et reconnaissez ce risque, ainsi que ceux mentionnés dans nos Conditions d’utilisation et nos Conditions bêta.",
+    "message": "Utilisez cette version pour tester les futures fonctionnalités avant leur lancement. Votre utilisation et vos commentaires nous aident à développer la meilleure version possible de MetaMask. Votre utilisation de la version bêta de Waymont est conditionnée par notre norme $1, ainsi que par notre $2. Il s’agit de la version bêta, présentant un risque de bogues plus élevé. En continuant, vous acceptez et reconnaissez ce risque, ainsi que ceux mentionnés dans nos Conditions d’utilisation et nos Conditions bêta.",
     "description": "$1 represents localization item betaMetamaskDescriptionExplanationTermsLinkText.  $2 represents localization item betaMetamaskDescriptionExplanationBetaTermsLinkText"
   },
   "betaMetamaskDescriptionExplanationBetaTermsLinkText": {
@@ -370,10 +370,10 @@
     "message": "Conditions d’utilisation"
   },
   "betaMetamaskVersion": {
-    "message": "MetaMask version bêta"
+    "message": "Waymont version bêta"
   },
   "betaWelcome": {
-    "message": "Bienvenue sur MetaMask Beta"
+    "message": "Bienvenue sur Waymont Beta"
   },
   "blockExplorerAccountAction": {
     "message": "Compte",
@@ -407,7 +407,7 @@
     "message": "Créez votre liste de contacts"
   },
   "builtAroundTheWorld": {
-    "message": "MetaMask est conçu et établi dans le monde entier."
+    "message": "Waymont est conçu et établi dans le monde entier."
   },
   "busy": {
     "message": "Occupé"
@@ -432,21 +432,21 @@
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithMoonPayDescription": {
-    "message": "MoonPay prend en charge les moyens de paiement populaires, incluant Visa, Mastercard, Apple / Google / Samsung Pay et les virements bancaires dans plus de 145 pays. Les tokens sont déposés sur votre compte MetaMask."
+    "message": "MoonPay prend en charge les moyens de paiement populaires, incluant Visa, Mastercard, Apple / Google / Samsung Pay et les virements bancaires dans plus de 145 pays. Les tokens sont déposés sur votre compte Waymont."
   },
   "buyCryptoWithTransak": {
     "message": "Acheter $1 avec Transak",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "buyCryptoWithTransakDescription": {
-    "message": "Transak prend en charge les cartes de crédit et de débit, Apple Pay, MobiKwik et les virements bancaires (selon l’emplacement) dans plus de 100 pays. Les tokens $1 sont directement déposés sur votre compte MetaMask.",
+    "message": "Transak prend en charge les cartes de crédit et de débit, Apple Pay, MobiKwik et les virements bancaires (selon l’emplacement) dans plus de 100 pays. Les tokens $1 sont directement déposés sur votre compte Waymont.",
     "description": "$1 represents the crypto symbol to be purchased"
   },
   "buyWithWyre": {
     "message": "Acheter des $1 avec Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Intégration facile pour les achats à hauteur de 1000 $. Vérification interactive et rapide des achats pour les comptes qui bénéficient d’un plafond de paiement élevé. Prise en charge des cartes de débit/crédit, d’Apple Pay et des virements bancaires. Disponible dans plus de 100 pays. Dépôt de jetons sur votre compte MetaMask."
+    "message": "Intégration facile pour les achats à hauteur de 1000 $. Vérification interactive et rapide des achats pour les comptes qui bénéficient d’un plafond de paiement élevé. Prise en charge des cartes de débit/crédit, d’Apple Pay et des virements bancaires. Disponible dans plus de 100 pays. Dépôt de jetons sur votre compte Waymont."
   },
   "bytes": {
     "message": "Octets"
@@ -501,7 +501,7 @@
     "description": "$1 is the chain id currently entered in the network form and $2 is the return value of nativeCurrency.symbol from chainlist.network"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Pour connecter votre portefeuille matériel, vous devez utiliser MetaMask pour Google Chrome."
+    "message": "Pour connecter votre portefeuille matériel, vous devez utiliser Waymont pour Google Chrome."
   },
   "clickToConnectLedgerViaWebHID": {
     "message": "Cliquez ici pour connecter votre Ledger via WebHID",
@@ -580,7 +580,7 @@
     "description": "$1 is the number of accounts to which the web3 site/application is asking to connect; this will substitute $1 in connectToMultiple"
   },
   "connectWithMetaMask": {
-    "message": "Connectez-vous avec MetaMask"
+    "message": "Connectez-vous avec Waymont"
   },
   "connectedAccountsDescriptionPlural": {
     "message": "Vous avez $1 comptes connectés à ce site.",
@@ -590,7 +590,7 @@
     "message": "Vous avez 1 compte connecté à ce site."
   },
   "connectedAccountsEmptyDescription": {
-    "message": "MetaMask n’est pas connecté à ce site. Pour vous connecter à un site web3, cliquez sur le bouton de connexion."
+    "message": "Waymont n’est pas connecté à ce site. Pour vous connecter à un site web3, cliquez sur le bouton de connexion."
   },
   "connectedSites": {
     "message": "Sites connectés"
@@ -665,7 +665,7 @@
     "message": "Interaction avec un contrat"
   },
   "convertTokenToNFTDescription": {
-    "message": "Nous avons détecté que cet actif est un NFT. MetaMask prend désormais nativement en charge les NFT. Voulez-vous le retirer de votre liste de jetons et l’ajouter en tant que NFT ?"
+    "message": "Nous avons détecté que cet actif est un NFT. Waymont prend désormais nativement en charge les NFT. Voulez-vous le retirer de votre liste de jetons et l’ajouter en tant que NFT ?"
   },
   "convertTokenToNFTExistDescription": {
     "message": "Nous avons détecté que cet actif a été ajouté en tant que NFT. Souhaitez-vous le retirer de votre liste de tokens ?"
@@ -788,7 +788,7 @@
     "message": "Données"
   },
   "dataBackupFoundInfo": {
-    "message": "Certaines données de votre compte ont été sauvegardées lors d’une précédente installation de MetaMask. Il peut s’agir de vos paramètres, contacts et jetons. Souhaitez-vous restaurer ces données maintenant ?"
+    "message": "Certaines données de votre compte ont été sauvegardées lors d’une précédente installation de Waymont. Il peut s’agir de vos paramètres, contacts et jetons. Souhaitez-vous restaurer ces données maintenant ?"
   },
   "dataHex": {
     "message": "Hex"
@@ -1091,7 +1091,7 @@
     "message": "Ne partagez jamais cette phrase avec qui que ce soit."
   },
   "endOfFlowMessage5": {
-    "message": "Attention à l’hameçonnage ! MetaMask ne vous demandera jamais spontanément votre phrase de départ."
+    "message": "Attention à l’hameçonnage ! Waymont ne vous demandera jamais spontanément votre phrase de départ."
   },
   "endOfFlowMessage6": {
     "message": "Si vous avez besoin de sauvegarder à nouveau votre phrase de départ, vous pouvez la trouver dans Paramètres -> Sécurité."
@@ -1101,7 +1101,7 @@
     "description": "$1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask ne peut pas récupérer votre phrase de départ."
+    "message": "Waymont ne peut pas récupérer votre phrase de départ."
   },
   "endOfFlowMessage9": {
     "message": "En savoir plus."
@@ -1159,7 +1159,7 @@
     "description": "Message displayed on generic error page in the popup UI, $1 is a clickable link with text defined by the 'here' key. The link will open to a form where users can file support tickets."
   },
   "errorPageTitle": {
-    "message": "MetaMask a rencontré une erreur",
+    "message": "Waymont a rencontré une erreur",
     "description": "Title of generic error page"
   },
   "errorStack": {
@@ -1253,11 +1253,11 @@
     "description": "This explains the risks of using MetaMask Flask"
   },
   "flaskWelcomeWarning3": {
-    "message": "Toutes les API de Flask sont expérimentales. Elles peuvent être modifiées ou supprimées sans préavis. Elles peuvent aussi rester sur Flask indéfiniment sans jamais être migrées vers le MetaMask stable. Utilisez-les à vos risques et périls.",
+    "message": "Toutes les API de Flask sont expérimentales. Elles peuvent être modifiées ou supprimées sans préavis. Elles peuvent aussi rester sur Flask indéfiniment sans jamais être migrées vers le Waymont stable. Utilisez-les à vos risques et périls.",
     "description": "This message warns developers about unstable Flask APIs"
   },
   "flaskWelcomeWarning4": {
-    "message": "Assurez-vous de désactiver l’extension MetaMask que vous utilisez habituellement lorsque vous utilisez Flask.",
+    "message": "Assurez-vous de désactiver l’extension Waymont que vous utilisez habituellement lorsque vous utilisez Flask.",
     "description": "This message calls to pay attention about multiple versions of MetaMask running on the same site (Flask + Prod)"
   },
   "flaskWelcomeWarningAcceptButton": {
@@ -1442,7 +1442,7 @@
     "message": "Connecter un portefeuille matériel"
   },
   "hardwareWalletsMsg": {
-    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec MetaMask"
+    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec Waymont"
   },
   "here": {
     "message": "ici",
@@ -1503,7 +1503,7 @@
     "message": "Erreur d’importation de compte."
   },
   "importAccountMsg": {
-    "message": "Les comptes importés ne seront pas associés à la phrase secrète de récupération que vous avez créée au départ dans MetaMask. En savoir plus sur les comptes importés"
+    "message": "Les comptes importés ne seront pas associés à la phrase secrète de récupération que vous avez créée au départ dans Waymont. En savoir plus sur les comptes importés"
   },
   "importAccountSeedPhrase": {
     "message": "Importez un compte avec une phrase mnémotechnique"
@@ -1553,7 +1553,7 @@
     "description": "status showing that an account has been fully loaded into the keyring"
   },
   "infuraBlockedNotification": {
-    "message": "MetaMask ne peut pas se connecter à l’hôte de la blockchain. Vérifiez les éventuelles raisons $1.",
+    "message": "Waymont ne peut pas se connecter à l’hôte de la blockchain. Vérifiez les éventuelles raisons $1.",
     "description": "$1 is a clickable link with with text defined by the 'here' key"
   },
   "initialTransactionConfirmed": {
@@ -1710,7 +1710,7 @@
     "message": "Ouvrez et déverrouillez l’application Ledger Live"
   },
   "ledgerConnectionPreferenceDescription": {
-    "message": "Personnalisez la façon dont vous souhaitez connecter votre Ledger à MetaMask. $1 est recommandé, mais d’autres options sont disponibles. En savoir plus ici : $2",
+    "message": "Personnalisez la façon dont vous souhaitez connecter votre Ledger à Waymont. $1 est recommandé, mais d’autres options sont disponibles. En savoir plus ici : $2",
     "description": "A description that appears above a dropdown where users can select between up to three options - Ledger Live, U2F or WebHID - depending on what is supported in their browser. $1 is the recommended browser option, it will be either WebHID or U2f. $2 is a link to an article where users can learn more, but will be the translation of the learnMore message."
   },
   "ledgerDeviceOpenFailureMessage": {
@@ -1840,7 +1840,7 @@
     "message": "Message"
   },
   "metaMaskConnectStatusParagraphOne": {
-    "message": "Vous avez maintenant davantage de contrôle sur les connexions de vos comptes dans MetaMask."
+    "message": "Vous avez maintenant davantage de contrôle sur les connexions de vos comptes dans Waymont."
   },
   "metaMaskConnectStatusParagraphThree": {
     "message": "Cliquez pour gérer vos comptes connectés."
@@ -1849,13 +1849,13 @@
     "message": "Le bouton d’état de connexion indique si le site Web que vous visitez est connecté à votre compte actuellement sélectionné."
   },
   "metamaskDescription": {
-    "message": "MetaMask est un coffre sécurisé pour votre identité sur Ethereum."
+    "message": "Waymont est un coffre sécurisé pour votre identité sur Ethereum."
   },
   "metamaskSwapsOfflineDescription": {
-    "message": "MetaMask Swaps est en cours de maintenance. Nous vous invitons à revenir plus tard."
+    "message": "Waymont Swaps est en cours de maintenance. Nous vous invitons à revenir plus tard."
   },
   "metamaskVersion": {
-    "message": "Version de MetaMask"
+    "message": "Version de Waymont"
   },
   "metametricsCommitmentsAllowOptOut": {
     "message": "Toujours pouvoir vous désinscrire via les Paramètres"
@@ -1868,7 +1868,7 @@
     "description": "This string is localized separately from some of the commitments so that we can bold it"
   },
   "metametricsCommitmentsIntro": {
-    "message": "MetaMask :"
+    "message": "Waymont :"
   },
   "metametricsCommitmentsNeverCollect": {
     "message": "Ne collectera jamais vos clés, adresses, transactions, soldes, hachages ou toute autre information personnelle"
@@ -1895,16 +1895,16 @@
     "message": "Enverra des événements de clics et de pages vues anonymisés"
   },
   "metametricsHelpImproveMetaMask": {
-    "message": "Aidez-nous à améliorer MetaMask"
+    "message": "Aidez-nous à améliorer Waymont"
   },
   "metametricsOptInDescription": {
-    "message": "MetaMask souhaite recueillir des données d’utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l’extension. Elles seront utilisées pour améliorer en permanence la convivialité et l’expérience utilisateur de notre produit et de l’écosystème Ethereum."
+    "message": "Waymont souhaite recueillir des données d’utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l’extension. Elles seront utilisées pour améliorer en permanence la convivialité et l’expérience utilisateur de notre produit et de l’écosystème Ethereum."
   },
   "metametricsOptInDescription2": {
     "message": "Nous aimerions recueillir des données d’utilisation de base pour améliorer la convivialité de notre produit. Ces indicateurs seront…"
   },
   "metametricsTitle": {
-    "message": "Rejoignez plus de 6 M d’utilisateurs pour améliorer MetaMask"
+    "message": "Rejoignez plus de 6 M d’utilisateurs pour améliorer Waymont"
   },
   "mismatchedChainLinkText": {
     "message": "vérifier les détails du réseau",
@@ -1936,7 +1936,7 @@
     "message": "Vous ne voyez pas votre jeton ?"
   },
   "mobileSyncWarning": {
-    "message": "La fonction « Synchronisation avec l’extension » est temporairement désactivée. Si vous souhaitez utiliser votre portefeuille d’extension sur MetaMask mobile : sur votre application mobile, revenez aux options de configuration du portefeuille et sélectionnez l’option « Importation avec la phrase secrète de récupération ». Utilisez la phrase secrète de votre portefeuille d’extension pour importer celui-ci sur votre mobile."
+    "message": "La fonction « Synchronisation avec l’extension » est temporairement désactivée. Si vous souhaitez utiliser votre portefeuille d’extension sur Waymont mobile : sur votre application mobile, revenez aux options de configuration du portefeuille et sélectionnez l’option « Importation avec la phrase secrète de récupération ». Utilisez la phrase secrète de votre portefeuille d’extension pour importer celui-ci sur votre mobile."
   },
   "mustSelectOne": {
     "message": "Vous devez sélectionner au moins 1 jeton."
@@ -1948,7 +1948,7 @@
     "message": "Nom"
   },
   "needCryptoInWallet": {
-    "message": "Pour interagir avec des applications décentralisées à l’aide de MetaMask, vous devrez avoir $1 dans votre portefeuille.",
+    "message": "Pour interagir avec des applications décentralisées à l’aide de Waymont, vous devrez avoir $1 dans votre portefeuille.",
     "description": "$1 represents the cypto symbol to be purchased"
   },
   "needHelp": {
@@ -1959,7 +1959,7 @@
     "message": "Partagez vos commentaires"
   },
   "needHelpLinkText": {
-    "message": "Assistance MetaMask"
+    "message": "Assistance Waymont"
   },
   "needHelpSubmitTicket": {
     "message": "Envoyer un ticket"
@@ -2056,7 +2056,7 @@
     "message": "Nouveau contrat"
   },
   "newNFTDetectedMessage": {
-    "message": "Cela permet à MetaMask de détecter automatiquement les NFT d’OpenSea et de les afficher dans votre portefeuille."
+    "message": "Cela permet à Waymont de détecter automatiquement les NFT d’OpenSea et de les afficher dans votre portefeuille."
   },
   "newNFTsDetected": {
     "message": "Nouveau ! Détection de NFT"
@@ -2068,7 +2068,7 @@
     "message": "Nouveau mot de passe (min 8 caractères)"
   },
   "newToMetaMask": {
-    "message": "Nouveau sur MetaMask ?"
+    "message": "Nouveau sur Waymont ?"
   },
   "newTokensImportedMessage": {
     "message": "Vous avez importé avec succès $1.",
@@ -2207,7 +2207,7 @@
     "message": "Ajouter des réseaux populaires"
   },
   "notifications1Description": {
-    "message": "Les utilisateurs de MetaMask Mobile peuvent désormais échanger des jetons dans leur portefeuille mobile. Scannez le code QR pour obtenir l’application mobile et commencez à échanger.",
+    "message": "Les utilisateurs de Waymont Mobile peuvent désormais échanger des jetons dans leur portefeuille mobile. Scannez le code QR pour obtenir l’application mobile et commencez à échanger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the swapping on mobile feature."
   },
   "notifications1Title": {
@@ -2219,7 +2219,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Stay secure' notification. Upon clicking, users will be taken to a page about security on the metamask support website."
   },
   "notifications3Description": {
-    "message": "Informez-vous régulièrement sur les pratiques de sécurité conseillées par MetaMask et bénéficiez des derniers conseils de son service d’assistance officiel en la matière.",
+    "message": "Informez-vous régulièrement sur les pratiques de sécurité conseillées par Waymont et bénéficiez des derniers conseils de son service d’assistance officiel en la matière.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the information they can get on security from the linked support page."
   },
   "notifications3Title": {
@@ -2231,7 +2231,7 @@
     "description": "The 'call to action' on the button, or link, of the 'Swap on Binance Smart Chain!' notification. Upon clicking, users will be taken to a page where then can swap tokens on Binance Smart Chain."
   },
   "notifications4Description": {
-    "message": "Bénéficiez des meilleurs prix sur les swaps de jetons directement dans votre portefeuille. MetaMask vous connecte désormais à de multiples agrégateurs d’échanges décentralisés et à des teneurs de marché professionnels sur la Binance Smart Chain.",
+    "message": "Bénéficiez des meilleurs prix sur les swaps de jetons directement dans votre portefeuille. Waymont vous connecte désormais à de multiples agrégateurs d’échanges décentralisés et à des teneurs de marché professionnels sur la Binance Smart Chain.",
     "description": "Description of a notification in the 'See What's New' popup."
   },
   "notifications4Title": {
@@ -2243,11 +2243,11 @@
     "description": "Description of a notification in the 'See What's New' popup. Describes the seed phrase wording update."
   },
   "notifications6DescriptionOne": {
-    "message": "Depuis la version 91 de Chrome, l’API qui permettait la prise en charge de notre Ledger (U2F) ne gère plus les portefeuilles matériels. MetaMask a donc mis en place un nouveau système de prise en charge de Ledger Live qui vous permet de continuer à vous connecter à votre appareil Ledger via l’application Ledger Live.",
+    "message": "Depuis la version 91 de Chrome, l’API qui permettait la prise en charge de notre Ledger (U2F) ne gère plus les portefeuilles matériels. Waymont a donc mis en place un nouveau système de prise en charge de Ledger Live qui vous permet de continuer à vous connecter à votre appareil Ledger via l’application Ledger Live.",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionThree": {
-    "message": "Lorsque vous interagissez avec votre compte Ledger dans MetaMask, un nouvel onglet s’ouvre et vous invite à ouvrir l’application Ledger Live. Une fois celle-ci lancée, vous devrez autoriser une connexion WebSocket à votre compte MetaMask. Et le tour est joué !",
+    "message": "Lorsque vous interagissez avec votre compte Ledger dans MetaMask, un nouvel onglet s’ouvre et vous invite à ouvrir l’application Ledger Live. Une fois celle-ci lancée, vous devrez autoriser une connexion WebSocket à votre compte Waymont. Et le tour est joué !",
     "description": "Description of a notification in the 'See What's New' popup. Describes the Ledger support update."
   },
   "notifications6DescriptionTwo": {
@@ -2259,7 +2259,7 @@
     "description": "Title for a notification in the 'See What's New' popup. Lets users know about the Ledger support update"
   },
   "notifications7DescriptionOne": {
-    "message": "MetaMask v10.1.0 inclut une nouvelle prise en charge des transactions EIP-1559 en cas d’utilisation d’appareils Ledger.",
+    "message": "Waymont v10.1.0 inclut une nouvelle prise en charge des transactions EIP-1559 en cas d’utilisation d’appareils Ledger.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for ledger and EIP1559 in v10.1.0"
   },
   "notifications7DescriptionTwo": {
@@ -2275,7 +2275,7 @@
     "description": "Description on an action button that appears in the What's New popup. Tells the user that if they click it, they will go to our Advanced settings page."
   },
   "notifications8DescriptionOne": {
-    "message": "Depuis MetaMask v10.4.0, vous n’avez plus besoin de Ledger Live pour connecter votre appareil Ledger à MetaMask.",
+    "message": "Depuis MetaMask v10.4.0, vous n’avez plus besoin de Ledger Live pour connecter votre appareil Ledger à Waymont.",
     "description": "Description of a notification in the 'See What's New' popup. Describes changes for how Ledger Live is no longer needed to connect the device."
   },
   "notifications8DescriptionTwo": {
@@ -2345,16 +2345,16 @@
     "message": "Cliquez sur l’icône d’extension du navigateur"
   },
   "onboardingPinExtensionDescription": {
-    "message": "Épinglez MetaMask dans votre navigateur pour qu’il soit accessible et qu’il soit facile de voir les confirmations de transaction."
+    "message": "Épinglez Waymont dans votre navigateur pour qu’il soit accessible et qu’il soit facile de voir les confirmations de transaction."
   },
   "onboardingPinExtensionDescription2": {
-    "message": "Vous pouvez ouvrir MetaMask en cliquant sur l’extension pour accéder à votre portefeuille en un seul clic."
+    "message": "Vous pouvez ouvrir Waymont en cliquant sur l’extension pour accéder à votre portefeuille en un seul clic."
   },
   "onboardingPinExtensionDescription3": {
     "message": "Cliquez sur l’icône d’extension du navigateur pour y accéder instantanément"
   },
   "onboardingPinExtensionLabel": {
-    "message": "Épingler MetaMask"
+    "message": "Épingler Waymont"
   },
   "onboardingPinExtensionStep1": {
     "message": "1"
@@ -2363,7 +2363,7 @@
     "message": "2"
   },
   "onboardingPinExtensionTitle": {
-    "message": "Votre installation de MetaMask est terminée !"
+    "message": "Votre installation de Waymont est terminée !"
   },
   "onboardingReturnNotice": {
     "message": "« $1 » va fermer cet onglet et vous rediriger vers $2",
@@ -2384,7 +2384,7 @@
     "message": "Ne vous connectez qu’aux sites auxquels vous faites confiance."
   },
   "openFullScreenForLedgerWebHid": {
-    "message": "Ouvrez MetaMask en mode plein écran pour connecter votre Ledger via WebHID.",
+    "message": "Ouvrez Waymont en mode plein écran pour connecter votre Ledger via WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
   "optional": {
@@ -2412,7 +2412,7 @@
     "message": "Participer à MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participez à MetaMetrics pour nous aider à améliorer MetaMask"
+    "message": "Participez à MetaMetrics pour nous aider à améliorer Waymont"
   },
   "password": {
     "message": "Mot de passe"
@@ -2421,7 +2421,7 @@
     "message": "Mot de passe trop court"
   },
   "passwordSetupDetails": {
-    "message": "Ce mot de passe permet de déverrouiller votre portefeuille MetaMask uniquement sur cet appareil. MetaMask ne peut pas récupérer ce mot de passe."
+    "message": "Ce mot de passe permet de déverrouiller votre portefeuille MetaMask uniquement sur cet appareil. Waymont ne peut pas récupérer ce mot de passe."
   },
   "passwordStrength": {
     "message": "Robustesse du mot de passe : $1",
@@ -2431,7 +2431,7 @@
     "message": "Un mot de passe robuste peut améliorer la sécurité de votre portefeuille en cas de vol ou de compromission de votre appareil."
   },
   "passwordTermsWarning": {
-    "message": "Je comprends que MetaMask ne peut pas me récupérer ce mot de passe. $1"
+    "message": "Je comprends que Waymont ne peut pas me récupérer ce mot de passe. $1"
   },
   "passwordsDontMatch": {
     "message": "Les mots de passe ne correspondent pas"
@@ -2468,7 +2468,7 @@
     "description": "The description for the `wallet_snap_*` permission. $1 is the name of the Snap."
   },
   "permission_customConfirmation": {
-    "message": "Afficher une confirmation dans MetaMask.",
+    "message": "Afficher une confirmation dans Waymont.",
     "description": "The description for the `snap_confirm` permission"
   },
   "permission_ethereumAccounts": {
@@ -2601,7 +2601,7 @@
     "message": "Ne partagez jamais votre phrase secrète de récupération avec qui que ce soit"
   },
   "recoveryPhraseReminderItemTwo": {
-    "message": "L’équipe MetaMask ne vous demandera jamais votre phrase secrète de récupération"
+    "message": "L’équipe Waymont ne vous demandera jamais votre phrase secrète de récupération"
   },
   "recoveryPhraseReminderSubText": {
     "message": "Votre phrase secrète de récupération contrôle tous vos comptes."
@@ -2677,7 +2677,7 @@
     "message": "Réinitialiser le portefeuille"
   },
   "resetWalletSubHeader": {
-    "message": "MetaMask ne conserve pas de copie de votre mot de passe. Si vous avez des difficultés à déverrouiller votre compte, vous devrez réinitialiser votre portefeuille. Vous pouvez le faire en fournissant la phrase de récupération secrète que vous avez saisie lors de la configuration de votre portefeuille."
+    "message": "Waymont ne conserve pas de copie de votre mot de passe. Si vous avez des difficultés à déverrouiller votre compte, vous devrez réinitialiser votre portefeuille. Vous pouvez le faire en fournissant la phrase de récupération secrète que vous avez saisie lors de la configuration de votre portefeuille."
   },
   "resetWalletUsingSRP": {
     "message": "Cette action supprimera votre portefeuille actuel et votre phrase de récupération secrète de cet appareil, ainsi que la liste des comptes que vous avez sélectionnés. Après la réinitialisation avec une phrase de récupération secrète, vous verrez une liste de comptes basés sur la phrase de récupération secrète que vous utilisez pour réinitialiser. Cette nouvelle liste comprendra automatiquement les comptes qui ont un solde. Vous pourrez également $1 créé auparavant. Les comptes personnalisés que vous avez importés devront être $2 et tous les jetons personnalisés que vous avez ajoutés à un compte devront également être $3."
@@ -2686,7 +2686,7 @@
     "message": "Vérifiez que vous avez saisi correctement la phrase de récupération secrète avant de continuer. Vous ne pourrez pas annuler cette action."
   },
   "restartMetamask": {
-    "message": "Redémarrer MetaMask"
+    "message": "Redémarrer Waymont"
   },
   "restore": {
     "message": "Restaurer"
@@ -2815,7 +2815,7 @@
     "message": "Si quelqu’un vous demande votre phrase de récupération, il est probable qu’il essaie de vous arnaquer pour dérober les fonds de votre portefeuille"
   },
   "seedPhraseIntroSidebarCopyTwo": {
-    "message": "Ne partagez jamais, au grand jamais, votre phrase secrète de récupération, pas même avec MetaMask !"
+    "message": "Ne partagez jamais, au grand jamais, votre phrase secrète de récupération, pas même avec Waymont !"
   },
   "seedPhraseIntroSidebarTitleOne": {
     "message": "Qu’est-ce qu’une phrase secrète de récupération ?"
@@ -2854,7 +2854,7 @@
     "message": "Sélectionner un compte"
   },
   "selectAnAccountAlreadyConnected": {
-    "message": "Ce compte a déjà été connecté à MetaMask"
+    "message": "Ce compte a déjà été connecté à Waymont"
   },
   "selectEachPhrase": {
     "message": "Veuillez sélectionner chaque phrase afin de vous assurer qu’elle est correcte."
@@ -2908,7 +2908,7 @@
     "message": "Définir des paramètres de confidentialité avancés"
   },
   "setAdvancedPrivacySettingsDetails": {
-    "message": "MetaMask utilise ces services tiers de confiance pour améliorer la convivialité et la sécurité des produits."
+    "message": "Waymont utilise ces services tiers de confiance pour améliorer la convivialité et la sécurité des produits."
   },
   "setApprovalForAll": {
     "message": "Définir l'approbation pour tous"
@@ -3130,7 +3130,7 @@
     "message": "Erreur lors du chargement des journaux d’état."
   },
   "stateLogFileName": {
-    "message": "Journaux d’état MetaMask"
+    "message": "Journaux d’état Waymont"
   },
   "stateLogs": {
     "message": "Journaux d’état"
@@ -3151,7 +3151,7 @@
     "message": "Assurez-vous que votre Lattice1 est prêt à se connecter"
   },
   "step1LatticeWalletMsg": {
-    "message": "Vous pouvez connecter MetaMask à votre dispositif Lattice1 une fois qu’il est configuré et en ligne. Déverrouillez votre appareil et munissez-vous de son ID. Pour en savoir plus sur l’utilisation des portefeuilles matériels, $1",
+    "message": "Vous pouvez connecter Waymont à votre dispositif Lattice1 une fois qu’il est configuré et en ligne. Déverrouillez votre appareil et munissez-vous de son ID. Pour en savoir plus sur l’utilisation des portefeuilles matériels, $1",
     "description": "$1 represents the `hardwareWalletSupportLinkConversion` localization key"
   },
   "step1LedgerWallet": {
@@ -3209,7 +3209,7 @@
     "message": "Réessayez le swap. Nous serons là pour vous protéger contre des risques similaires la prochaine fois."
   },
   "stxDescription": {
-    "message": "MetaMask Swaps vient de devenir beaucoup plus intelligent ! Si vous activez les transactions intelligentes, MetaMask pourra optimiser programmatiquement votre swap pour vous aider à :"
+    "message": "MetaMask Swaps vient de devenir beaucoup plus intelligent ! Si vous activez les transactions intelligentes, Waymont pourra optimiser programmatiquement votre swap pour vous aider à :"
   },
   "stxErrorNotEnoughFunds": {
     "message": "Fonds insuffisants pour une transaction intelligente."
@@ -3347,7 +3347,7 @@
     "message": "Modifier la limite"
   },
   "swapEnableDescription": {
-    "message": "Cette information est nécessaire et autorise MetaMask à effectuer le swap de vos $1.",
+    "message": "Cette information est nécessaire et autorise Waymont à effectuer le swap de vos $1.",
     "description": "Gives the user info about the required approval transaction for swaps. $1 will be the symbol of a token being approved for swaps."
   },
   "swapEnableTokenForSwapping": {
@@ -3397,14 +3397,14 @@
     "message": "Les frais de carburant indiqués dans l’écran précédent sont répartis entre ces deux transactions."
   },
   "swapGasFeesSummary": {
-    "message": "Les frais de carburant sont payés aux mineurs de cryptomonnaies qui traitent les transactions sur le réseau $1. MetaMask ne tire aucun profit des frais de carburant.",
+    "message": "Les frais de carburant sont payés aux mineurs de cryptomonnaies qui traitent les transactions sur le réseau $1. Waymont ne tire aucun profit des frais de carburant.",
     "description": "$1 is the selected network, e.g. Ethereum or BSC"
   },
   "swapHighSlippageWarning": {
     "message": "Le montant du glissement est très élevé."
   },
   "swapIncludesMMFee": {
-    "message": "Comprend des frais MetaMask à hauteur de $1 %.",
+    "message": "Comprend des frais Waymont à hauteur de $1 %.",
     "description": "Provides information about the fee that metamask takes for swaps. $1 is a decimal number."
   },
   "swapLowSlippageError": {
@@ -3414,7 +3414,7 @@
     "message": "Glissement maximal"
   },
   "swapMetaMaskFee": {
-    "message": "Frais MetaMask"
+    "message": "Frais Waymont"
   },
   "swapMetaMaskFeeDescription": {
     "message": "Nous recherchons systématiquement le meilleur prix auprès des meilleures sources de liquidité. Une commission de $1 % est automatiquement incluse dans cette cotation.",
@@ -3595,7 +3595,7 @@
     "message": "Afficher dans l’activité"
   },
   "switchEthereumChainConfirmationDescription": {
-    "message": "Ceci permet de remplacer le réseau sélectionné dans MetaMask par un réseau précédemment ajouté :"
+    "message": "Ceci permet de remplacer le réseau sélectionné dans Waymont par un réseau précédemment ajouté :"
   },
   "switchEthereumChainConfirmationTitle": {
     "message": "Autoriser ce site à changer de réseau ?"
@@ -3635,16 +3635,16 @@
     "message": "Assurez-vous que personne d’autre ne regarde votre écran lorsque vous scannez ce code."
   },
   "syncWithMobileComplete": {
-    "message": "Vos données ont été synchronisées avec succès. Profitez de l’application mobile MetaMask !"
+    "message": "Vos données ont été synchronisées avec succès. Profitez de l’application mobile Waymont !"
   },
   "syncWithMobileDesc": {
-    "message": "Vous pouvez synchroniser vos comptes et vos informations avec votre appareil mobile. Ouvrez l’application mobile MetaMask, allez dans « Paramètres » et appuyez sur « Synchroniser depuis l’extension de navigateur »"
+    "message": "Vous pouvez synchroniser vos comptes et vos informations avec votre appareil mobile. Ouvrez l’application mobile Waymont, allez dans « Paramètres » et appuyez sur « Synchroniser depuis l’extension de navigateur »"
   },
   "syncWithMobileDescNewUsers": {
-    "message": "Si vous ouvrez l’application MetaMask Mobile pour la première fois, suivez simplement les étapes dans votre téléphone."
+    "message": "Si vous ouvrez l’application Waymont Mobile pour la première fois, suivez simplement les étapes dans votre téléphone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scannez ce code avec votre application mobile MetaMask"
+    "message": "Scannez ce code avec votre application mobile Waymont"
   },
   "syncWithMobileTitle": {
     "message": "Synchroniser avec le mobile"
@@ -3677,7 +3677,7 @@
     "message": "Thème"
   },
   "themeDescription": {
-    "message": "Choisissez votre thème MetaMask préféré."
+    "message": "Choisissez votre thème Waymont préféré."
   },
   "thisWillCreate": {
     "message": "Cela créera un nouveau portefeuille et une nouvelle phrase mnémotechnique"
@@ -3776,7 +3776,7 @@
     "message": "Site suggéré"
   },
   "transactionDetailDappGasTooltip": {
-    "message": "Modifier pour utiliser les frais de carburant recommandé par MetaMask selon le dernier bloc."
+    "message": "Modifier pour utiliser les frais de carburant recommandé par Waymont selon le dernier bloc."
   },
   "transactionDetailGasHeading": {
     "message": "Frais de carburant estimés"
@@ -3791,7 +3791,7 @@
     "message": "Les frais de carburant sont définis par le réseau et fluctuent selon le trafic réseau et la complexité de la transaction."
   },
   "transactionDetailGasTooltipIntro": {
-    "message": "Les frais de carburant sont payés aux mineurs de cryptomonnaies qui traitent les transactions sur le réseau $1. MetaMask ne tire aucun profit des frais de carburant."
+    "message": "Les frais de carburant sont payés aux mineurs de cryptomonnaies qui traitent les transactions sur le réseau $1. Waymont ne tire aucun profit des frais de carburant."
   },
   "transactionDetailGasTotalSubtitle": {
     "message": "Montant + frais de carburant"
@@ -3861,7 +3861,7 @@
     "description": "$1 is the wallet device name; $2 is a link to wallet connection guide"
   },
   "troubleStarting": {
-    "message": "Impossible de démarrer MetaMask. Cette erreur peut être occasionnelle, essayez donc de redémarrer lextension."
+    "message": "Impossible de démarrer Waymont. Cette erreur peut être occasionnelle, essayez donc de redémarrer lextension."
   },
   "troubleTokenBalances": {
     "message": "Nous avons eu du mal à charger votre balance de jetons, vous pouvez la consulter ici :",
@@ -4024,10 +4024,10 @@
     "message": "Votre portefeuille est bien protégé. Conservez votre phrase secrète de récupération en sécurité et en toute discrétion. C’est votre responsabilité !"
   },
   "walletCreationSuccessReminder1": {
-    "message": "MetaMask ne peut pas restaurer votre phrase secrète de récupération."
+    "message": "Waymont ne peut pas restaurer votre phrase secrète de récupération."
   },
   "walletCreationSuccessReminder2": {
-    "message": "MetaMask ne vous demandera jamais votre phrase secrète de récupération."
+    "message": "Waymont ne vous demandera jamais votre phrase secrète de récupération."
   },
   "walletCreationSuccessReminder3": {
     "message": "$1 avec n’importe qui, sinon vous risquez de voir vos fonds subtilisés",
@@ -4058,7 +4058,7 @@
     "description": "Refers to a interface for connecting external devices to the browser. Used for connecting ledger to the browser. Read more here https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API"
   },
   "welcome": {
-    "message": "Bienvenue dans MetaMask"
+    "message": "Bienvenue dans Waymont"
   },
   "welcomeBack": {
     "message": "Bienvenue à nouveau !"
@@ -4070,7 +4070,7 @@
     "message": "Explorer des applications décentralisées"
   },
   "welcomeLoginDescription": {
-    "message": "Utilisez votre MetaMask pour vous connecter à des applications décentralisées. Nul besoin de vous inscrire !"
+    "message": "Utilisez votre Waymont pour vous connecter à des applications décentralisées. Nul besoin de vous inscrire !"
   },
   "welcomeLoginTitle": {
     "message": "Dites bonjour à votre portefeuille"
@@ -4079,7 +4079,7 @@
     "message": "C’est parti !"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "MetaMask est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Waymont est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
   },
   "whatsNew": {
     "message": "Nouveautés",

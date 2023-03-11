@@ -27,7 +27,7 @@
     "message": "aktivite ki fèt"
   },
   "addAcquiredTokens": {
-    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk MetaMask"
+    "message": "Ajoute tokens yo ou te achte lè l sèvi avèk Waymont"
   },
   "addSuggestedTokens": {
     "message": "Ajoute Token Yo Sikjere W"
@@ -43,15 +43,15 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "Waymont",
     "description": "The name of the application"
   },
   "appNameBeta": {
-    "message": "MetaMask Beta",
+    "message": "Waymont Beta",
     "description": "The name of the application (Beta)"
   },
   "appNameFlask": {
-    "message": "MetaMask Flask",
+    "message": "Waymont Flask",
     "description": "The name of the application (Flask)"
   },
   "approve": {
@@ -88,7 +88,7 @@
     "message": "Anilasyon Gaz Chaj"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "Ou bezwen sèvi ak MetaMask sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
+    "message": "Ou bezwen sèvi ak Waymont sou Google Chrome yo nan lòd yo konekte sou Hardware Wallet."
   },
   "close": {
     "message": "Fèmen"
@@ -238,7 +238,7 @@
     "message": "Materyèl Wallet konekte"
   },
   "hardwareWalletsMsg": {
-    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak MetaMask"
+    "message": "Chwazi yon Materyèl Wallet ou ta renmen itilize ak Waymont"
   },
   "here": {
     "message": "isit la",
@@ -261,7 +261,7 @@
     "message": "Pòte Kont"
   },
   "importAccountMsg": {
-    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont MetaMask seed fraz. Aprann plis sou kont enpòte "
+    "message": " Kont pòte pa pral asosye avèk orijinal ou te kreye nan kont Waymont seed fraz. Aprann plis sou kont enpòte "
   },
   "imported": {
     "message": "Pòte",
@@ -332,10 +332,10 @@
     "message": "Mesaje"
   },
   "metamaskDescription": {
-    "message": "MetaMask sekirize idantite pou Ethereum."
+    "message": "Waymont sekirize idantite pou Ethereum."
   },
   "metamaskVersion": {
-    "message": "MetaMask Vèsyon"
+    "message": "Waymont Vèsyon"
   },
   "mustSelectOne": {
     "message": "Ou dwe chwazi omwen 1 token."
@@ -679,7 +679,7 @@
     "message": "Vizite sit entènèt nou an"
   },
   "welcome": {
-    "message": "Byenveni nan MetaMask"
+    "message": "Byenveni nan Waymont"
   },
   "welcomeBack": {
     "message": "Bon Retou!"
