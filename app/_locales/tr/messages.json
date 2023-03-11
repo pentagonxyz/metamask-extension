@@ -2984,6 +2984,9 @@
   "sign": {
     "message": "İmza"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Bu mesajı imzalamak tehlikeli olabilir. Bu imza, hesabınızın tüm kontrolünü ve tüm varlıklarını talepte bulunan siteye vermek de dahil olmak üzere hesabınızın adına potansiyel olarak herhangi bir işlem gerçekleştirebilir. Sadece ne yaptığınızı biliyorsanız veya talepte bulunan siteye tamamen güveniyorsanız bu mesajı imzalayın."
   },

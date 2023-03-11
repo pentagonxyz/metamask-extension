@@ -857,6 +857,9 @@
   "sign": {
     "message": "Allkirjasta"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Selle sõnumi allkirjastamisel \nvõib olla ohtlikke kõrvaltoimeid. Allkirjastage sõnumeid vaid \nsaitidelt, mida te kogu kontoga usaldate.\n See ohtlik meetod eemaldatakse uues versioonis."
   },

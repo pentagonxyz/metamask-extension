@@ -845,6 +845,9 @@
   "sign": {
     "message": "Ingia kwenye akaunti"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Kusaini ujumbe huu kunaweza kuwa \nmadhara hatari. Saini ujumbe kutoka kwenye\ntovuti unazoziamini kabisa na akaunti yako yote tu.\nNjia hii ya hatari itaondolewa kwenye toleo la baadaye."
   },

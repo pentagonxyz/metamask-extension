@@ -864,6 +864,9 @@
   "sign": {
     "message": "Allekirjoita"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Tämän viestin allekirjoittamisella voi olla\nvaarallisia sivuvaikutuksia. Allekirjoita viestejä ainoastaan\nsivustoilta, joihin luotat täysin koko tililläsi.\n Tällainen vaarallinen menetelmä poistetaan tulevista versioista."
   },

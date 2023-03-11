@@ -845,6 +845,9 @@
   "sign": {
     "message": "Underskriv"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Underskrivning af denne besked kan have farlige sideeffekter. Skriv kun under på beskeder fra sider, du har fuld tillid til med hele din konto.\nDenne farlige metode bliver fjernet i en fremtidig version."
   },

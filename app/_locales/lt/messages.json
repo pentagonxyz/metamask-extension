@@ -867,6 +867,9 @@
   "sign": {
     "message": "Prisijunkite"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Pasirašant šį pranešimą gali būti \npavojingų šalutinių efektų. Pasirašykite tik pranešimus iš vietų,\nkuriomis visiškai pasitikite su visomis savo paskyromis.\nŠis pavojingas būdas bus pašalintas ateities versijoje. "
   },

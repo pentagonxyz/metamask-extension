@@ -2984,6 +2984,9 @@
   "sign": {
     "message": "Signer"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "La signature de ce message peut avoir des effets secondaires dangereux, interférant en votre nom via le contrôle de votre compte et de ses actifs par le site demandeur. Signez uniquement les messages de sites auxquels vous faites entièrement confiance."
   },

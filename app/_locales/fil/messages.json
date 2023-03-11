@@ -782,6 +782,9 @@
   "sign": {
     "message": "I-sign"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "signNotice": {
     "message": "Kapag na-sign ang mensaheng ito, maaaring magkaroon \nng mapapanganib na side effect. Mag-sign lang ng mga mensaheng mula \nsa mga site na ganap mong pinagkakatiwalaang gumamit sa iyong account.\n Isa itong mapanganib na method na aalisin sa isang bersyon sa hinaharap. "
   },
