@@ -3186,9 +3186,9 @@
     "@metamask/utils" "^2.0.0"
     readable-stream "2.3.3"
 
-"@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers":
+"@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers#waymont-reaudit":
   version "9.1.0"
-  resolved "https://github.com/pentagonxyz/providers#d8f04d3c5a45732f1ec75d8320da645a1fe7624d"
+  resolved "https://github.com/pentagonxyz/providers#e6919b1754fb5ad7b7660166f428d2faae886656"
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
