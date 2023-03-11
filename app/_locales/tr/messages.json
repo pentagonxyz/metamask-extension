@@ -357,7 +357,7 @@
     "message": "Temel"
   },
   "betaMetamaskDescription": {
-    "message": "Milyonların güvendiği Waymont, web3 dünyasını herkes için erişilebilir kılan güvenli bir cüzdandır."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Yayınlanmadan önce gelecek özellikleri test etmek için bu sürümü kullanın. Kullanımınız ve geri bildiriminiz mümkün olan en iyi Waymont sürümünü oluşturmamıza yardımcı olur. MetMask Beta kullanımınız standart $1 ile ayrıca $2 bölümümüze tabidir. Beta sürümü olduğu için hatayla karşılaşma riskiniz daha yüksektir. Devam ederek bu riskleri ve aynı zamanda Şartlar ve Beta Şartları kısımlarında yer alan riskleri kabul eder ve onaylarsınız.",
@@ -4079,7 +4079,7 @@
     "message": "Başlayalım"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Milyonların güvendiği Waymont, web3 dünyasını herkes için erişilebilir kılan güvenli bir cüzdandır."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "Yenilikler",

@@ -357,7 +357,7 @@
     "message": "基本"
   },
   "betaMetamaskDescription": {
-    "message": "Waymontは何百万人もに信頼されている安全なウォレットで、誰もがWeb3の世界にアクセスできるようにしています。"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "このバージョンを使うと、リリース前に今後の機能をテストできます。皆様からのご意見は、可能な限り最高のバージョンのMetaMaskを開発するうえで参考にさせていただきます。Waymontベータの使用には、標準の$1および弊社の$2が適用されます。ベータ版のため、バグのリスクが高くなる可能性があります。 続行することにより、これらのリスクと、弊社の利用規約およびベータ規約に記載されているリスクを承認し、これらに同意したものとみなされます。",
@@ -4079,7 +4079,7 @@
     "message": "始めましょう"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Waymontは何百万人もに信頼されている安全なウォレットで、すべての人々によるWeb3の世界へのアクセスを可能にしています。"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "新機能",

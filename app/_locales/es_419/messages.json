@@ -307,7 +307,7 @@
     "message": "Básico"
   },
   "betaMetamaskDescription": {
-    "message": "Con la confianza de millones de personas, Waymont es una cartera segura que pone el mundo de la web3 al alcance de todos."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Use esta versión para probar las próximas funcionalidades antes de su lanzamiento. Su uso y comentarios nos ayudan a construir la mejor versión de MetaMask posible. Su uso de Waymont Beta quedará sujeto a nuestra tarifa estándar de $1 y $2. Como Beta, puede haber un mayor riesgo de errores. Al proceder, usted acepta y reconoce estos riesgos, así como los que se encuentran en nuestros Términos y en los Términos de Beta.",
@@ -3331,7 +3331,7 @@
     "message": "Comencemos"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Con la confianza de millones de personas, Waymont es una cartera segura que pone el mundo de la web3 al alcance de todos."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "Novedades",

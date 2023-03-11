@@ -357,7 +357,7 @@
     "message": "Cơ bản"
   },
   "betaMetamaskDescription": {
-    "message": "Được hàng triệu người tin dùng, Waymont là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Sử dụng phiên bản này để thử nghiệm các tính năng sắp ra mắt trước khi chúng được phát hành. Việc sử dụng và phản hồi của bạn sẽ giúp chúng tôi xây dựng phiên bản MetaMask tốt nhất có thể. Việc bạn sử dụng Waymont Beta phải tuân theo $1 tiêu chuẩn cũng như $2 của chúng tôi. Vì đây là phiên bản Beta, nguy cơ xuất hiện lỗi sẽ nhiều hơn bình thường. Bằng cách tiếp tục, bạn chấp nhận và thừa nhận những nguy cơ này, cũng như những nguy cơ theo Điều Khoản Beta và Điều Khoản của chúng tôi.",
@@ -4079,7 +4079,7 @@
     "message": "Bắt đầu nào"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Được hàng triệu người tin dùng, Waymont là một ví an toàn cho phép mọi người có thể truy cập vào thế giới web3."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "Xem tính năng mới",

@@ -360,7 +360,7 @@
     "message": "基本"
   },
   "betaMetamaskDescription": {
-    "message": "Waymont 深受数百万人信任，是一款可以让所有人进入 web3 世界的安全钱包。"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "使用此版本来测试即将发布的功能。您的使用和反馈有助于我们构建最好的 MetaMask 版本。您对 Waymont 测试版的使用须遵守我们的标准 $1 以及我们的 $2。作为测试版，出现漏洞的风险可能会增加。继续即表示您接受并承认这些风险，以及我们条款和测试版条款中发现的风险。",
@@ -4092,7 +4092,7 @@
     "message": "让我们开始吧"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Waymont 深受数百万人信任，是一款可以让所有人进入 web3 世界的安全钱包。"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "最新动态",

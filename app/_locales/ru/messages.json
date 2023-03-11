@@ -357,7 +357,7 @@
     "message": "Базовый"
   },
   "betaMetamaskDescription": {
-    "message": "Waymont, которому доверяют миллионы, — это безопасный кошелек, предоставляющий всем доступ к миру web3."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Используйте эту версию для тестирования будущих функций перед их выпуском. Ваше использование и отзывы помогают нам создать лучшую из возможных версий MetaMask. За использование бета-версии Waymont взимается наша стандартная комиссия $1 и наша комиссия $2. В бета-версии может быть повышенный риск ошибок. Продолжая, вы принимаете и признаете эти риски, а также риски, указанные в наших Условиях и Условиях бета-версии.",
@@ -4079,7 +4079,7 @@
     "message": "Давайте приступим к делу"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Waymont, которому доверяют миллионы, — это безопасный кошелек, предоставляющий всем доступ к миру web3."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "Что нового",

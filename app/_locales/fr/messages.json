@@ -357,7 +357,7 @@
     "message": "Général"
   },
   "betaMetamaskDescription": {
-    "message": "Waymont est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "Utilisez cette version pour tester les futures fonctionnalités avant leur lancement. Votre utilisation et vos commentaires nous aident à développer la meilleure version possible de MetaMask. Votre utilisation de la version bêta de Waymont est conditionnée par notre norme $1, ainsi que par notre $2. Il s’agit de la version bêta, présentant un risque de bogues plus élevé. En continuant, vous acceptez et reconnaissez ce risque, ainsi que ceux mentionnés dans nos Conditions d’utilisation et nos Conditions bêta.",
@@ -4079,7 +4079,7 @@
     "message": "C’est parti !"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "Waymont est un portefeuille sécurisé utilisé par des millions de personnes qui rend l’univers du web3 accessible à toutes et à tous."
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "Nouveautés",

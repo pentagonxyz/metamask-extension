@@ -357,7 +357,7 @@
     "message": "बेसिक"
   },
   "betaMetamaskDescription": {
-    "message": "लाखों लोगों का भरोसेमंद, Waymont एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "betaMetamaskDescriptionExplanation": {
     "message": "आगामी फीचर के रिलीज़ होने से पहले उनके परीक्षण के लिए इस संस्करण का उपयोग करें। आपका उपयोग और फीडबैक हमें MetaMask के सर्वोत्तम संस्करण को संभव बनाने में मदद करता है। Waymont बीटा का आपका उपयोग हमारे मानक $1 के साथ साथ $2 के अधीन है। बीटा के रूप में, वहां बग का खतरा बढ़ सकता है। आगे बढ़ने पर, आप इन खतरों को स्वीकार करते हैं और पहचानते हैं, साथ हीं साथ वो खतरे हमारे नियम औऱ बीटा नियम में पाए जाते हैं।",
@@ -4079,7 +4079,7 @@
     "message": "चलिए शुरु करते हैं"
   },
   "welcomeToMetaMaskIntro": {
-    "message": "लाखों लोगों का भरोसेमंद, Waymont एक सुरक्षित वॉलेट है जो वेब3 की दुनिया को सबके लिए सुलभ बनाता है।"
+    "message": "Waymont is the first wealth platform designed for crypto-natives."
   },
   "whatsNew": {
     "message": "नया क्या है",
