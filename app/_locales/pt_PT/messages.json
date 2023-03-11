@@ -149,6 +149,9 @@
   "settings": {
     "message": "Definições"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "slow": {
     "message": "Lento"
   },

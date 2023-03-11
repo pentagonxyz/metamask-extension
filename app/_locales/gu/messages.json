@@ -136,6 +136,9 @@
   "settings": {
     "message": "સેટિંગ્સ"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "slow": {
     "message": "ધીમું"
   },

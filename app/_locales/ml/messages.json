@@ -136,6 +136,9 @@
   "settings": {
     "message": "ക്രമീകരണങ്ങള്‍"
   },
+  "signInWithWaymont": {
+    "message": "Sign in with Waymont"
+  },
   "slow": {
     "message": "പതുക്കെ"
   },
