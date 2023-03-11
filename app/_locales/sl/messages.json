@@ -190,6 +190,21 @@
   "connectingTo": {
     "message": "Povezovanje na $1"
   },
+  "connectingToArbitrum": {
+    "message": "Connecting to Arbitrum One"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
+  },
+  "connectingToArbitrumGoerli": {
+    "message": "Connecting to Arbitrum Goerli test network"
+  },
   "connectingToGoerli": {
     "message": "Povezovanje na testno omrežje Goerli"
   },
@@ -411,6 +426,21 @@
   },
   "goerli": {
     "message": "Testno omrežje Goerli"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
+  },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "arbitrum": {
+    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "Veseli nas, da ste nas spet obiskali."

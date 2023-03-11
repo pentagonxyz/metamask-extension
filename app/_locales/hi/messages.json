@@ -613,6 +613,21 @@
   "connectingTo": {
     "message": "$1 से कनेक्ट किया जा रहा है"
   },
+  "connectingToArbitrum": {
+    "message": "Connecting to Arbitrum One"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
+  },
+  "connectingToArbitrumGoerli": {
+    "message": "Connecting to Arbitrum Goerli test network"
+  },
   "connectingToGoerli": {
     "message": "Goerli टेस्ट नेटवर्क से कनेक्ट हो रहा है"
   },
@@ -1412,6 +1427,21 @@
   },
   "goerli": {
     "message": "Goerli टेस्ट नेटवर्क"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
+  },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "arbitrum": {
+    "message": "Arbitrum One"
   },
   "gotIt": {
     "message": "समझ आ गया!"

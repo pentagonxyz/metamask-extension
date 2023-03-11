@@ -190,6 +190,21 @@
   "connectingTo": {
     "message": "$1 ಗೆ ಸಂಪರ್ಕಪಡಿಸಲಾಗುತ್ತಿದೆ"
   },
+  "connectingToArbitrum": {
+    "message": "Connecting to Arbitrum One"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
+  },
+  "connectingToArbitrumGoerli": {
+    "message": "Connecting to Arbitrum Goerli test network"
+  },
   "connectingToGoerli": {
     "message": "Goerli ಪರೀಕ್ಷಾ ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ"
   },
@@ -414,6 +429,21 @@
   },
   "goerli": {
     "message": "Goerli ಪರೀಕ್ಷೆ ನೆಟ್‌ವರ್ಕ್"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
+  },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "arbitrum": {
+    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "ನಿಮ್ಮನ್ನು ನೋಡಿ ನಮಗೆ ಸಂತೋಷವಾಗಿದೆ."

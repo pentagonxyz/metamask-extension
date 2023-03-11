@@ -720,6 +720,21 @@
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
+  "connectingToArbitrum": {
+    "message": "Connecting to Arbitrum One"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
+  },
+  "connectingToArbitrumGoerli": {
+    "message": "Connecting to Arbitrum Goerli test network"
+  },
   "connectingToGoerli": {
     "message": "Connecting to Goerli test network"
   },
@@ -1543,6 +1558,21 @@
   },
   "goerli": {
     "message": "Goerli test network"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
+  },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "arbitrum": {
+    "message": "Arbitrum One"
   },
   "arbitrumGoerli": {
     "message": "Arbitrum Goerli test network"

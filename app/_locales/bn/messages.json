@@ -190,6 +190,21 @@
   "connectingTo": {
     "message": " $1 এর সাথে সংযোগ করছে"
   },
+  "connectingToArbitrum": {
+    "message": "Connecting to Arbitrum One"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
+  },
+  "connectingToArbitrumGoerli": {
+    "message": "Connecting to Arbitrum Goerli test network"
+  },
   "connectingToGoerli": {
     "message": "গোয়েরলি টেস্ট নেটওয়ার্কের সাথে সংযোগ করা হচ্ছে"
   },
@@ -414,6 +429,21 @@
   },
   "goerli": {
     "message": "গোয়েরলি টেস্ট নেটওয়ার্ক"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
+  },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "arbitrum": {
+    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "আপনাকে দেখে আমরা আনন্দিত।"
