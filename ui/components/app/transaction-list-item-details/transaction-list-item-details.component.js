@@ -158,37 +158,6 @@ export default class TransactionListItemDetails extends PureComponent {
     return (
       <Popover title={title} onClose={onClose}>
         <div className="transaction-list-item-details">
-          <div className="transaction-list-item-details__operations">
-            <div className="transaction-list-item-details__header-buttons">
-              {showSpeedUp && (
-                <Button
-                  type="primary"
-                  onClick={this.handleRetry}
-                  className="transaction-list-item-details__header-button-rounded-button"
-                >
-                  {t('speedUp')}
-                </Button>
-              )}
-              {showCancel && (
-                <CancelButton
-                  transaction={transaction}
-                  cancelTransaction={this.handleCancel}
-                  detailsModal
-                />
-              )}
-              {showRetry && (
-                <Tooltip title={t('retryTransaction')}>
-                  <Button
-                    type="raised"
-                    onClick={this.handleRetry}
-                    className="transaction-list-item-details__header-button"
-                  >
-                    <i className="fa fa-sync"></i>
-                  </Button>
-                </Tooltip>
-              )}
-            </div>
-          </div>
           <div className="transaction-list-item-details__header">
             <div className="transaction-list-item-details__tx-status">
               <div>{t('status')}</div>
