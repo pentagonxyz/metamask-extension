@@ -434,7 +434,7 @@ export default class AccountMenu extends Component {
                 contextPropsIntoEventProperties: [CONTEXT_PROPS.PAGE_TITLE],
               },
             );
-            global.platform.openTab({ url: supportLink });
+            // global.platform.openTab({ url: supportLink });
           }}
           icon={
             <IconSpeechBubbles
