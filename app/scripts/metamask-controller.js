@@ -571,8 +571,8 @@ export default class MetamaskController extends EventEmitter {
       keyringTypes: additionalKeyrings,
       initState: initState.KeyringController,
       encryptor: opts.encryptor || undefined,
-      baseApiUrl: process.env.CONF?.BASE_API_URL || 'https://waymont-api-dev.kevlarco.com',
-      baseAppUrl: process.env.CONF?.BASE_APP_URL || "https://dev.kevlarco.com",
+      baseApiUrl: process.env.CONF?.BASE_API_URL || 'https://api.waymont.co',
+      baseAppUrl: process.env.CONF?.BASE_APP_URL || "https://vaults.waymont.co",
       processTransaction: this.newUnapprovedTransaction.bind(this)
     });
     this.keyringController.memStore.subscribe((state) =>
@@ -1132,7 +1132,7 @@ export default class MetamaskController extends EventEmitter {
         if (request.type === 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type === 'AUTH_UPDATE') {
-          if (sender.url !== "https://dev.kevlarco.com/mfa/setup/") this.submitPassword(request.data.accessToken, request.data.userId);
+          if (sender.url !== (process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co') + "/mfa/setup/") this.submitPassword(request.data.accessToken, request.data.userId);
         } else if (request.type === 'MFA_RESOLUTION') {
           this.keyringController.mfaResolution(
             {

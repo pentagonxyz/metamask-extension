@@ -1,6 +1,6 @@
 ; Extra environment variables
-BASE_APP_URL=https://dev.kevlarco.com
-BASE_API_URL=https://waymont-api-dev.kevlarco.com
+BASE_APP_URL=https://vaults.waymont.co
+BASE_API_URL=https://api.waymont.co
 PASSWORD=METAMASK PASSWORD
 INFURA_PROJECT_ID=00000000000
 SEGMENT_WRITE_KEY=

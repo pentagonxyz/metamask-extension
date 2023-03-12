@@ -115,7 +115,7 @@ export default class UnlockPage extends Component {
     try {
       forceNextMfaSetup();
       chrome.windows.create({
-        url: 'https://dev.kevlarco.com/login/?login_source=extension',
+        url: (process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co') + '/login/?login_source=extension',
         focused: true,
         type: 'popup',
         width: 400,
