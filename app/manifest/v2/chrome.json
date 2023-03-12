@@ -1,7 +1,6 @@
 {
   "externally_connectable": {
-    "matches": ["https://vaults.waymont.co/*"],
-    "ids": ["*"]
+    "matches": ["https://vaults.waymont.co/*"]
   },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApF3tAlY1bPZ7HloszZNJJqy5t0v74B3Ur0BwV8MK+TC2FB7y2Rz9DBMAlRU/KwoMm3dJk/hBg61ckR9mBMWvZspX/UdGuAL8HAoYXrFmS+RYSb89jR3fH/mjBo6/3Nh4XLqIMNpMiWxJNdVESFdxkC2Eu31ZdMqPLdkgx29vuXhx6Nl+iH+AYJ2r74ay6Fs6G1TS43slqLRNE0o38iE7YIoW+uXr4xNLTS4LbgnToXuAS2NaT3cwTNrl4fpkEr0WFkqTkq4ajVQ4nsfdXHIohUISN8gKVdN1fCOQpmhdHZJ3znRw/lflamNWIghGwMz20ENakpQQSnDLV1Fg8CU/FwIDAQAB",
   "minimum_chrome_version": "66"
