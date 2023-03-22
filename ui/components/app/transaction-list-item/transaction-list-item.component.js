@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback, useContext } from 'react';
+import React, { /* useMemo, */ useState, useCallback, useContext } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { useHistory } from 'react-router-dom';
@@ -32,7 +32,7 @@ import {
   getEIP1559V2Enabled,
 } from '../../../selectors';
 import { isLegacyTransaction } from '../../../helpers/utils/transactions.util';
-import Button from '../../ui/button';
+// import Button from '../../ui/button';
 import AdvancedGasFeePopover from '../advanced-gas-fee-popover';
 // import CancelButton from '../cancel-button';
 import CancelSpeedupPopover from '../cancel-speedup-popover';
@@ -46,7 +46,7 @@ function TransactionListItemInner({
   setEditGasMode,
   isEarliestNonce = false,
 }) {
-  const t = useI18nContext();
+  // const t = useI18nContext();
   const history = useHistory();
   const { hasCancelled } = transactionGroup;
   const [showDetails, setShowDetails] = useState(false);

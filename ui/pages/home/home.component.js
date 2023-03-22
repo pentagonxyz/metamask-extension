@@ -118,10 +118,10 @@ export default class Home extends PureComponent {
     shouldShowErrors: PropTypes.bool.isRequired,
     removeSnapError: PropTypes.func.isRequired,
     ///: END:ONLY_INCLUDE_IN
-    showRecoveryPhraseReminder: PropTypes.bool.isRequired,
+    // showRecoveryPhraseReminder: PropTypes.bool.isRequired,
     setRecoveryPhraseReminderHasBeenShown: PropTypes.func.isRequired,
     setRecoveryPhraseReminderLastShown: PropTypes.func.isRequired,
-    seedPhraseBackedUp: (props) => {
+    /* seedPhraseBackedUp: (props) => {
       if (
         props.seedPhraseBackedUp !== null &&
         typeof props.seedPhraseBackedUp !== 'boolean'
@@ -130,7 +130,7 @@ export default class Home extends PureComponent {
           `seedPhraseBackedUp is required to be null or boolean. Received ${props.seedPhraseBackedUp}`,
         );
       }
-    },
+    }, */
     newNetworkAdded: PropTypes.string,
     setNewNetworkAdded: PropTypes.func.isRequired,
     // This prop is used in the `shouldCloseNotificationPopup` function

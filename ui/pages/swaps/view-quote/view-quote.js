@@ -47,7 +47,7 @@ import {
   getSmartTransactionsEnabled,
   getSmartTransactionsError,
   getCurrentSmartTransactionsError,
-  getCurrentSmartTransactionsErrorMessageDismissed,
+  // getCurrentSmartTransactionsErrorMessageDismissed,
   getSwapsSTXLoading,
   fetchSwapsSmartTransactionFees,
   getSmartTransactionFees,

@@ -31,9 +31,9 @@ export default class TransactionListItemDetails extends PureComponent {
   static propTypes = {
     onCancel: PropTypes.func,
     onRetry: PropTypes.func,
-    showCancel: PropTypes.bool,
-    showSpeedUp: PropTypes.bool,
-    showRetry: PropTypes.bool,
+    // showCancel: PropTypes.bool,
+    // showSpeedUp: PropTypes.bool,
+    // showRetry: PropTypes.bool,
     isEarliestNonce: PropTypes.bool,
     primaryCurrency: PropTypes.string,
     transactionGroup: PropTypes.object,

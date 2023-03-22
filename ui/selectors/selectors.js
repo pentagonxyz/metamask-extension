@@ -55,7 +55,7 @@ import {
 import { TEMPLATED_CONFIRMATION_MESSAGE_TYPES } from '../pages/confirmation/templates';
 import { STATIC_MAINNET_TOKEN_LIST } from '../../shared/constants/tokens';
 import { toChecksumHexAddress } from '../../shared/modules/hexstring-utils';
-import { DAY } from '../../shared/constants/time';
+// import { DAY } from '../../shared/constants/time';
 import {
   getNativeCurrency,
   getConversionRate,
@@ -866,16 +866,8 @@ export function getSortedAnnouncementsToShow(state) {
   return announcementsSortedByDate;
 }
 
-export function getShowRecoveryPhraseReminder(state) {
-  /* const {
-    recoveryPhraseReminderLastShown,
-    recoveryPhraseReminderHasBeenShown,
-  } = state.metamask;
-
-  const currentTime = new Date().getTime();
-  const frequency = recoveryPhraseReminderHasBeenShown ? DAY * 90 : DAY * 2; */
-
-  return /* currentTime - recoveryPhraseReminderLastShown >= frequency */ false;
+export function getShowRecoveryPhraseReminder() {
+  return false;
 }
 
 /**
