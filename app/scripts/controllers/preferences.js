@@ -227,6 +227,10 @@ export default class PreferencesController {
     return textDirection;
   }
 
+  removeAllAddresses() {
+    this.store.updateState({ identities: {} });
+  }
+
   /**
    * Updates identities to only include specified addresses. Removes identities
    * not included in addresses array
