@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 import ListItem from '../../ui/list-item';
 import { useTransactionDisplayData } from '../../../hooks/useTransactionDisplayData';
-import { useI18nContext } from '../../../hooks/useI18nContext';
+// import { useI18nContext } from '../../../hooks/useI18nContext';
 
 import TransactionListItemDetails from '../transaction-list-item-details';
 import { CONFIRM_TRANSACTION_ROUTE } from '../../../helpers/constants/routes';
