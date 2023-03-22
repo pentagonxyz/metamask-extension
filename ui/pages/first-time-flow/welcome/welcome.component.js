@@ -11,6 +11,7 @@ import {
 import { isBeta } from '../../../helpers/utils/build-types';
 import WelcomeFooter from './welcome-footer.component';
 import BetaWelcomeFooter from './beta-welcome-footer.component';
+import { INITIALIZE_UNLOCK_ROUTE } from '../../../helpers/constants/routes';
 
 export default class Welcome extends PureComponent {
   static propTypes = {
@@ -18,6 +19,9 @@ export default class Welcome extends PureComponent {
     participateInMetaMetrics: PropTypes.bool,
     welcomeScreenSeen: PropTypes.bool,
     isInitialized: PropTypes.bool,
+    setParticipateInMetaMetrics: PropTypes.func,
+    createNewVaultAndGetSeedPhrase: PropTypes.func,
+    setCompletedOnboarding: PropTypes.func
   };
 
   static contextTypes = {
@@ -51,8 +55,18 @@ export default class Welcome extends PureComponent {
     }
   }
 
-  handleContinue = () => {
-    this.props.history.push(INITIALIZE_METAMETRICS_OPT_IN_ROUTE);
+  handleContinue = async () => {
+    const {
+      history,
+      setParticipateInMetaMetrics,
+      createNewVaultAndGetSeedPhrase,
+      setCompletedOnboarding
+    } = this.props;
+
+    await setParticipateInMetaMetrics(true);
+    await createNewVaultAndGetSeedPhrase();
+    await setCompletedOnboarding();
+    history.push(INITIALIZE_UNLOCK_ROUTE);
   };
 
   render() {
