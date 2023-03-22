@@ -898,14 +898,15 @@ export default class MetaMetricsController {
       };
 
       if (flushImmediately) {
-        (async function() {
-          await mixpanel.track("Extension tracking", payload);
-          callback();
-        })();
-      } else {
         mixpanel.track("Extension tracking", payload);
         callback();
+        return;
       }
+
+      (async function(cb) {
+        await mixpanel.track("Extension tracking", payload);
+        cb();
+      })(callback);
     });
   }
 }

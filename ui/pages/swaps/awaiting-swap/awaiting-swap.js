@@ -38,7 +38,6 @@ import {
   getFromTokenInputValue,
   getMaxSlippage,
 } from '../../../ducks/swaps/swaps';
-import Mascot from '../../../components/ui/mascot';
 import {
   QUOTES_EXPIRED_ERROR,
   SWAP_FAILED_ERROR,
@@ -77,7 +76,6 @@ export default function AwaitingSwap({
   const trackEvent = useContext(MetaMetricsContext);
   const history = useHistory();
   const dispatch = useDispatch();
-  const animationEventEmitter = useRef(new EventEmitter());
 
   const fetchParams = useSelector(getFetchParams, isEqual);
   const { destinationTokenInfo, sourceTokenInfo } = fetchParams?.metaData || {};

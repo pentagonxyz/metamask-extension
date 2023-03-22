@@ -19,7 +19,6 @@ import {
 } from '../../../selectors/selectors';
 import { I18nContext } from '../../../contexts/i18n';
 import { MetaMetricsContext } from '../../../contexts/metametrics';
-import Mascot from '../../../components/ui/mascot';
 import { EVENT } from '../../../../shared/constants/metametrics';
 import SwapsFooter from '../swaps-footer';
 import BackgroundAnimation from './background-animation';
@@ -33,7 +32,6 @@ export default function LoadingSwapsQuotes({
   const trackEvent = useContext(MetaMetricsContext);
   const dispatch = useDispatch();
   const history = useHistory();
-  const animationEventEmitter = useRef(new EventEmitter());
 
   const fetchParams = useSelector(getFetchParams, isEqual);
   const quotesFetchStartTime = useSelector(getQuotesFetchStartTime);
@@ -73,7 +71,7 @@ export default function LoadingSwapsQuotes({
   const currentMascotContainer = mascotContainer.current;
 
   const [quoteCount, updateQuoteCount] = useState(0);
-  const [midPointTarget, setMidpointTarget] = useState(null);
+  const [, setMidpointTarget] = useState(null);
 
   useEffect(() => {
     let timeoutLength;

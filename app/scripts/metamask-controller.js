@@ -1,3 +1,4 @@
+/* global chrome */
 import EventEmitter from 'events';
 import pump from 'pump';
 import { ObservableStore } from '@metamask/obs-store';

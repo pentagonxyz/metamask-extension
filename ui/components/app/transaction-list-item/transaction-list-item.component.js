@@ -34,7 +34,7 @@ import {
 import { isLegacyTransaction } from '../../../helpers/utils/transactions.util';
 import Button from '../../ui/button';
 import AdvancedGasFeePopover from '../advanced-gas-fee-popover';
-import CancelButton from '../cancel-button';
+// import CancelButton from '../cancel-button';
 import CancelSpeedupPopover from '../cancel-speedup-popover';
 import EditGasFeePopover from '../edit-gas-fee-popover';
 import EditGasPopover from '../edit-gas-popover';
@@ -148,7 +148,7 @@ function TransactionListItemInner({
     setShowDetails((prev) => !prev);
   }, [isUnapproved, history, id]);
 
-  const speedUpButton = useMemo(() => {
+  /* const speedUpButton = useMemo(() => {
     if (!shouldShowSpeedUp || !isPending || isUnapproved) {
       return null;
     }
@@ -171,7 +171,7 @@ function TransactionListItemInner({
     cancelTransaction,
   ]);
 
-  const showCancelButton = !hasCancelled && isPending && !isUnapproved;
+  const showCancelButton = !hasCancelled && isPending && !isUnapproved; */
 
   return (
     <>

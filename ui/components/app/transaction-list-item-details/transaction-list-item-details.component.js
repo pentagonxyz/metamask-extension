@@ -9,7 +9,7 @@ import TransactionActivityLog from '../transaction-activity-log';
 import TransactionBreakdown from '../transaction-breakdown';
 import Button from '../../ui/button';
 import Tooltip from '../../ui/tooltip';
-import CancelButton from '../cancel-button';
+// import CancelButton from '../cancel-button';
 import Popover from '../../ui/popover';
 import { SECOND } from '../../../../shared/constants/time';
 import { EVENT } from '../../../../shared/constants/metametrics';
@@ -135,8 +135,8 @@ export default class TransactionListItemDetails extends PureComponent {
     const {
       transactionGroup,
       primaryCurrency,
-      showSpeedUp,
-      showRetry,
+      // showSpeedUp,
+      // showRetry,
       recipientEns,
       recipientAddress,
       senderAddress,
@@ -145,7 +145,7 @@ export default class TransactionListItemDetails extends PureComponent {
       title,
       onClose,
       recipientNickname,
-      showCancel,
+      // showCancel,
       transactionStatus: TransactionStatus,
       blockExplorerLinkText,
     } = this.props;

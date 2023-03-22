@@ -1,7 +1,6 @@
 import EventEmitter from 'events';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Mascot from '../../../components/ui/mascot';
 import Button from '../../../components/ui/button';
 import {
   INITIALIZE_CREATE_PASSWORD_ROUTE,

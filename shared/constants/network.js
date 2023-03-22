@@ -72,7 +72,7 @@ export const PALM_DISPLAY_NAME = 'Palm';
 
 export const infuraProjectId = process.env.INFURA_PROJECT_ID;
 export const getRpcUrl = ({ network, excludeProjectId = false }) => {
-  let infuraNetwork = network.replace(/[A-Z]/g, m => "-" + m.toLowerCase());
+  let infuraNetwork = network.replace(/[A-Z]/gu, m => "-" + m.toLowerCase());
   if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
   return `https://${infuraNetwork}.infura.io/v3/${excludeProjectId ? '' : infuraProjectId}`;
 }

@@ -3940,7 +3940,7 @@ export function requestAddNetworkApproval(customRpc, originIsMetaMask) {
 }
 
 export function forceNextMfaSetup() {
-  return async (dispatch) => {
+  return async () => {
     await submitRequestToBackground('forceNextMfaSetup');
   };
 }

@@ -11,14 +11,12 @@ import {
 import EthQuery from 'eth-query';
 import {
   GOERLI,
-  RINKEBY,
   MAINNET,
   INFURA_PROVIDER_TYPES,
   NETWORK_TYPE_RPC,
   NETWORK_TYPE_TO_ID_MAP,
   MAINNET_CHAIN_ID,
   GOERLI_CHAIN_ID,
-  RINKEBY_CHAIN_ID,
   INFURA_BLOCKED_KEY,
   TEST_NETWORK_TICKER_MAP,
 } from '../../../../shared/constants/network';
@@ -352,7 +350,7 @@ export default class NetworkController extends EventEmitter {
   //
 
   async _checkInfuraAvailability(network) {
-    let infuraNetwork = network.replace(/[A-Z]/g, m => "-" + m.toLowerCase());
+    let infuraNetwork = network.replace(/[A-Z]/gu, m => "-" + m.toLowerCase());
     if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
     const rpcUrl = `https://${infuraNetwork}.infura.io/v3/${this._infuraProjectId}`;
 

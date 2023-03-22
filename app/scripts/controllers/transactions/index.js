@@ -1,6 +1,6 @@
 import EventEmitter from 'safe-event-emitter';
 import { ObservableStore } from '@metamask/obs-store';
-import { bufferToHex, keccak, toBuffer, isHexString } from 'ethereumjs-util';
+import { bufferToHex, isHexString } from 'ethereumjs-util';
 import EthQuery from 'ethjs-query';
 import { ethErrors } from 'eth-rpc-errors';
 import Common from '@ethereumjs/common';
@@ -47,7 +47,6 @@ import { EVENT } from '../../../../shared/constants/metametrics';
 import {
   HARDFORKS,
   MAINNET,
-  NETWORK_TYPE_RPC,
   CHAIN_ID_TO_GAS_LIMIT_BUFFER_MAP,
 } from '../../../../shared/constants/network';
 import {
@@ -1457,7 +1456,7 @@ export default class TransactionController extends EventEmitter {
    * publishes the raw tx and sets the txMeta to submitted
    *
    * @param {number} txId - the tx's Id
-   * @param {string} rawTx - the hex string of the serialized signed transaction
+   * @param {string} txHash - the hex string of the transaction hash
    * @returns {Promise<void>}
    */
   async publishTransaction(txId, txHash) {

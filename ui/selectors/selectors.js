@@ -867,13 +867,13 @@ export function getSortedAnnouncementsToShow(state) {
 }
 
 export function getShowRecoveryPhraseReminder(state) {
-  const {
+  /* const {
     recoveryPhraseReminderLastShown,
     recoveryPhraseReminderHasBeenShown,
   } = state.metamask;
 
   const currentTime = new Date().getTime();
-  const frequency = recoveryPhraseReminderHasBeenShown ? DAY * 90 : DAY * 2;
+  const frequency = recoveryPhraseReminderHasBeenShown ? DAY * 90 : DAY * 2; */
 
   return /* currentTime - recoveryPhraseReminderLastShown >= frequency */ false;
 }

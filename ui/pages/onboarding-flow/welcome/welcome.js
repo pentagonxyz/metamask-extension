@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
-import Mascot from '../../../components/ui/mascot';
 import Button from '../../../components/ui/button';
 import Typography from '../../../components/ui/typography/typography';
 import {
@@ -19,7 +18,6 @@ export default function OnboardingWelcome() {
   const t = useI18nContext();
   const dispatch = useDispatch();
   const history = useHistory();
-  const [eventEmitter] = useState(new EventEmitter());
 
   const onCreateClick = () => {
     dispatch(setFirstTimeFlowType('create'));

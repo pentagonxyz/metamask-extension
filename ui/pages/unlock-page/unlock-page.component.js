@@ -1,3 +1,4 @@
+/* global chrome */
 import { EventEmitter } from 'events';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -41,6 +42,7 @@ export default class UnlockPage extends Component {
      * Event handler to show metametrics modal
      */
     // showOptInModal: PropTypes.func,
+    forceNextMfaSetup: PropTypes.func,
   };
 
   state = {
@@ -61,7 +63,7 @@ export default class UnlockPage extends Component {
     }
   }
 
-  handleLogin = async (session_access_token) => {
+  handleLogin = async (sessionAccessToken) => {
     const { onSubmit, forceUpdateMetamaskState /* , showOptInModal */ } =
       this.props;
 
@@ -73,7 +75,7 @@ export default class UnlockPage extends Component {
     this.submitting = true;
 
     try {
-      await onSubmit(session_access_token);
+      await onSubmit(sessionAccessToken);
       /* const newState = */ await forceUpdateMetamaskState();
       this.context.trackEvent(
         {
@@ -130,7 +132,7 @@ export default class UnlockPage extends Component {
     const { history } = this.props;
     
     chrome.runtime.onMessage.addListener(
-      function(request, sender, sendResponse) {
+      function(request /* , sender, sendResponse */) {
         if (request.msg === "LOGGED_IN") {
           history.push(DEFAULT_ROUTE);
         }

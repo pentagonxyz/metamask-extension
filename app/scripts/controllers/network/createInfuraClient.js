@@ -14,7 +14,7 @@ import { PollingBlockTracker } from 'eth-block-tracker';
 import { NETWORK_TYPE_TO_ID_MAP } from '../../../../shared/constants/network';
 
 export default function createInfuraClient({ network, projectId }) {
-  let infuraNetwork = network.replace(/[A-Z]/g, m => "-" + m.toLowerCase());
+  let infuraNetwork = network.replace(/[A-Z]/gu, m => "-" + m.toLowerCase());
   if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
   const infuraMiddleware = createInfuraMiddleware({
     network: infuraNetwork,

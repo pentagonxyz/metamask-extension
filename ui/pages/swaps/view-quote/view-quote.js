@@ -188,9 +188,9 @@ export default function ViewQuote() {
     getCurrentSmartTransactionsError,
   );
   const smartTransactionsError = useSelector(getSmartTransactionsError);
-  const currentSmartTransactionsErrorMessageDismissed = useSelector(
+  /* const currentSmartTransactionsErrorMessageDismissed = useSelector(
     getCurrentSmartTransactionsErrorMessageDismissed,
-  );
+  ); */
   const currentSmartTransactionsEnabled = false
     /* smartTransactionsEnabled &&
     !(
