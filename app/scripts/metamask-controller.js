@@ -573,8 +573,8 @@ export default class MetamaskController extends EventEmitter {
       initState: initState.KeyringController,
       encryptor: opts.encryptor || undefined,
       baseApiUrl: process.env.CONF?.BASE_API_URL || 'https://api.waymont.co',
-      baseAppUrl: process.env.CONF?.BASE_APP_URL || "https://vaults.waymont.co",
-      processTransaction: this.newUnapprovedTransaction.bind(this)
+      baseAppUrl: process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co',
+      processTransaction: this.newUnapprovedTransaction.bind(this),
     });
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
@@ -1133,7 +1133,12 @@ export default class MetamaskController extends EventEmitter {
         if (request.type === 'CLOSE_ME') {
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type === 'AUTH_UPDATE') {
-          if (sender.url !== (process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co') + "/mfa/setup/") {
+          if (
+            sender.url !==
+            `${
+              process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co'
+            }/mfa/setup/`
+          ) {
             this.preferencesController.removeAllAddresses();
             this.submitPassword(request.data.accessToken, request.data.userId);
           }
@@ -1153,7 +1158,7 @@ export default class MetamaskController extends EventEmitter {
               nonce: request.data.nonce,
               from: request.data.from,
             },
-            "Request was rejected by a signing device",
+            'Request was rejected by a signing device',
           );
           chrome.tabs.remove(sender.tab.id);
         } else if (request.type === 'MFA_ERROR') {
@@ -1683,10 +1688,15 @@ export default class MetamaskController extends EventEmitter {
       acceptWatchAsset:
         tokensController.acceptWatchAsset.bind(tokensController),
       updateTokenType: tokensController.updateTokenType.bind(tokensController),
-      setAccountLabel: (function(account, label, clientSideOnly) {
-        if (!clientSideOnly) this.keyringController.renameAccount(account, label);
-        preferencesController.setAccountLabel.bind(preferencesController)(account, label);
-      }).bind(this),
+      setAccountLabel: function (account, label, clientSideOnly) {
+        if (!clientSideOnly) {
+          this.keyringController.renameAccount(account, label);
+        }
+        preferencesController.setAccountLabel.bind(preferencesController)(
+          account,
+          label,
+        );
+      }.bind(this),
       setFeatureFlag: preferencesController.setFeatureFlag.bind(
         preferencesController,
       ),
@@ -2125,8 +2135,9 @@ export default class MetamaskController extends EventEmitter {
         password !== undefined &&
         typeof password === 'string' &&
         password.length > 0
-      )
+      ) {
         releaseLock();
+      }
     }
   }
 
@@ -2414,6 +2425,7 @@ export default class MetamaskController extends EventEmitter {
    * is up to date with known accounts once the vault is decrypted.
    *
    * @param {string} password - The user's password
+   * @param userId
    * @returns {Promise<object>} The keyringController update.
    */
   async submitPassword(password, userId) {
@@ -2450,16 +2462,20 @@ export default class MetamaskController extends EventEmitter {
 
     // Let the UI know we are logged in
     chrome.runtime.sendMessage({
-      msg: "LOGGED_IN"
+      msg: 'LOGGED_IN',
     });
 
     // Get account names
-    var names = await this.keyringController.getAccountNames();
-    for (const address of Object.keys(names)) this.preferencesController.setAccountLabel(address, names[address]);
+    const names = await this.keyringController.getAccountNames();
+    for (const address of Object.keys(names)) {
+      this.preferencesController.setAccountLabel(address, names[address]);
+    }
 
     // Set uninstall URL
-    this.metaMetricsController.store.updateState({ userId })
-    this.metaMetricsController.updateExtensionUninstallUrlUserId.bind(this.metaMetricsController)(userId);
+    this.metaMetricsController.store.updateState({ userId });
+    this.metaMetricsController.updateExtensionUninstallUrlUserId.bind(
+      this.metaMetricsController,
+    )(userId);
 
     return this.keyringController.fullUpdate();
   }
@@ -2724,6 +2740,7 @@ export default class MetamaskController extends EventEmitter {
    * Adds a new account to the default (first) HD seed phrase Keyring.
    *
    * @param accountCount
+   * @param newAccountName
    * @returns {} keyState
    */
   async addNewAccount(accountCount, newAccountName) {
@@ -3054,7 +3071,7 @@ export default class MetamaskController extends EventEmitter {
       const rawSig = await this.keyringController.signPersonalMessage(
         cleanMsgParams,
         {},
-        msgParams.origin
+        msgParams.origin,
       );
       // tells the listener that the message has been signed
       // and can be returned to the dapp

@@ -72,6 +72,12 @@
   "approved": {
     "message": "የተፈቀደ"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "asset": {
     "message": "ሐብት"
   },
@@ -187,15 +193,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -207,6 +204,15 @@
   },
   "connectingToMainnet": {
     "message": "ከዋናው የ Ethereum አውታረ መረብ ጋር መገናኘት"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "ከ Rinkeby የሙከራ አውታረ መረብ ጋር በመገናኘት ላይ"
@@ -420,21 +426,6 @@
   },
   "goerli": {
     "message": "የ Goerli የሙከራ አውታረ መረብ"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "እርስዎን በማየታችን ደስተኛ ነን።"
@@ -661,6 +652,9 @@
   "on": {
     "message": "በርቷል"
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "origin": {
     "message": "መነሻ"
   },
@@ -691,6 +685,12 @@
   },
   "personalAddressDetected": {
     "message": "የግል አድራሻ ተገኝቷል። የተለዋጭ ስም የመገኛ አድራሻን ያስገቡ።"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "prev": {
     "message": "የቀደመ"

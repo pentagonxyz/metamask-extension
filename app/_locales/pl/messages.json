@@ -78,6 +78,12 @@
   "approved": {
     "message": "Zatwierdzone"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "asset": {
     "message": "Składnik aktywów"
   },
@@ -193,15 +199,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -213,6 +210,15 @@
   },
   "connectingToMainnet": {
     "message": "Łączenie z główną siecią Ethereum"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "Łączenie z siecią testową Rinkeby"
@@ -429,21 +435,6 @@
   },
   "goerli": {
     "message": "Sieć testowa Goerli"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "Cieszymy się, że tu jesteś."
@@ -670,6 +661,9 @@
   "on": {
     "message": "Włączone"
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "origin": {
     "message": "Pochodzenie"
   },
@@ -700,6 +694,12 @@
   },
   "personalAddressDetected": {
     "message": "Wykryto osobisty adres. Wprowadź adres kontraktu tokenów."
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "prev": {
     "message": "Poprzednie"

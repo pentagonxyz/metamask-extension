@@ -12,12 +12,16 @@ function mapDispatchToProps(dispatch) {
   return {
     hideModal: () => dispatch(actions.hideModal()),
     createAccount: (newAccountName) => {
-      return dispatch(actions.addNewAccount(newAccountName)).then((newAccountAddress) => {
-        if (newAccountName) {
-          dispatch(actions.setAccountLabel(newAccountAddress, newAccountName, true));
-        }
-        return newAccountAddress;
-      });
+      return dispatch(actions.addNewAccount(newAccountName)).then(
+        (newAccountAddress) => {
+          if (newAccountName) {
+            dispatch(
+              actions.setAccountLabel(newAccountAddress, newAccountName, true),
+            );
+          }
+          return newAccountAddress;
+        },
+      );
     },
   };
 }

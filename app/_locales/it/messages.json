@@ -124,6 +124,12 @@
   "approved": {
     "message": "Approvato"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "assets": {
     "message": "Patrimonio"
   },
@@ -295,15 +301,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -315,6 +312,15 @@
   },
   "connectingToMainnet": {
     "message": "Connessione alla Rete Ethereum Principale"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "Connessione alla Rete di test Rinkeby"
@@ -671,21 +677,6 @@
   "goerli": {
     "message": "Rete di test Goerli"
   },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
-  },
   "happyToSeeYou": {
     "message": "Siamo contenti di vederti."
   },
@@ -1033,6 +1024,9 @@
   "onlyConnectTrust": {
     "message": "Connettiti solo con siti di cui ti fidi."
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "origin": {
     "message": "Origine"
   },
@@ -1071,6 +1065,12 @@
   "plusXMore": {
     "message": "+ $1 elementi",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "prev": {
     "message": "Precedente"

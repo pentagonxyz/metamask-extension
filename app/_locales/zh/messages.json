@@ -293,6 +293,12 @@
   "approvedAsset": {
     "message": "已获批准的资产"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "areYouDeveloper": {
     "message": "您是开发人员吗？"
   },
@@ -619,15 +625,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -639,6 +636,15 @@
   },
   "connectingToMainnet": {
     "message": "正在连接到以太坊主网"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "正在连接到 Rinkeby 测试网络"
@@ -1430,21 +1436,6 @@
   },
   "goerli": {
     "message": "Goerli 测试网络"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "gotIt": {
     "message": "知道了！"
@@ -2427,6 +2418,9 @@
   "openSourceCode": {
     "message": "检查源代码"
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "optional": {
     "message": "可选"
   },
@@ -2547,6 +2541,12 @@
   "plusXMore": {
     "message": "另外 $1 项",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "popularCustomNetworks": {
     "message": "流行自定义网络"

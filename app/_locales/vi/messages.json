@@ -293,6 +293,12 @@
   "approvedAsset": {
     "message": "Tài sản được chấp nhận"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "areYouSure": {
     "message": "Bạn có chắc chắn không?"
   },
@@ -616,15 +622,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -636,6 +633,15 @@
   },
   "connectingToMainnet": {
     "message": "Đang kết nối với mạng chính thức của Ethereum"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "Đang kết nối với mạng thử nghiệm Rinkeby"
@@ -1427,21 +1433,6 @@
   },
   "goerli": {
     "message": "Mạng thử nghiệm Goerli"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "gotIt": {
     "message": "Đã hiểu!"
@@ -2417,6 +2408,9 @@
     "message": "Mở Waymont ở chế độ toàn màn hình để kết nối thiết bị Ledger của bạn qua WebHID.",
     "description": "Shown to the user on the confirm screen when they are viewing MetaMask in a popup window but need to connect their ledger via webhid."
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "optional": {
     "message": "Không bắt buộc"
   },
@@ -2537,6 +2531,12 @@
   "plusXMore": {
     "message": "+ $1 khác",
     "description": "$1 is a number of additional but unshown items in a list- this message will be shown in place of those items"
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "popularCustomNetworks": {
     "message": "Mạng tùy chỉnh phổ biến"

@@ -78,6 +78,12 @@
   "approved": {
     "message": "Kinnitatud"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "asset": {
     "message": "Vara"
   },
@@ -193,15 +199,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -213,6 +210,15 @@
   },
   "connectingToMainnet": {
     "message": "Ühenduse loomine peamise Etherumi võrguga"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "Ühendamine Rinkeby testvõrguga"
@@ -425,21 +431,6 @@
   },
   "goerli": {
     "message": "Goerli testvõrk"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "Meil on hea meel teid näha."
@@ -666,6 +657,9 @@
   "on": {
     "message": "Sees"
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "origin": {
     "message": "Päritolu"
   },
@@ -696,6 +690,12 @@
   },
   "personalAddressDetected": {
     "message": "Leiti isiklik aadress. Sisestage loa kontaktaadress."
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "prev": {
     "message": "Eelm"

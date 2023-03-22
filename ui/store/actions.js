@@ -145,7 +145,7 @@ export function createNewVaultAndGetSeedPhrase(password) {
     try {
       await createNewVault(password);
       // const seedPhrase = await verifySeedPhrase();
-      return "";
+      return '';
     } catch (error) {
       dispatch(displayWarning(error.message));
       throw new Error(error.message);
@@ -163,7 +163,7 @@ export function unlockAndGetSeedPhrase(password) {
       await submitPassword(password);
       // const seedPhrase = await verifySeedPhrase();
       await forceUpdateMetamaskState(dispatch);
-      return "";
+      return '';
     } catch (error) {
       dispatch(displayWarning(error.message));
       throw new Error(error.message);
@@ -354,7 +354,7 @@ export function addNewAccount(newAccountName) {
     try {
       const { identities } = await submitRequestToBackground('addNewAccount', [
         Object.keys(oldIdentities).length,
-        newAccountName
+        newAccountName,
       ]);
       newIdentities = identities;
     } catch (error) {
@@ -2448,21 +2448,25 @@ export function setAccountLabel(account, label, clientSideOnly) {
     log.debug(`background.setAccountLabel`);
 
     return new Promise((resolve, reject) => {
-      callBackgroundMethod('setAccountLabel', [account, label, clientSideOnly], (err) => {
-        dispatch(hideLoadingIndication());
+      callBackgroundMethod(
+        'setAccountLabel',
+        [account, label, clientSideOnly],
+        (err) => {
+          dispatch(hideLoadingIndication());
 
-        if (err) {
-          dispatch(displayWarning(err.message));
-          reject(err);
-          return;
-        }
+          if (err) {
+            dispatch(displayWarning(err.message));
+            reject(err);
+            return;
+          }
 
-        dispatch({
-          type: actionConstants.SET_ACCOUNT_LABEL,
-          value: { account, label },
-        });
-        resolve(account);
-      });
+          dispatch({
+            type: actionConstants.SET_ACCOUNT_LABEL,
+            value: { account, label },
+          });
+          resolve(account);
+        },
+      );
     });
   };
 }

@@ -78,6 +78,12 @@
   "approved": {
     "message": "Potrjeno"
   },
+  "arbitrum": {
+    "message": "Arbitrum One"
+  },
+  "arbitrumGoerli": {
+    "message": "Arbitrum Goerli test network"
+  },
   "asset": {
     "message": "Sredstva"
   },
@@ -193,15 +199,6 @@
   "connectingToArbitrum": {
     "message": "Connecting to Arbitrum One"
   },
-  "connectingToPolygon": {
-    "message": "Connecting to Polygon Mainnet"
-  },
-  "connectingToOptimism": {
-    "message": "Connecting to Optimism Mainnet"
-  },
-  "connectingToPolygonMumbai": {
-    "message": "Connecting to Polygon Mumbai test network"
-  },
   "connectingToArbitrumGoerli": {
     "message": "Connecting to Arbitrum Goerli test network"
   },
@@ -213,6 +210,15 @@
   },
   "connectingToMainnet": {
     "message": "Povezovanje na glavno omrežje"
+  },
+  "connectingToOptimism": {
+    "message": "Connecting to Optimism Mainnet"
+  },
+  "connectingToPolygon": {
+    "message": "Connecting to Polygon Mainnet"
+  },
+  "connectingToPolygonMumbai": {
+    "message": "Connecting to Polygon Mumbai test network"
   },
   "connectingToRinkeby": {
     "message": "Povezovanje na testno omrežje Rinkeby"
@@ -426,21 +432,6 @@
   },
   "goerli": {
     "message": "Testno omrežje Goerli"
-  },
-  "arbitrumGoerli": {
-    "message": "Arbitrum Goerli test network"
-  },
-  "polygonMumbai": {
-    "message": "Polygon Mumbai test network"
-  },
-  "optimism": {
-    "message": "Optimism Mainnet"
-  },
-  "polygon": {
-    "message": "Polygon Mainnet"
-  },
-  "arbitrum": {
-    "message": "Arbitrum One"
   },
   "happyToSeeYou": {
     "message": "Veseli nas, da ste nas spet obiskali."
@@ -664,6 +655,9 @@
   "on": {
     "message": "Vklopljeno"
   },
+  "optimism": {
+    "message": "Optimism Mainnet"
+  },
   "origin": {
     "message": "Izvor"
   },
@@ -694,6 +688,12 @@
   },
   "personalAddressDetected": {
     "message": "Zaznan je osebni naslov. Vnesite naslov pogodbe žetona."
+  },
+  "polygon": {
+    "message": "Polygon Mainnet"
+  },
+  "polygonMumbai": {
+    "message": "Polygon Mumbai test network"
   },
   "prev": {
     "message": "Prej"

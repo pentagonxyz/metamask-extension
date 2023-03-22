@@ -1051,11 +1051,6 @@
         "@metamask/jazzicon>color>color-convert>color-name": true
       }
     },
-    "@sentry/utils>tslib": {
-      "globals": {
-        "define": true
-      }
-    },
     "@storybook/addon-essentials>@storybook/addon-docs>remark-slug>unist-util-visit": {
       "packages": {
         "@storybook/addon-essentials>@storybook/addon-docs>remark-slug>unist-util-visit>unist-util-visit-parents": true
@@ -1136,8 +1131,13 @@
     },
     "@typescript-eslint/eslint-plugin>tsutils": {
       "packages": {
-        "@sentry/utils>tslib": true,
+        "@typescript-eslint/eslint-plugin>tsutils>tslib": true,
         "typescript": true
+      }
+    },
+    "@typescript-eslint/eslint-plugin>tsutils>tslib": {
+      "globals": {
+        "define": true
       }
     },
     "@typescript-eslint/parser": {
@@ -1393,16 +1393,11 @@
     },
     "brfs>static-module>scope-analyzer>es6-set": {
       "packages": {
-        "brfs>static-module>scope-analyzer>es6-set>es6-symbol": true,
         "gulp-sourcemaps>debug-fabulous>memoizee>event-emitter": true,
         "resolve-url-loader>es6-iterator": true,
         "resolve-url-loader>es6-iterator>d": true,
-        "resolve-url-loader>es6-iterator>es5-ext": true
-      }
-    },
-    "brfs>static-module>scope-analyzer>es6-set>es6-symbol": {
-      "packages": {
-        "resolve-url-loader>es6-iterator>d": true
+        "resolve-url-loader>es6-iterator>es5-ext": true,
+        "resolve-url-loader>es6-iterator>es6-symbol": true
       }
     },
     "brfs>static-module>scope-analyzer>get-assigned-identifiers": {
@@ -3929,7 +3924,6 @@
         "WebKitMutationObserver": true,
         "document": true,
         "process": true,
-        "queueMicrotask": true,
         "setImmediate": true,
         "setTimeout": true
       }
@@ -6015,8 +6009,8 @@
       }
     },
     "readable-stream>core-util-is": {
-      "globals": {
-        "Buffer.isBuffer": true
+      "builtin": {
+        "buffer.Buffer.isBuffer": true
       }
     },
     "readable-stream>process-nextick-args": {
@@ -6043,7 +6037,6 @@
     },
     "resolve-url-loader>es6-iterator>d": {
       "packages": {
-        "resolve-url-loader>es6-iterator>d>type": true,
         "resolve-url-loader>es6-iterator>es5-ext": true
       }
     },
@@ -6054,13 +6047,7 @@
     },
     "resolve-url-loader>es6-iterator>es6-symbol": {
       "packages": {
-        "resolve-url-loader>es6-iterator>d": true,
-        "resolve-url-loader>es6-iterator>es6-symbol>ext": true
-      }
-    },
-    "resolve-url-loader>es6-iterator>es6-symbol>ext": {
-      "globals": {
-        "__global__": true
+        "resolve-url-loader>es6-iterator>d": true
       }
     },
     "resolve-url-loader>rework>css>urix": {

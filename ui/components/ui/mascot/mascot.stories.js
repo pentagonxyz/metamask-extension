@@ -49,7 +49,7 @@ export const DefaultStory = () => {
       <img
         src="./images/logo/metamask-fox.svg"
         alt=""
-        style={{width: '120px', height: '120px'}}
+        style={{ width: '120px', height: '120px' }}
       />
       <div style={buttonStyle}>
         <ButtonGroup

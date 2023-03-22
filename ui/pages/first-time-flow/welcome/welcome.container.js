@@ -1,7 +1,12 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
-import { closeWelcomeScreen, createNewVaultAndGetSeedPhrase, setCompletedOnboarding, setParticipateInMetaMetrics } from '../../../store/actions';
+import {
+  closeWelcomeScreen,
+  createNewVaultAndGetSeedPhrase,
+  setCompletedOnboarding,
+  setParticipateInMetaMetrics,
+} from '../../../store/actions';
 import Welcome from './welcome.component';
 
 const mapStateToProps = ({ metamask }) => {
@@ -20,8 +25,7 @@ const mapDispatchToProps = (dispatch) => {
     closeWelcomeScreen: () => dispatch(closeWelcomeScreen()),
     createNewVaultAndGetSeedPhrase: (val) =>
       dispatch(createNewVaultAndGetSeedPhrase(val)),
-    setCompletedOnboarding: (val) =>
-      dispatch(setCompletedOnboarding(val)),
+    setCompletedOnboarding: (val) => dispatch(setCompletedOnboarding(val)),
     setParticipateInMetaMetrics: (val) =>
       dispatch(setParticipateInMetaMetrics(val)),
   };

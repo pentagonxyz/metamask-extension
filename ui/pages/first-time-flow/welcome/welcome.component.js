@@ -6,11 +6,11 @@ import {
   INITIALIZE_CREATE_PASSWORD_ROUTE,
   INITIALIZE_SELECT_ACTION_ROUTE,
   INITIALIZE_METAMETRICS_OPT_IN_ROUTE,
+  INITIALIZE_UNLOCK_ROUTE,
 } from '../../../helpers/constants/routes';
 import { isBeta } from '../../../helpers/utils/build-types';
 import WelcomeFooter from './welcome-footer.component';
 import BetaWelcomeFooter from './beta-welcome-footer.component';
-import { INITIALIZE_UNLOCK_ROUTE } from '../../../helpers/constants/routes';
 
 export default class Welcome extends PureComponent {
   static propTypes = {
@@ -20,7 +20,7 @@ export default class Welcome extends PureComponent {
     isInitialized: PropTypes.bool,
     setParticipateInMetaMetrics: PropTypes.func,
     createNewVaultAndGetSeedPhrase: PropTypes.func,
-    setCompletedOnboarding: PropTypes.func
+    setCompletedOnboarding: PropTypes.func,
   };
 
   static contextTypes = {
@@ -59,7 +59,7 @@ export default class Welcome extends PureComponent {
       history,
       setParticipateInMetaMetrics,
       createNewVaultAndGetSeedPhrase,
-      setCompletedOnboarding
+      setCompletedOnboarding,
     } = this.props;
 
     await setParticipateInMetaMetrics(true);
@@ -77,7 +77,7 @@ export default class Welcome extends PureComponent {
           <img
             src="./images/logo/metamask-fox.svg"
             alt=""
-            style={{width: '125px', height: '125px'}}
+            style={{ width: '125px', height: '125px' }}
           />
           {isBeta() ? <BetaWelcomeFooter /> : <WelcomeFooter />}
           <Button

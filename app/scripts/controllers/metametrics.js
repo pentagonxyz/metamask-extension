@@ -17,11 +17,11 @@ import {
   METAMETRICS_ANONYMOUS_ID,
   METAMETRICS_BACKGROUND_PAGE_OBJECT,
   TRAITS,
-  MIXPANEL_TOKEN
+  MIXPANEL_TOKEN,
 } from '../../../shared/constants/metametrics';
 import { SECOND } from '../../../shared/constants/time';
 
-mixpanel.init(MIXPANEL_TOKEN, { debug: process.env.METAMASK_DEBUG }); 
+mixpanel.init(MIXPANEL_TOKEN, { debug: process.env.METAMASK_DEBUG });
 
 const EXTENSION_UNINSTALL_URL = 'https://vaults.waymont.co/uninstalled';
 
@@ -378,7 +378,11 @@ export default class MetaMetricsController {
 
   updateExtensionUninstallUrlUserId(userId) {
     const { participateInMetaMetrics, metaMetricsId } = this.store.getState();
-    this.updateExtensionUninstallUrl(participateInMetaMetrics, metaMetricsId, userId);
+    this.updateExtensionUninstallUrl(
+      participateInMetaMetrics,
+      metaMetricsId,
+      userId,
+    );
   }
 
   get state() {
@@ -407,22 +411,19 @@ export default class MetaMetricsController {
       const { metaMetricsId } = this.state;
       const idTrait = metaMetricsId ? 'mmiUserId' : 'mmiAnonymousId';
       const idValue = metaMetricsId ?? METAMETRICS_ANONYMOUS_ID;
-      mixpanel.track(
-        "Extension page view",
-        {
-          [idTrait]: idValue,
-          userId: this.store.getState().userId,
-          name,
-          properties: {
-            params,
-            locale: this.locale,
-            network: this.network,
-            chain_id: this.chainId,
-            environment_type: environmentType,
-          },
-          context: this._buildContext(referrer, page),
-        }
-      );
+      mixpanel.track('Extension page view', {
+        [idTrait]: idValue,
+        userId: this.store.getState().userId,
+        name,
+        properties: {
+          params,
+          locale: this.locale,
+          network: this.network,
+          chain_id: this.chainId,
+          environment_type: environmentType,
+        },
+        context: this._buildContext(referrer, page),
+      });
     } catch (err) {
       this._captureException(err);
     }
@@ -764,14 +765,11 @@ export default class MetaMetricsController {
     }
 
     try {
-      mixpanel.track(
-        "Extension identification",
-        {
-          userId: this.store.getState().userId,
-          mmiUserId: metaMetricsId,
-          traits: userTraits,
-        }
-      );
+      mixpanel.track('Extension identification', {
+        userId: this.store.getState().userId,
+        mmiUserId: metaMetricsId,
+        traits: userTraits,
+      });
     } catch (err) {
       this._captureException(err);
     }
@@ -898,13 +896,13 @@ export default class MetaMetricsController {
       };
 
       if (flushImmediately) {
-        mixpanel.track("Extension tracking", payload);
+        mixpanel.track('Extension tracking', payload);
         callback();
         return;
       }
 
-      (async function(cb) {
-        await mixpanel.track("Extension tracking", payload);
+      (async function (cb) {
+        await mixpanel.track('Extension tracking', payload);
         cb();
       })(callback);
     });

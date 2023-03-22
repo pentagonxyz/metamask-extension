@@ -117,7 +117,9 @@ export default class UnlockPage extends Component {
     try {
       forceNextMfaSetup();
       chrome.windows.create({
-        url: (process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co') + '/login/?login_source=extension',
+        url: `${
+          process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co'
+        }/login/?login_source=extension`,
         focused: true,
         type: 'popup',
         width: 400,
@@ -130,14 +132,14 @@ export default class UnlockPage extends Component {
     }
 
     const { history } = this.props;
-    
-    chrome.runtime.onMessage.addListener(
-      function(request /* , sender, sendResponse */) {
-        if (request.msg === "LOGGED_IN") {
-          history.push(DEFAULT_ROUTE);
-        }
+
+    chrome.runtime.onMessage.addListener(function (
+      request /* , sender, sendResponse */,
+    ) {
+      if (request.msg === 'LOGGED_IN') {
+        history.push(DEFAULT_ROUTE);
       }
-    );
+    });
   };
 
   renderSubmitButton() {
@@ -170,7 +172,7 @@ export default class UnlockPage extends Component {
 
     // TODO: Add a "forgot password" button for key recovery
     // const { onRestore } = this.props;
-    
+
     const { isUnlocked, history } = this.props;
 
     if (isUnlocked) {

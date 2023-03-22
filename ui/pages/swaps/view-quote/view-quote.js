@@ -191,14 +191,16 @@ export default function ViewQuote() {
   /* const currentSmartTransactionsErrorMessageDismissed = useSelector(
     getCurrentSmartTransactionsErrorMessageDismissed,
   ); */
-  const currentSmartTransactionsEnabled = false
-    /* smartTransactionsEnabled &&
+  const currentSmartTransactionsEnabled = false;
+  /* smartTransactionsEnabled &&
     !(
       currentSmartTransactionsError &&
       (currentSmartTransactionsError !== 'not_enough_funds' ||
         currentSmartTransactionsErrorMessageDismissed)
-    ) */;
-  const smartTransactionFees = useSelector(getSmartTransactionFees, isEqual);
+    ) */ const smartTransactionFees = useSelector(
+    getSmartTransactionFees,
+    isEqual,
+  );
   const swapsNetworkConfig = useSelector(getSwapsNetworkConfig, shallowEqual);
   const unsignedTransaction = usedQuote.trade;
 

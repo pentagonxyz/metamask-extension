@@ -350,8 +350,13 @@ export default class NetworkController extends EventEmitter {
   //
 
   async _checkInfuraAvailability(network) {
-    let infuraNetwork = network.replace(/[A-Z]/gu, m => "-" + m.toLowerCase());
-    if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
+    let infuraNetwork = network.replace(
+      /[A-Z]/gu,
+      (m) => `-${m.toLowerCase()}`,
+    );
+    if (['arbitrum', 'polygon', 'optimism'].indexOf(infuraNetwork) >= 0) {
+      infuraNetwork += '-mainnet';
+    }
     const rpcUrl = `https://${infuraNetwork}.infura.io/v3/${this._infuraProjectId}`;
 
     let networkChanged = false;

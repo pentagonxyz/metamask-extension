@@ -142,7 +142,7 @@ export default function LoadingSwapsQuotes({
             <img
               src="./images/logo/metamask-fox.svg"
               alt=""
-              style={{width: '90px', height: '90px'}}
+              style={{ width: '90px', height: '90px' }}
             />
           </div>
         </div>

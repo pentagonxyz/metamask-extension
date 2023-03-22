@@ -11,7 +11,7 @@ export default class MetaMetricsOptIn extends Component {
     setParticipateInMetaMetrics: PropTypes.func,
     participateInMetaMetrics: PropTypes.bool,
     createNewVaultAndGetSeedPhrase: PropTypes.func,
-    setCompletedOnboarding: PropTypes.func
+    setCompletedOnboarding: PropTypes.func,
   };
 
   static contextTypes = {
@@ -21,8 +21,13 @@ export default class MetaMetricsOptIn extends Component {
 
   render() {
     const { trackEvent, t } = this.context;
-    const { history, setParticipateInMetaMetrics, participateInMetaMetrics, createNewVaultAndGetSeedPhrase, setCompletedOnboarding } =
-      this.props;
+    const {
+      history,
+      setParticipateInMetaMetrics,
+      participateInMetaMetrics,
+      createNewVaultAndGetSeedPhrase,
+      setCompletedOnboarding,
+    } = this.props;
 
     return (
       <div className="metametrics-opt-in">

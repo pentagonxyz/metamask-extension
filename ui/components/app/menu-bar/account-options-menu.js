@@ -40,7 +40,8 @@ export default function AccountOptionsMenu({ anchorElement, onClose }) {
   const trackEvent = useContext(MetaMetricsContext);
   const blockExplorerLinkText = useSelector(getBlockExplorerLinkText);
 
-  const isRemovable = keyring.type !== 'HD Key Tree' && keyring.type !== 'Waymont Co. SCW';
+  const isRemovable =
+    keyring.type !== 'HD Key Tree' && keyring.type !== 'Waymont Co. SCW';
 
   const routeToAddBlockExplorerUrl = () => {
     history.push(`${NETWORKS_ROUTE}#blockExplorerUrl`);

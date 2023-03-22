@@ -72,10 +72,14 @@ export const PALM_DISPLAY_NAME = 'Palm';
 
 export const infuraProjectId = process.env.INFURA_PROJECT_ID;
 export const getRpcUrl = ({ network, excludeProjectId = false }) => {
-  let infuraNetwork = network.replace(/[A-Z]/gu, m => "-" + m.toLowerCase());
-  if (["arbitrum", "polygon", "optimism"].indexOf(infuraNetwork) >= 0) infuraNetwork += "-mainnet";
-  return `https://${infuraNetwork}.infura.io/v3/${excludeProjectId ? '' : infuraProjectId}`;
-}
+  let infuraNetwork = network.replace(/[A-Z]/gu, (m) => `-${m.toLowerCase()}`);
+  if (['arbitrum', 'polygon', 'optimism'].indexOf(infuraNetwork) >= 0) {
+    infuraNetwork += '-mainnet';
+  }
+  return `https://${infuraNetwork}.infura.io/v3/${
+    excludeProjectId ? '' : infuraProjectId
+  }`;
+};
 
 export const ROPSTEN_RPC_URL = getRpcUrl({ network: ROPSTEN });
 export const RINKEBY_RPC_URL = getRpcUrl({ network: RINKEBY });
@@ -112,7 +116,18 @@ export const HARMONY_ONE_TOKEN_IMAGE_URL = './images/harmony-one.svg';
 export const OPTIMISM_TOKEN_IMAGE_URL = './images/optimism.svg';
 export const PALM_TOKEN_IMAGE_URL = './images/palm.svg';
 
-export const INFURA_PROVIDER_TYPES = [ROPSTEN, RINKEBY, KOVAN, ARBITRUM, POLYGON, OPTIMISM, MAINNET, GOERLI, ARBITRUM_GOERLI, POLYGON_MUMBAI];
+export const INFURA_PROVIDER_TYPES = [
+  ROPSTEN,
+  RINKEBY,
+  KOVAN,
+  ARBITRUM,
+  POLYGON,
+  OPTIMISM,
+  MAINNET,
+  GOERLI,
+  ARBITRUM_GOERLI,
+  POLYGON_MUMBAI,
+];
 
 export const TEST_CHAINS = [
   ROPSTEN_CHAIN_ID,

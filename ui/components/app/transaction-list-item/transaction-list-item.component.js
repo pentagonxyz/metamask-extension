@@ -216,8 +216,7 @@ function TransactionListItemInner({
             </>
           )
         }
-      >
-      </ListItem>
+      ></ListItem>
       {showDetails && (
         <TransactionListItemDetails
           title={title}

@@ -256,7 +256,7 @@ export default class TransactionController extends EventEmitter {
     // type will be one of our default network names or 'rpc'. the default
     // network names are sufficient configuration, simply pass the name as the
     // chain argument in the constructor.
-    if (["mainnet", "goerli"].indexOf(type) > 0) {
+    if (['mainnet', 'goerli'].indexOf(type) > 0) {
       return new Common({
         chain: type,
         hardfork,
@@ -1467,7 +1467,10 @@ export default class TransactionController extends EventEmitter {
       txMeta.preTxBalance = preTxBalance.toString(16);
     }
 
-    this.txStateManager.updateTransaction(txMeta, 'transactions#publishTransaction');
+    this.txStateManager.updateTransaction(
+      txMeta,
+      'transactions#publishTransaction',
+    );
 
     this.setTxHash(txId, txHash);
     this.txStateManager.setTxStatusSubmitted(txId);

@@ -46,7 +46,7 @@ export default function OnboardingWelcome() {
             <img
               src="./images/logo/metamask-fox.svg"
               alt=""
-              style={{width: '250px', height: '250px'}}
+              style={{ width: '250px', height: '250px' }}
             />
           </div>
         </div>
