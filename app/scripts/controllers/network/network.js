@@ -41,11 +41,7 @@ if (process.env.IN_TEST) {
     nickname: 'Localhost 8545',
   };
 } else if (process.env.METAMASK_DEBUG || env === 'test') {
-  defaultProviderConfigOpts = {
-    type: GOERLI,
-    chainId: GOERLI_CHAIN_ID,
-    ticker: TEST_NETWORK_TICKER_MAP.goerli,
-  };
+  defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID };
 } else {
   defaultProviderConfigOpts = { type: MAINNET, chainId: MAINNET_CHAIN_ID };
 }
