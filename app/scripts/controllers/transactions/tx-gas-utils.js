@@ -35,7 +35,7 @@ export default class TxGasUtil {
     const block = await this.query.getBlockByNumber('latest', false);
 
     // fallback to block gasLimit
-    const blockGasLimitBN = hexToBn(block.gasLimit);
+    const blockGasLimitBN = hexToBn(typeof block.gasLimit !== 'string' ? block.gasLimit.toString() : block.gasLimit);
     const saferGasLimitBN = BnMultiplyByFraction(blockGasLimitBN, 19, 20);
     let estimatedGasHex = bnToHex(saferGasLimitBN);
     let simulationFails;
@@ -84,8 +84,8 @@ export default class TxGasUtil {
    * @returns {string} the buffered gas limit as a hex string
    */
   addGasBuffer(initialGasLimitHex, blockGasLimitHex, multiplier = 1.5) {
-    const initialGasLimitBn = hexToBn(initialGasLimitHex);
-    const blockGasLimitBn = hexToBn(blockGasLimitHex);
+    const initialGasLimitBn = hexToBn(typeof initialGasLimitHex !== 'string' ? initialGasLimitHex.toString() : initialGasLimitHex);
+    const blockGasLimitBn = hexToBn(typeof blockGasLimitHex !== 'string' ? blockGasLimitHex.toString() : blockGasLimitHex);
     const upperGasLimitBn = blockGasLimitBn.muln(0.9);
     const bufferedGasLimitBn = initialGasLimitBn.muln(multiplier);
 
