@@ -40,7 +40,7 @@ async function getMethodFrom4Byte(fourBytePrefix) {
       ? -1
       : 1;
   });
-  return fourByteResponse.results[0].text_signature;
+  return fourByteResponse.results.length > 0 ? fourByteResponse.results[0].text_signature : "";
 }
 
 let registry;
