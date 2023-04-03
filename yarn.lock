@@ -3188,7 +3188,7 @@
 
 "@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers#waymont-reaudit":
   version "9.1.0"
-  resolved "https://github.com/pentagonxyz/providers#df06df824f353e64a132a17b70a03e5a7ff5a111"
+  resolved "https://github.com/pentagonxyz/providers#eaa55d6119a458ab4644e4f2fb8f61075208e2e4"
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
@@ -22079,7 +22079,7 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont-reaudit":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#4aec2e1f67b7d5128e8f4ee9f9727e0778fb670b"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#fef7d8608ae10bb81f2f207f30c9befcae3377e9"
   dependencies:
     "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
