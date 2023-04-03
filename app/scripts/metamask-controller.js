@@ -1141,6 +1141,15 @@ export default class MetamaskController extends EventEmitter {
           ) {
             this.preferencesController.removeAllAddresses();
             this.submitPassword(request.data.accessToken, request.data.userId);
+            this.metaMetricsController.trackEvent(
+              {
+                category: EVENT.CATEGORIES.NAVIGATION,
+                event: EVENT_NAMES.APP_UNLOCKED
+              },
+              {
+                isNewVisit: true,
+              },
+            );
           }
         } else if (request.type === 'MFA_RESOLUTION') {
           this.keyringController.mfaResolution(
