@@ -419,5 +419,3 @@ export const EVENT = {
 export const CONTEXT_PROPS = {
   PAGE_TITLE: 'location',
 };
-
-export const MIXPANEL_TOKEN = '9fb19d81dab75c3c95e9c160dca900a6';

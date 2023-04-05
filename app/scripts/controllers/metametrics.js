@@ -17,7 +17,6 @@ import {
   METAMETRICS_ANONYMOUS_ID,
   METAMETRICS_BACKGROUND_PAGE_OBJECT,
   TRAITS,
-  // MIXPANEL_TOKEN,
 } from '../../../shared/constants/metametrics';
 import { SECOND } from '../../../shared/constants/time';
 
@@ -32,7 +31,7 @@ async function trackMixpanelEvent(event, payload, distinctId) {
     body: JSON.stringify({
       event,
       properties: payload.concat({
-        token: MIXPANEL_TOKEN,
+        token: process.env.CONF?.MIXPANEL_TOKEN,
         time: (new Date()).getTime(),
         distinct_id: distinctId,
         "$insert_id": crypto.randomBytes(32).toString("hex"),
