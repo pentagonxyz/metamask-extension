@@ -3077,9 +3077,12 @@ export default class MetamaskController extends EventEmitter {
       const cleanMsgParams = await this.personalMessageManager.approveMessage(
         msgParams,
       );
+      const chainId = this.networkController.getCurrentChainId();
       const rawSig = await this.keyringController.signPersonalMessage(
         cleanMsgParams,
-        {},
+        {
+          gas: parseInt(chainId) !== 42161 && parseInt(chainId) !== 421613 ? "0x1D4C0" : undefined
+        },
         msgParams.origin,
       );
       // tells the listener that the message has been signed
