@@ -2189,20 +2189,6 @@
         "browserify>browser-resolve": true
       }
     },
-    "@apollo/client": {
-      "packages": {
-        "@apollo/client>@wry/context": true,
-        "@apollo/client>@wry/equality": true,
-        "@apollo/client>@wry/trie": true,
-        "@apollo/client>graphql-tag": true,
-        "@apollo/client>optimism": true,
-        "@apollo/client>symbol-observable": true,
-        "@apollo/client>ts-invariant": true,
-        "@apollo/client>tslib": true,
-        "mockttp>graphql": true,
-        "zen-observable-ts": true
-      }
-    },
     "@apollo/client>@wry/context": {
       "globals": {
         "setTimeout": true
@@ -4459,19 +4445,32 @@
         "chrome.windows.onRemoved.addListener": true,
         "chrome.windows.remove": true,
         "chrome.windows.update": true,
-        "confirm": true
+        "confirm": true,
+        "setTimeout": true
       },
       "packages": {
         "3box>graphql-request>cross-fetch": true,
-        "@apollo/client": true,
-        "@ethereumjs/tx": true,
         "browserify>buffer": true,
+        "browserify>crypto-browserify": true,
         "browserify>events": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client": true,
         "eth-keyring-controller>pentagonxyz/whale-keyring>ethereum-cryptography": true,
         "eth-keyring-controller>pentagonxyz/whale-keyring>graphql-ws": true,
-        "eth-trezor-keyring>@metamask/eth-sig-util": true,
-        "ethereumjs-util": true,
-        "uuid": true
+        "eth-trezor-keyring>@metamask/eth-sig-util": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client": {
+      "packages": {
+        "@apollo/client>@wry/context": true,
+        "@apollo/client>@wry/equality": true,
+        "@apollo/client>@wry/trie": true,
+        "@apollo/client>graphql-tag": true,
+        "@apollo/client>optimism": true,
+        "@apollo/client>symbol-observable": true,
+        "@apollo/client>ts-invariant": true,
+        "@apollo/client>tslib": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>graphql": true,
+        "zen-observable-ts": true
       }
     },
     "eth-keyring-controller>pentagonxyz/whale-keyring>ethereum-cryptography": {
@@ -5717,17 +5716,6 @@
     "madge>rc>deep-extend": {
       "packages": {
         "browserify>buffer": true
-      }
-    },
-    "mixpanel-browser": {
-      "globals": {
-        "XMLHttpRequest": true,
-        "clearTimeout": true,
-        "document.referrer": true,
-        "event": true,
-        "localStorage": true,
-        "location": "write",
-        "setTimeout": true
       }
     },
     "mockttp>node-forge": {
