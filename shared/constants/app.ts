@@ -89,9 +89,9 @@ export const CHROME_BUILD_IDS = [
   METAMASK_FLASK_CHROME_ID,
 ] as const;
 
-const METAMASK_BETA_FIREFOX_ID = 'webextension-beta@waymont.co';
-const METAMASK_PROD_FIREFOX_ID = 'webextension@waymont.co';
-const METAMASK_FLASK_FIREFOX_ID = 'webextension-flask@waymont.co';
+const METAMASK_BETA_FIREFOX_ID = 'browserextension-beta@waymont.co';
+const METAMASK_PROD_FIREFOX_ID = 'browserextension@waymont.co';
+const METAMASK_FLASK_FIREFOX_ID = 'browserextension-flask@waymont.co';
 
 export const FIREFOX_BUILD_IDS = [
   METAMASK_BETA_FIREFOX_ID,

@@ -1,7 +1,7 @@
 {
   "applications": {
     "gecko": {
-      "id": "webextension@waymont.co",
+      "id": "browserextension@waymont.co",
       "strict_min_version": "68.0"
     }
   },
