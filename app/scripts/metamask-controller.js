@@ -1139,7 +1139,9 @@ export default class MetamaskController extends EventEmitter {
               process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co'
             }/mfa/setup/`
           ) {
-            if (this.keyringController.getKeyringsByType('Waymont Co. SCW').length === 0) this.preferencesController.removeAllAddresses();
+            if (this.keyringController.getKeyringsByType('Waymont Co. SCW').length === 0) {
+              this.preferencesController.removeAllAddresses();
+            }
             this.submitPassword(request.data.accessToken, request.data.userId);
             this.metaMetricsController.trackEvent(
               {
