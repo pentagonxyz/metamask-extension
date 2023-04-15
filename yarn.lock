@@ -76,9 +76,9 @@
   integrity sha512-7UDWIIF9hIeJqfKXkNIzkVandlwLf1FWTSdrb9iXvOP8oF544JRXQjCbiTmCv2c9n44n/FIWtehhBfNuAx2CZA==
 
 "@apollo/client@^3.5.10":
-  version "3.7.11"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.11.tgz#fbe9ac3cd508123aacae370dfb3d268fd74f3a44"
-  integrity sha512-uLg2KtxoAyj9ta7abLxXx8cGRM7HypCkXVmxtL7Ko//N5g37aoJ3ca7VYoFCMUFO1BXBulj+yKVl0U3+ILj5AQ==
+  version "3.7.12"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.12.tgz#9ddd355d0788374cdb900e5f40298b196176952b"
+  integrity sha512-XvH8ssDibx5hR92Tet8CHtUxhiIs+RbYjyxkflAcnF85QT3VacUdNAhjj0OcA2kcZ+5KyceJmilmBNjj6+rJFg==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -3188,7 +3188,7 @@
 
 "@metamask/providers@^9.0.0", "@metamask/providers@https://github.com/pentagonxyz/providers#waymont-reaudit":
   version "9.1.0"
-  resolved "https://github.com/pentagonxyz/providers#c5649ee8050c04217bd56ed931910791e0c40ff1"
+  resolved "https://github.com/pentagonxyz/providers#fda72d7e37cbd7751b7c9b1493d1deff64fac304"
   dependencies:
     "@metamask/object-multiplex" "^1.1.0"
     "@metamask/safe-event-emitter" "^2.0.0"
@@ -11860,7 +11860,7 @@ eth-keyring-controller@^7.0.2:
 
 "eth-keyring-controller@https://github.com/pentagonxyz/KeyringController.git#waymont-reaudit":
   version "7.0.2"
-  resolved "https://github.com/pentagonxyz/KeyringController.git#a6e559dc97a19c3ed099e90b7aaa5c4412bd9de4"
+  resolved "https://github.com/pentagonxyz/KeyringController.git#f14f36cbc1e850f5074798f14bbac77718030156"
   dependencies:
     "@metamask/bip39" "^4.0.0"
     "@metamask/eth-hd-keyring" "^4.0.2"
