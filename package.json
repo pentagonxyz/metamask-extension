@@ -113,7 +113,6 @@
   },
   "dependencies": {
     "3box": "^1.10.2",
-    "@apollo/client": "^3.6.9",
     "@babel/runtime": "^7.5.5",
     "@download/blockies": "^1.0.3",
     "@ensdomains/content-hash": "^2.5.6",
