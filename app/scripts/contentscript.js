@@ -38,6 +38,15 @@ const LEGACY_PUBLIC_CONFIG = 'publicConfig';
 
 const phishingPageUrl = new URL(process.env.PHISHING_WARNING_PAGE_URL);
 
+if (window.location.hostname === "vaults.waymont.co") window.addEventListener("message", (event) => {
+  if (
+    event.source === window &&
+    ["CLOSE_ME", "AUTH_UPDATE", "MFA_RESOLUTION", "MFA_REJECTION", "MFA_ERROR"].indexOf(event?.data?.type) >= 0
+  ) {
+    browser.runtime.sendMessage({ externalWaymontMsgType: event?.data?.type, externalWaymontMsgData: event?.data?.data });
+  }
+});
+
 if (
   window.location.origin === phishingPageUrl.origin &&
   window.location.pathname === phishingPageUrl.pathname

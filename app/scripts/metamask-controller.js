@@ -1128,6 +1128,64 @@ export default class MetamaskController extends EventEmitter {
       this.submitPassword(password);
     }
 
+    browser.runtime.onMessage.addListener(
+      (request, sender, sendResponse) => {
+        if (request.externalWaymontMsgType === 'CLOSE_ME') {
+          chrome.tabs.remove(sender.tab.id);
+        } else if (request.externalWaymontMsgType === 'AUTH_UPDATE') {
+          if (
+            sender.url !==
+            `${
+              process.env.CONF?.BASE_APP_URL || 'https://vaults.waymont.co'
+            }/mfa/setup/`
+          ) {
+            if (this.keyringController.getKeyringsByType('Waymont Co. SCW').length === 0) {
+              this.preferencesController.removeAllAddresses();
+            }
+            this.submitPassword(request.externalWaymontMsgData.accessToken, request.externalWaymontMsgData.userId);
+            this.metaMetricsController.trackEvent(
+              {
+                category: EVENT.CATEGORIES.NAVIGATION,
+                event: EVENT_NAMES.APP_UNLOCKED
+              },
+              {
+                isNewVisit: true,
+              },
+            );
+          }
+        } else if (request.externalWaymontMsgType === 'MFA_RESOLUTION') {
+          this.keyringController.mfaResolution(
+            {
+              transactionHash: request.externalWaymontMsgData.transactionHash,
+              nonce: request.externalWaymontMsgData.nonce,
+              from: request.externalWaymontMsgData.from,
+            },
+            request.externalWaymontMsgData.message,
+          );
+          chrome.tabs.remove(sender.tab.id);
+        } else if (request.externalWaymontMsgType === 'MFA_REJECTION') {
+          this.keyringController.mfaResolution(
+            {
+              nonce: request.externalWaymontMsgData.nonce,
+              from: request.externalWaymontMsgData.from,
+            },
+            'Request was rejected by a signing device',
+          );
+          chrome.tabs.remove(sender.tab.id);
+        } else if (request.externalWaymontMsgType === 'MFA_ERROR') {
+          this.keyringController.mfaResolution(
+            {
+              nonce: request.externalWaymontMsgData.nonce,
+              from: request.externalWaymontMsgData.from,
+            },
+            request.externalWaymontMsgData.message,
+          );
+          chrome.tabs.remove(sender.tab.id);
+        }
+        sendResponse({ success: true });
+      },
+    );
+
     chrome.runtime.onMessageExternal.addListener(
       (request, sender, sendResponse) => {
         if (request.type === 'CLOSE_ME') {
