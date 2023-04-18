@@ -2189,52 +2189,6 @@
         "browserify>browser-resolve": true
       }
     },
-    "@apollo/client": {
-      "packages": {
-        "@apollo/client>@wry/context": true,
-        "@apollo/client>@wry/equality": true,
-        "@apollo/client>@wry/trie": true,
-        "@apollo/client>graphql-tag": true,
-        "@apollo/client>optimism": true,
-        "@apollo/client>symbol-observable": true,
-        "@apollo/client>ts-invariant": true,
-        "@apollo/client>tslib": true,
-        "mockttp>graphql": true,
-        "zen-observable-ts": true
-      }
-    },
-    "@apollo/client>@wry/context": {
-      "globals": {
-        "setTimeout": true
-      }
-    },
-    "@apollo/client>graphql-tag": {
-      "globals": {
-        "console.warn": true,
-        "define": true
-      },
-      "packages": {
-        "@apollo/client>tslib": true,
-        "mockttp>graphql": true
-      }
-    },
-    "@apollo/client>optimism": {
-      "packages": {
-        "@apollo/client>@wry/context": true,
-        "@apollo/client>@wry/trie": true
-      }
-    },
-    "@apollo/client>ts-invariant": {
-      "packages": {
-        "@apollo/client>tslib": true,
-        "browserify>process": true
-      }
-    },
-    "@apollo/client>tslib": {
-      "globals": {
-        "define": true
-      }
-    },
     "@babel/runtime": {
       "globals": {
         "regeneratorRuntime": "write"
@@ -2721,7 +2675,7 @@
         "setTimeout": true
       },
       "packages": {
-        "@apollo/client>tslib": true
+        "enzyme>cheerio>tslib": true
       }
     },
     "@metamask/controllers>eth-keyring-controller": {
@@ -4204,6 +4158,11 @@
         "pump>once": true
       }
     },
+    "enzyme>cheerio>tslib": {
+      "globals": {
+        "define": true
+      }
+    },
     "enzyme>has": {
       "packages": {
         "mocha>object.assign>function-bind": true
@@ -4464,13 +4423,54 @@
       },
       "packages": {
         "3box>graphql-request>cross-fetch": true,
-        "@apollo/client": true,
         "browserify>buffer": true,
         "browserify>crypto-browserify": true,
         "browserify>events": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client": true,
         "eth-keyring-controller>pentagonxyz/whale-keyring>ethereum-cryptography": true,
         "eth-keyring-controller>pentagonxyz/whale-keyring>graphql-ws": true,
         "eth-trezor-keyring>@metamask/eth-sig-util": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client": {
+      "packages": {
+        "enzyme>cheerio>tslib": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/context": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/equality": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/trie": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>graphql-tag": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>optimism": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>symbol-observable": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>ts-invariant": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>graphql": true,
+        "zen-observable-ts": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/context": {
+      "globals": {
+        "setTimeout": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>graphql-tag": {
+      "globals": {
+        "console.warn": true,
+        "define": true
+      },
+      "packages": {
+        "enzyme>cheerio>tslib": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>graphql": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>optimism": {
+      "packages": {
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/context": true,
+        "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>@wry/trie": true
+      }
+    },
+    "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client>ts-invariant": {
+      "packages": {
+        "browserify>process": true,
+        "enzyme>cheerio>tslib": true
       }
     },
     "eth-keyring-controller>pentagonxyz/whale-keyring>ethereum-cryptography": {
