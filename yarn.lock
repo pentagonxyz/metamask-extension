@@ -75,9 +75,10 @@
   resolved "https://registry.yarnpkg.com/@apocentre/alias-sampling/-/alias-sampling-0.5.3.tgz#897ff181b48ad7b2bcb4ecf29400214888244f08"
   integrity sha512-7UDWIIF9hIeJqfKXkNIzkVandlwLf1FWTSdrb9iXvOP8oF544JRXQjCbiTmCv2c9n44n/FIWtehhBfNuAx2CZA==
 
-"@apollo/client@https://github.com/pentagonxyz/apollo-client.git":
+"@apollo/client@^3.5.10":
   version "3.7.12"
-  resolved "https://github.com/pentagonxyz/apollo-client.git#d2625320f3bc7c6cf0d9aa2a866f9c7cac7fe0a8"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.12.tgz#9ddd355d0788374cdb900e5f40298b196176952b"
+  integrity sha512-XvH8ssDibx5hR92Tet8CHtUxhiIs+RbYjyxkflAcnF85QT3VacUdNAhjj0OcA2kcZ+5KyceJmilmBNjj6+rJFg==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -22059,9 +22060,9 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont-reaudit":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#72b5bd983a79d2d26da6568169340193d4e03d6d"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#02da84940a1b1174879d9087972d13b159f154ec"
   dependencies:
-    "@apollo/client" "https://github.com/pentagonxyz/apollo-client.git"
+    "@apollo/client" "^3.5.10"
     "@ethereumjs/tx" "^3.1.1"
     "@metamask/eth-sig-util" "^4.0.0"
     cross-fetch "^3.1.5"
