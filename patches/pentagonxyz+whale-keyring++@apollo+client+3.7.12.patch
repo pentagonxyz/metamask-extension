@@ -1,0 +1,22 @@
+diff --git a/node_modules/pentagonxyz/whale-keyring/node_modules/@apollo/client/utilities/observables/Concast.js b/node_modules/pentagonxyz/whale-keyring/node_modules/@apollo/client/utilities/observables/Concast.js
+index e10da19..4809148 100644
+--- a/node_modules/pentagonxyz/whale-keyring/node_modules/@apollo/client/utilities/observables/Concast.js
++++ b/node_modules/pentagonxyz/whale-keyring/node_modules/@apollo/client/utilities/observables/Concast.js
+@@ -29,7 +29,7 @@ var Concast = (function (_super) {
+                 var sub = _this.sub;
+                 if (sub !== null) {
+                     if (sub)
+-                        setTimeout(function () { return sub.unsubscribe(); });
++                        Promise.resolve().then(function () { return sub.unsubscribe(); });
+                     _this.sub = null;
+                     _this.latest = ["error", error];
+                     _this.reject(error);
+@@ -43,7 +43,7 @@ var Concast = (function (_super) {
+                     var value = sources.shift();
+                     if (!value) {
+                         if (sub)
+-                            setTimeout(function () { return sub.unsubscribe(); });
++                            Promise.resolve().then(function () { return sub.unsubscribe(); });
+                         _this.sub = null;
+                         if (_this.latest &&
+                             _this.latest[0] === "next") {
