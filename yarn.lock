@@ -75,25 +75,6 @@
   resolved "https://registry.yarnpkg.com/@apocentre/alias-sampling/-/alias-sampling-0.5.3.tgz#897ff181b48ad7b2bcb4ecf29400214888244f08"
   integrity sha512-7UDWIIF9hIeJqfKXkNIzkVandlwLf1FWTSdrb9iXvOP8oF544JRXQjCbiTmCv2c9n44n/FIWtehhBfNuAx2CZA==
 
-"@apollo/client@^3.5.10":
-  version "3.7.12"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.12.tgz#9ddd355d0788374cdb900e5f40298b196176952b"
-  integrity sha512-XvH8ssDibx5hR92Tet8CHtUxhiIs+RbYjyxkflAcnF85QT3VacUdNAhjj0OcA2kcZ+5KyceJmilmBNjj6+rJFg==
-  dependencies:
-    "@graphql-typed-document-node/core" "^3.1.1"
-    "@wry/context" "^0.7.0"
-    "@wry/equality" "^0.5.0"
-    "@wry/trie" "^0.3.0"
-    graphql-tag "^2.12.6"
-    hoist-non-react-statics "^3.3.2"
-    optimism "^0.16.2"
-    prop-types "^15.7.2"
-    response-iterator "^0.2.6"
-    symbol-observable "^4.0.0"
-    ts-invariant "^0.10.3"
-    tslib "^2.3.0"
-    zen-observable-ts "^1.2.5"
-
 "@apollo/client@^3.6.9":
   version "3.7.10"
   resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.7.10.tgz#addc5fcebaf016981d9476268a06d529be83f568"
@@ -106,6 +87,24 @@
     graphql-tag "^2.12.6"
     hoist-non-react-statics "^3.3.2"
     optimism "^0.16.1"
+    prop-types "^15.7.2"
+    response-iterator "^0.2.6"
+    symbol-observable "^4.0.0"
+    ts-invariant "^0.10.3"
+    tslib "^2.3.0"
+    zen-observable-ts "^1.2.5"
+
+"@apollo/client@https://github.com/pentagonxyz/apollo-client.git":
+  version "3.7.12"
+  resolved "https://github.com/pentagonxyz/apollo-client.git#d2625320f3bc7c6cf0d9aa2a866f9c7cac7fe0a8"
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.1.1"
+    "@wry/context" "^0.7.0"
+    "@wry/equality" "^0.5.0"
+    "@wry/trie" "^0.3.0"
+    graphql-tag "^2.12.6"
+    hoist-non-react-statics "^3.3.2"
+    optimism "^0.16.2"
     prop-types "^15.7.2"
     response-iterator "^0.2.6"
     symbol-observable "^4.0.0"
@@ -22079,9 +22078,9 @@ pend@~1.2.0:
 
 "pentagonxyz/whale-keyring@https://github.com/pentagonxyz/whale-keyring.git#waymont-reaudit":
   version "4.2.0"
-  resolved "https://github.com/pentagonxyz/whale-keyring.git#b8b0b368ee05ec1007656abe2a80ec74921a76af"
+  resolved "https://github.com/pentagonxyz/whale-keyring.git#72b5bd983a79d2d26da6568169340193d4e03d6d"
   dependencies:
-    "@apollo/client" "^3.5.10"
+    "@apollo/client" "https://github.com/pentagonxyz/apollo-client.git"
     "@ethereumjs/tx" "^3.1.1"
     "@metamask/eth-sig-util" "^4.0.0"
     cross-fetch "^3.1.5"

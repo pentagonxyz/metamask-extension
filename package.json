@@ -488,7 +488,8 @@
       "@fortawesome/fontawesome-free": false,
       "resolve-url-loader>es6-iterator>es5-ext": false,
       "eth-keyring-controller>pentagonxyz/whale-keyring>ethereumjs-util>ethereum-cryptography>keccak": false,
-      "eth-keyring-controller>pentagonxyz/whale-keyring>ethereumjs-util>ethereum-cryptography>secp256k1": false
+      "eth-keyring-controller>pentagonxyz/whale-keyring>ethereumjs-util>ethereum-cryptography>secp256k1": false,
+      "eth-keyring-controller>pentagonxyz/whale-keyring>@apollo/client": false
     }
   }
 }
