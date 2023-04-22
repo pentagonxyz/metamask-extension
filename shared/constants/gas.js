@@ -1,7 +1,7 @@
 import { addHexPrefix } from 'ethereumjs-util';
 
-const ONE_HUNDRED_THOUSAND = 100000;
-const MIN_GAS_LIMIT_DEC = '21000';
+const ONE_HUNDRED_SIXTY_THOUSAND = 160000;
+const MIN_GAS_LIMIT_DEC = '80000'; // 70939 rounded up to 80000
 
 export const MIN_GAS_LIMIT_HEX = parseInt(MIN_GAS_LIMIT_DEC, 10).toString(16);
 
@@ -9,7 +9,7 @@ export const GAS_LIMITS = {
   // maximum gasLimit of a simple send
   SIMPLE: addHexPrefix(MIN_GAS_LIMIT_HEX),
   // a base estimate for token transfers.
-  BASE_TOKEN_ESTIMATE: addHexPrefix(ONE_HUNDRED_THOUSAND.toString(16)),
+  BASE_TOKEN_ESTIMATE: addHexPrefix(ONE_HUNDRED_SIXTY_THOUSAND.toString(16)),
 };
 
 /**
