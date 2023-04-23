@@ -3142,7 +3142,7 @@ export default class MetamaskController extends EventEmitter {
       const rawSig = await this.keyringController.signPersonalMessage(
         cleanMsgParams,
         {
-          gas: parseInt(chainId.substring(2), 16) !== 42161 && parseInt(chainId.substring(2), 16) !== 421613 ? "0x1D4C0" : undefined
+          gas: parseInt(chainId.substring(2), 16) !== 42161 && parseInt(chainId.substring(2), 16) !== 421613 ? "0x186A0" : undefined // 86202 rounded up to 100000 = 0x186A0
         },
         msgParams.origin,
       );
