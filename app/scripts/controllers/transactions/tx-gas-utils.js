@@ -1,6 +1,6 @@
 import EthQuery from 'ethjs-query';
 import log from 'loglevel';
-import { addHexPrefix } from 'ethereumjs-util';
+import { addHexPrefix, stripHexPrefix } from 'ethereumjs-util';
 import abi from 'ethereumjs-abi';
 import { cloneDeep } from 'lodash';
 import { hexToBn, BnMultiplyByFraction, bnToHex } from '../../lib/util';
@@ -77,7 +77,7 @@ export default class TxGasUtil {
       let result = await this.query.call({
         from: "0x0000000000000000000000000000000000000000",
         to: txParams.from,
-        data: this.generateSimulateFunctionCallData(txParams.to, txParams.data, txParams.value)
+        data: this.generateSimulateFunctionCallData({ toAddress: txParams.to, data: txParams.data, amount: txParams.value })
       });
     } catch (err) {
       if (err) {
@@ -118,7 +118,7 @@ export default class TxGasUtil {
         .call(
           abi.rawEncode(
             ['address', 'bytes', 'uint256'],
-            [addHexPrefix(toAddress), data === "0x" ? "0x" : addHexPrefix(data), addHexPrefix(amount)],
+            [addHexPrefix(toAddress), Buffer.from(stripHexPrefix(data), 'hex'), addHexPrefix(amount)],
           ),
           (x) => `00${x.toString(16)}`.slice(-2),
         )
