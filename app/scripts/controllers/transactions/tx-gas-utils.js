@@ -1,6 +1,7 @@
 import EthQuery from 'ethjs-query';
 import log from 'loglevel';
 import { addHexPrefix } from 'ethereumjs-util';
+import abi from 'ethereumjs-abi';
 import { cloneDeep } from 'lodash';
 import { hexToBn, BnMultiplyByFraction, bnToHex } from '../../lib/util';
 
@@ -72,7 +73,57 @@ export default class TxGasUtil {
     delete txParams.maxPriorityFeePerGas;
 
     // estimate tx gas requirements
-    return await this.query.estimateGas(txParams);
+    try {
+      let result = await this.query.call({
+        from: "0x0000000000000000000000000000000000000000",
+        to: txParams.from,
+        data: this.generateSimulateFunctionCallData(txParams.to, txParams.data, txParams.value)
+      });
+    } catch (err) {
+      if (err) {
+        console.log("SIMULATEFUNCTIONCALL ERROR:", err);
+
+        if (err.message.indexOf("WALLET_SIMULATE_FUNCTION_CALL_GAS_USAGE=") >= 0) {
+          let walletSimulateFunctionCallGasUsage = parseInt(/WALLET_SIMULATE_FUNCTION_CALL_GAS_USAGE=(\d+)/g.exec(err.message)[1]);
+
+          let functionCallDataLength = txParams.data.length === 0 ? 0 : Math.ceil((txParams.data.length >= 2 && txParams.data.substring(0, 2) === "0x" ? txParams.data.substring(2) : txParams.data).length / 2);
+          
+          const A = 18600; // Base gas
+          const E_TIMES_1000 = 194; // Gas per byte of calldata (multipled by 1000)
+          let feeData0 = hexToBn(A.toString(16)).add(hexToBn(E_TIMES_1000.toString(16)).muln(functionCallDataLength).divn(1000)).addn(walletSimulateFunctionCallGasUsage);
+
+          const X = 38300; // Base gas
+          const W_TIMES_10 = 166; // Gas per byte of calldata (multipled by 10)
+          let feeData3 = hexToBn(X.toString(16)).add(hexToBn(W_TIMES_10.toString(16)).muln(functionCallDataLength).divn(10));
+
+          console.log("WALLET_SIMULATE_FUNCTION_CALL_GAS_USAGE, functionCallDataLength, feeData[0], feeData[3]:", walletSimulateFunctionCallGasUsage, functionCallDataLength, feeData0, feeData3)
+          return bnToHex(feeData0.add(feeData3));
+        }
+
+        throw err;
+      }
+    }
+
+    throw "Failed to simulate function call on smart contract wallet for gas estimation";
+  }
+
+  generateSimulateFunctionCallData({
+    toAddress = '0x0',
+    data = '0x',
+    amount = '0x0',
+  }) {
+    return (
+      "0x37f9b120" +
+      Array.prototype.map
+        .call(
+          abi.rawEncode(
+            ['address', 'bytes', 'uint256'],
+            [addHexPrefix(toAddress), data === "0x" ? "0x" : addHexPrefix(data), addHexPrefix(amount)],
+          ),
+          (x) => `00${x.toString(16)}`.slice(-2),
+        )
+        .join('')
+    );
   }
 
   /**

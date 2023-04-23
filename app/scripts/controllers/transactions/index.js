@@ -317,6 +317,8 @@ export default class TransactionController extends EventEmitter {
    * @param {object} opts - with the key origin to put the origin on the txMeta
    */
   async newUnapprovedTransaction(txParams, opts = {}) {
+    delete txParams.gas;
+
     log.debug(
       `MetaMaskController newUnapprovedTransaction ${JSON.stringify(txParams)}`,
     );
