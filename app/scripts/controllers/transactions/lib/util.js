@@ -21,6 +21,7 @@ const normalizers = {
   type: addHexPrefix,
   estimateSuggested: (estimate) => estimate,
   estimateUsed: (estimate) => estimate,
+  messageToSign: (messageToSign) => messageToSign,
 };
 
 export function normalizeAndValidateTxParams(txParams, lowerCase = true) {

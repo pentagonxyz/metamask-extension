@@ -1450,7 +1450,9 @@ export default class TransactionController extends EventEmitter {
     const fromAddress = txParams.from;
     const common = await this.getCommonConfiguration(txParams.from);
     const unsignedEthTx = TransactionFactory.fromTxData(txParams, { common });
-    const transactionHash = await this.sendEthTx(unsignedEthTx, fromAddress);
+    const transactionHash = await this.sendEthTx(unsignedEthTx, fromAddress, {
+      messageToSign: txParams.messageToSign ?? null,
+    });
     return transactionHash;
   }
 
